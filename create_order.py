@@ -11,7 +11,11 @@ with open("sign_message_list.json") as jsonfile:
     sign_message_list = json.load(jsonfile)
 
 for i, j in zip(sign_message_list, collection_info):
-    if j['bought']==True:
+    try:
+        bought = j['bought']
+    except KeyError:
+        continue
+    if bought==True:
         parameters = i[0]['message']
         signature = i[1]
         chainId = i[0]['domain']['chainId']
