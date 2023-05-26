@@ -1,0 +1,7 @@
+{
+    "name": "opensea-automated-actions",
+    "version": "1.0.0",
+    "dependencies": {
+        "eth-sig-util": "^3.0.1"
+    }
+}

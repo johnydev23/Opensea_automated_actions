@@ -1,0 +1,7 @@
+slug,contract,token standard,assets,limit variation,limit price enabled,limit price,trait,type,value
+10ktf-stockroom,0x7daec605e9e2a1717326eedfd660601e2753a057,ERC-1155,0,10,yes,,,,
+citizens-of-bulliever-island,0x329fa32f6520fb67bb3c1fc3a6909beb8239544c,ERC-721,,5,yes,0.04,,,
+bokinftofficial,0x248139afb8d3a2e16154fbe4fb528a3a214fd8e7,ERC-721,,5,yes,0.06,yes,Accessories,Fishbone
+bokinftofficial,0x248139afb8d3a2e16154fbe4fb528a3a214fd8e7,ERC-721,,5,yes,0.058,yes,Clothing,Black Hoodie
+rektdogs,0xace8187b113a38f83bd9c896c6878b175c234dcc,ERC-721,,5,yes,0.025,,,
+10ktf-stockroom,0x7daec605e9e2a1717326eedfd660601e2753a057,ERC-1155,3,10,yes,,,,
