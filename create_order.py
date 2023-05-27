@@ -16,19 +16,20 @@ for i, j in zip(sign_message_list, collection_info):
     except KeyError:
         continue
     if bought==True:
-        parameters = i[0]['message']
-        signature = i[1]
-        chainId = i[0]['domain']['chainId']
-        chainId_dict = {
-            "42161": "arbitrum",
-            "43114": "avalanche",
-            "1": "ethereum",
-            "8217": "klaytn",
-            "137": "matic",
-            "10": "optimism"
-        }
-        chain = chainId_dict[chainId]
-        createListingOrder(parameters, signature, chain)
+        if i[0] is not None:
+            parameters = i[0]['message']
+            signature = i[1]
+            chainId = i[0]['domain']['chainId']
+            chainId_dict = {
+                "42161": "arbitrum",
+                "43114": "avalanche",
+                "1": "ethereum",
+                "8217": "klaytn",
+                "137": "matic",
+                "10": "optimism"
+            }
+            chain = chainId_dict[chainId]
+            createListingOrder(parameters, signature, chain)
     else:
         if i[0] is not None:
             if i[0]['message']['consideration'][0]['token'].upper() == j['contract'].upper():
