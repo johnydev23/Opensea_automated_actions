@@ -47,22 +47,26 @@ for i,v in enumerate(collection_list):
                 for k in j['traits']:
                     if k['trait_type'] == _type and k['value'] == _value:
                         token_id = j['token_id']
-                        collection_info[i].update({"bought": True, "token id": token_id})
-                        print(token_id)
-                        token_id_list.append(token_id)
-                        print("List token")
-                        found = True
-                        listed = j['seaport_sell_orders']
-                        if listed is None:
-                            message = getListingMessage(collection_info[i], address)
-                        break
-                    if found:
-                        break
+                        if token_id not in token_id_list:
+                            limit_price = float(j['last_sale']['total_price'])/1E18 if v['limit price']=='' else float(v['limit price'])
+                            limit_price = limit_price * (1 + float(v['limit variation'])/100) if v['limit price']!='' else limit_price
+                            collection_info[i].update({"limit price": limit_price, "bought": True, "token id": token_id})
+                            print(token_id)
+                            token_id_list.append(token_id)
+                            print("List token")
+                            found = True
+                            listed = j['seaport_sell_orders']
+                            if listed is None:
+                                message = getListingMessage(collection_info[i], address)
+                            break
+                        if found:
+                            break
         else:
             for j in assetInfo['assets']:
                 token_id = j['token_id']
                 if token_id not in token_id_list:
-                    collection_info[i].update({"bought": True, "token id": token_id})
+                    limit_price = float(j['last_sale']['total_price'])/1E18
+                    collection_info[i].update({"limit price": limit_price, "bought": True, "token id": token_id})
                     print(token_id)
                     token_id_list.append(token_id)
                     print("List token")
