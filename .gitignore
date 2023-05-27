@@ -10,3 +10,4 @@ package-lock.json
 message_list.json
 Pipfile
 Pipfile.lock
+collection_info.json
