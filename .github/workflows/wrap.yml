@@ -1,0 +1,36 @@
+name: "Wrap weth to eth"
+on:
+  schedule:
+  - cron: "*/60 */6 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  actions:
+    runs-on: ubuntu-22.04
+    permissions: write-all
+    steps:
+      - name: "Check out the repo"
+        uses: "actions/checkout@v3"
+      
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Install pip
+        run: |
+          python -m ensurepip --upgrade
+      
+      - name: Install dependencies with pip
+        run: |
+          pip install -r requirements.txt
+      
+      - name: Wrap weth to eth
+        env:
+            ADDRESS: ${{ secrets.ADDRESS }}
+            API_KEY: ${{ secrets.API_KEY }}
+            ETHEREUM_RPC: ${{ secrets.ETHEREUM_RPC }}
+        run: |
+          python3 wrap_weth_to_eth.py
+          echo "## Wraping weth" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Passed" >> $GITHUB_STEP_SUMMARY
