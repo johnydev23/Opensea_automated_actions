@@ -38,6 +38,7 @@ jobs:
         env:
             ADDRESS: ${{ secrets.ADDRESS }}
             API_KEY: ${{ secrets.API_KEY }}
+            ETHEREUM_RPC: ${{ secrets.ETHEREUM_RPC }}
         run: |
           python3 main.py
           echo "## Getting messages" >> $GITHUB_STEP_SUMMARY
