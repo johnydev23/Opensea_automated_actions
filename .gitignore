@@ -6,7 +6,6 @@ __pycache__
 test.py
 sign_message.py
 sign_message_list.json
-package-lock.json
 message_list.json
 Pipfile
 Pipfile.lock
