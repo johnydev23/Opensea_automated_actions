@@ -4,9 +4,10 @@ import csv
 from actions.user_tokens_info import getAssetInfo
 from actions.bidding import getBiddingMessage
 from actions.listing import getListingMessage
+from weth_balance import getWETHbalance
 
 address = os.environ.get('ADDRESS')
-
+balance = getWETHbalance(address)
 collection_list = []
 
 for filename in os.listdir('.'):
@@ -73,10 +74,14 @@ for i,v in enumerate(collection_list):
                     listed = j['seaport_sell_orders']
                     if listed is None:
                         message = getListingMessage(collection_info[i], address)
+                    elif v['token standard']=='ERC-1155':
+                        offerer = j['seaport_sell_orders'][0]['protocol_data']['parameters']['offerer'].upper()
+                        if address.upper() != offerer:
+                            message = getListingMessage(collection_info[i], address)
                     break
     else:
         print("Make offer")
-        limit_price, message = getBiddingMessage(v, address)
+        limit_price, message = getBiddingMessage(v, address, balance)
         collection_info[i].update({"limit price": limit_price, "bought": False})
     message_list.append(message)
 
