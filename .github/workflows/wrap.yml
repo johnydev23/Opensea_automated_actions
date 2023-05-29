@@ -29,7 +29,7 @@ jobs:
       - name: Wrap weth to eth
         env:
             ADDRESS: ${{ secrets.ADDRESS }}
-            API_KEY: ${{ secrets.API_KEY }}
+            PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
             ETHEREUM_RPC: ${{ secrets.ETHEREUM_RPC }}
         run: |
           python3 wrap_weth_to_eth.py
