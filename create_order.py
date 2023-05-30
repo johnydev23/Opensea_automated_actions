@@ -2,7 +2,7 @@ import json
 from actions.create_offer import createOffer
 from actions.create_single_offer import createSingleOffer
 from actions.create_listing_order import createListingOrder
-
+import time
 
 with open("collection_info.json") as jsonfile:
     collection_info = json.load(jsonfile)
@@ -11,6 +11,7 @@ with open("sign_message_list.json") as jsonfile:
     sign_message_list = json.load(jsonfile)
 
 for i, j in zip(sign_message_list, collection_info):
+    time.sleep(0.25)
     try:
         bought = j['bought']
     except KeyError:
