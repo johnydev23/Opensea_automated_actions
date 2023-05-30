@@ -35,13 +35,13 @@ contract = web3.eth.contract(web3.to_checksum_address(contract_address), abi=con
 balance_wei = web3.eth.get_balance(account_address)
 balance_eth = web3.from_wei(balance_wei, 'ether')
 
-amount_to_wrap = web3.to_wei(0.1, 'ether')
+amount_to_wrap = web3.to_wei(float(balance_eth)-0.0115, 'ether')
 
 gas_price_wei = web3.eth.gas_price
 gas_price_eth = web3.from_wei(gas_price_wei, 'ether')
 
 if (gas_price_eth * 55876) < 0.0035:
-    if balance_eth > 0.115:
+    if balance_eth > 0.1:
         transaction = contract.functions.deposit().build_transaction({
             'from': account_address,
             'value': amount_to_wrap,
