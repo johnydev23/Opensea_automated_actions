@@ -52,7 +52,6 @@ for i,v in enumerate(collection_list):
                             limit_price = float(j['last_sale']['total_price'])/1E18 if v['limit price']=='' else float(v['limit price'])
                             limit_price = limit_price * (1 + float(v['limit variation'])/100) if v['limit price']!='' else limit_price
                             collection_info[i].update({"limit price": limit_price, "bought": True, "token id": token_id})
-                            print(token_id)
                             token_id_list.append(token_id)
                             print("List token")
                             found = True
@@ -68,7 +67,6 @@ for i,v in enumerate(collection_list):
                 if token_id not in token_id_list:
                     limit_price = float(j['last_sale']['total_price'])/1E18
                     collection_info[i].update({"limit price": limit_price, "bought": True, "token id": token_id})
-                    print(token_id)
                     token_id_list.append(token_id)
                     print("List token")
                     listed = j['seaport_sell_orders']

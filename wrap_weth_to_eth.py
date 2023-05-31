@@ -35,7 +35,10 @@ contract = web3.eth.contract(web3.to_checksum_address(contract_address), abi=con
 balance_wei = web3.eth.get_balance(account_address)
 balance_eth = web3.from_wei(balance_wei, 'ether')
 
-amount_to_wrap = web3.to_wei(float(balance_eth)-0.0115, 'ether')
+try:
+    amount_to_wrap = web3.to_wei(float(balance_eth)-0.0115, 'ether')
+except ValueError:
+    quit()
 
 gas_price_wei = web3.eth.gas_price
 gas_price_eth = web3.from_wei(gas_price_wei, 'ether')
