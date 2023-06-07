@@ -63,6 +63,7 @@ jobs:
         env:
             ADDRESS: ${{ secrets.ADDRESS }}
             API_KEY: ${{ secrets.API_KEY }}
+            PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
             ETHEREUM_RPC: ${{ secrets.ETHEREUM_RPC }}
             POLYGON_RPC: ${{ secrets.POLYGON_RPC }}
         run: |
