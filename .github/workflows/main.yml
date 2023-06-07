@@ -55,9 +55,9 @@ jobs:
           echo "## Getting signed messages" >> $GITHUB_STEP_SUMMARY
           echo "✅ Passed" >> $GITHUB_STEP_SUMMARY
       
-      - name: Clear secrets
-        run: |
-          unset PRIVATE_KEY
+
+
+
           
       - name: Create orders
         env:
