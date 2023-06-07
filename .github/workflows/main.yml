@@ -54,11 +54,7 @@ jobs:
           node sign_message.js
           echo "## Getting signed messages" >> $GITHUB_STEP_SUMMARY
           echo "✅ Passed" >> $GITHUB_STEP_SUMMARY
-      
 
-
-
-          
       - name: Create orders
         env:
             ADDRESS: ${{ secrets.ADDRESS }}
