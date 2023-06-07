@@ -39,7 +39,9 @@ jobs:
         env:
             ADDRESS: ${{ secrets.ADDRESS }}
             API_KEY: ${{ secrets.API_KEY }}
+            API_KEY_2: ${{ secrets.API_KEY_2 }}
             ETHEREUM_RPC: ${{ secrets.ETHEREUM_RPC }}
+            POLYGON_RPC: ${{ secrets.POLYGON_RPC }}
         run: |
           python3 main.py
           echo "## Getting messages" >> $GITHUB_STEP_SUMMARY
@@ -61,6 +63,8 @@ jobs:
         env:
             ADDRESS: ${{ secrets.ADDRESS }}
             API_KEY: ${{ secrets.API_KEY }}
+            ETHEREUM_RPC: ${{ secrets.ETHEREUM_RPC }}
+            POLYGON_RPC: ${{ secrets.POLYGON_RPC }}
         run: |
           python3 create_order.py
           echo "## Sending orders" >> $GITHUB_STEP_SUMMARY
