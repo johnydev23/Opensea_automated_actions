@@ -91,6 +91,10 @@ for i,v in enumerate(collection_list):
         else:
             for j in assetInfo['assets']:
                 token_id = j['token_id']
+                if v['assets'] != '':
+                    asset_id = v['assets']
+                    if asset_id != token_id:
+                        continue
                 if token_id not in token_id_list:
                     last_sale_price = float(j['last_sale']['total_price'])/1E18 if data_user_contracts is None else j['latest_trade_price']
                     limit_price = last_sale_price
