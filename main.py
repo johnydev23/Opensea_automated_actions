@@ -83,6 +83,8 @@ for i,v in enumerate(collection_list):
                                     offerer = listed['orders'][0]['protocol_data']['parameters']['offerer'].upper()
                                 except KeyError:
                                     offerer = address.upper()
+                                except IndexError:
+                                    offerer = None
                                 if address.upper() != offerer:
                                     message = getListingMessage(collection_info[i], address)
                             break
@@ -115,6 +117,8 @@ for i,v in enumerate(collection_list):
                             offerer = listed['orders'][0]['protocol_data']['parameters']['offerer'].upper()
                         except KeyError:
                             offerer = address.upper()
+                        except IndexError:
+                            offerer = None
                         if address.upper() != offerer:
                             message = getListingMessage(collection_info[i], address)
                     break
