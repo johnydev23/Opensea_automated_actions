@@ -85,6 +85,8 @@ for i,v in enumerate(collection_list):
                                     offerer = address.upper()
                                 except IndexError:
                                     offerer = None
+                                except TypeError:
+                                    offerer = address.upper()
                                 if address.upper() != offerer:
                                     message = getListingMessage(collection_info[i], address)
                             break
@@ -119,6 +121,8 @@ for i,v in enumerate(collection_list):
                             offerer = address.upper()
                         except IndexError:
                             offerer = None
+                        except TypeError:
+                            offerer = address.upper()
                         if address.upper() != offerer:
                             message = getListingMessage(collection_info[i], address)
                     break
