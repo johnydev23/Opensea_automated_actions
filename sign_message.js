@@ -14,29 +14,15 @@ function signTypedMessage(message) {
     return serializedSig;
 }
 
-fs.readFile('message_list.json', 'utf8', (err, data) => {
-    if (err) {
-        console.error('Error reading input file:', err);
-        return;
-    }
+const filePath = 'collection_info.json';
+const jsonData = fs.readFileSync(filePath, 'utf8');
+const collectionInfo = JSON.parse(jsonData);
 
-    try {
-        const messages = JSON.parse(data);
+for (let i = 0; i < collectionInfo.length; i++) {
+    const message = collectionInfo[i].typed_message;
+    const signature = signTypedMessage(message);
+    collectionInfo[i].signature = signature;
+}
 
-        const signedMessages = messages.map((message) => {
-            const signature = signTypedMessage(message);
-            return [message, signature];
-        });
-
-        const signedMessagesJSON = JSON.stringify(signedMessages);
-
-        fs.writeFile('sign_message_list.json', signedMessagesJSON, 'utf8', (err) => {
-            if (err) {
-                console.error('Error writing output file:', err);
-                return;
-            }
-        });
-    } catch (err) {
-        console.error('Error parsing input JSON:', err);
-    }
-});
+const updatedJsonData = JSON.stringify(collectionInfo, null, 2);
+fs.writeFileSync(filePath, updatedJsonData);

@@ -23,11 +23,25 @@ with open(csv_file, 'r') as file:
         collection_list.append(row)
 
 collection_list = sorted(collection_list, key=lambda x: (x['slug'], x['trait']), reverse=True)
-collection_info = collection_list
-message_list = []
+collection_info = []
+
+with open("collection_info.json", "w") as jsonfile:
+    json.dump(collection_info, jsonfile)
+
 token_id_list = []
 
+def add_element(element):
+    try:
+        with open("collection_info.json") as jsonfile:
+            collection_info = json.load(jsonfile)
+    except FileNotFoundError:
+        collection_info = []
+    collection_info.append(element)
+    with open("collection_info.json", "w") as jsonfile:
+        json.dump(collection_info, jsonfile)
+
 for i,v in enumerate(collection_list):
+    collection_element = collection_list[i]
     slug = v['slug']
     message = None
     if i>0:
@@ -39,7 +53,6 @@ for i,v in enumerate(collection_list):
         try:
             num_assets = len(assetInfo['assets'])
         except KeyError:
-            message_list.append(message)
             continue
     else:
         asset_contract = v['contract'].lower()
@@ -69,14 +82,14 @@ for i,v in enumerate(collection_list):
                             last_sale_price = float(j['last_sale']['total_price'])/1E18 if data_user_contracts is None else j['latest_trade_price']
                             limit_price = last_sale_price if v['limit price']=='' else float(v['limit price'])
                             limit_price = limit_price * (1 + float(v['limit variation'])/100) if v['limit price']!='' else limit_price
-                            collection_info[i].update({"limit price": limit_price, "bought": True, "token id": token_id})
+                            collection_element.update({"limit price": limit_price, "bought": True, "token id": token_id})
                             token_id_list.append(token_id)
                             print("List token")
                             found = True
                             if data_user_contracts is None:
                                 listed = j['seaport_sell_orders']
                                 if listed is None:
-                                    message = getListingMessage(collection_info[i], address)
+                                    message = getListingMessage(collection_element, address)
                             else:
                                 listed = getListedPrice(asset_contract,token_id,chain)
                                 try:
@@ -88,7 +101,7 @@ for i,v in enumerate(collection_list):
                                 except TypeError:
                                     offerer = address.upper()
                                 if address.upper() != offerer:
-                                    message = getListingMessage(collection_info[i], address)
+                                    message = getListingMessage(collection_element, address)
                             break
                         if found:
                             break
@@ -102,17 +115,17 @@ for i,v in enumerate(collection_list):
                 if token_id not in token_id_list:
                     last_sale_price = float(j['last_sale']['total_price'])/1E18 if data_user_contracts is None else j['latest_trade_price']
                     limit_price = last_sale_price
-                    collection_info[i].update({"limit price": limit_price, "bought": True, "token id": token_id})
+                    collection_element.update({"limit price": limit_price, "bought": True, "token id": token_id})
                     token_id_list.append(token_id)
                     print("List token")
                     if data_user_contracts is None:
                         listed = j['seaport_sell_orders']        
                         if listed is None:
-                            message = getListingMessage(collection_info[i], address)
+                            message = getListingMessage(collection_element, address)
                         elif v['token standard']=='ERC-1155':
                             offerer = j['seaport_sell_orders'][0]['protocol_data']['parameters']['offerer'].upper()             
                             if address.upper() != offerer:
-                                message = getListingMessage(collection_info[i], address)
+                                message = getListingMessage(collection_element, address)
                     else:
                         listed = getListedPrice(asset_contract,token_id,chain)
                         try:
@@ -124,16 +137,11 @@ for i,v in enumerate(collection_list):
                         except TypeError:
                             offerer = address.upper()
                         if address.upper() != offerer:
-                            message = getListingMessage(collection_info[i], address)
+                            message = getListingMessage(collection_element, address)
                     break
     else:
         print("Make offer")
         limit_price, message = getBiddingMessage(v, address, balance)
-        collection_info[i].update({"limit price": limit_price, "bought": False})
-    message_list.append(message)
-
-with open("collection_info.json", "w") as jsonfile:
-    json.dump(collection_info, jsonfile)
-
-with open("message_list.json", "w") as jsonfile:
-    json.dump(message_list, jsonfile)
+        collection_element.update({"limit price": limit_price, "bought": False})
+    collection_element.update({"typed_message": message})
+    add_element(collection_element)
