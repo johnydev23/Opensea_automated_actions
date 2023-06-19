@@ -8,7 +8,7 @@ with open("collection_info.json") as jsonfile:
     collection_info = json.load(jsonfile)
 
 for j in collection_info:
-    time.sleep(0.5)
+    time.sleep(1)
     try:
         bought = j['bought']
     except KeyError:
