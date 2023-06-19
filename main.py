@@ -6,6 +6,7 @@ from actions.bidding import getBiddingMessage
 from actions.listing import getListingMessage
 from actions.token_listed_price import getListedPrice
 from weth_balance import getWETHbalance
+import time
 
 address = os.environ.get('ADDRESS')
 balance = getWETHbalance(address)
@@ -41,6 +42,7 @@ def add_element(element):
         json.dump(collection_info, jsonfile)
 
 for i,v in enumerate(collection_list):
+    time.sleep(1)
     collection_element = collection_list[i]
     slug = v['slug']
     message = None
