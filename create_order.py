@@ -2,13 +2,11 @@ import json
 from actions.create_offer import createOffer
 from actions.create_single_offer import createSingleOffer
 from actions.create_listing_order import createListingOrder
-import time
 
 with open("collection_info.json") as jsonfile:
     collection_info = json.load(jsonfile)
 
 for j in collection_info:
-    time.sleep(1)
     try:
         bought = j['bought']
     except KeyError:
