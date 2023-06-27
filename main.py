@@ -61,6 +61,14 @@ for i,v in enumerate(collection_list):
             num_assets = data_user_contracts_info[asset_contract]['owns_total']
             chain = data_user_contracts_info[asset_contract]['chain']
             assetInfo = data_user_contracts_info[asset_contract]
+            if asset is not None:
+                for j in assetInfo['assets']:
+                    token_id = j['token_id']
+                    if asset == token_id:
+                        num_assets = data_user_contracts_info[asset_contract]['owns_total']
+                        break
+                    else:
+                        num_assets = 0
         else:
             num_assets = 0
     for z in range(number_offers):
@@ -110,9 +118,8 @@ for i,v in enumerate(collection_list):
             else:
                 for j in assetInfo['assets']:
                     token_id = j['token_id']
-                    if v['assets'] != '':
-                        asset_id = v['assets']
-                        if asset_id != token_id:
+                    if asset is not None:
+                        if asset != token_id:
                             continue
                     if token_id not in token_id_list:
                         last_sale_price = float(j['last_sale']['total_price'])/1E18 if data_user_contracts is None else j['latest_trade_price']

@@ -1,7 +1,7 @@
 slug,contract,token standard,assets,limit variation,limit price enabled,limit price,trait,type,value,number offers,increment,different times
 rottenbananos,0x0912dad1db4643368b029166af217b8a9818db15,ERC-1155,0,10,yes,,,,,2,1,yes
-biginc-letters,0x7b390a46c868ccebf2730121faf777129b47c97c,ERC-1155,1,15,yes,0.11,,,,,,
-biginc-letters,0x7b390a46c868ccebf2730121faf777129b47c97c,ERC-1155,2,15,yes,0.14,,,,,,
+biginc-letters,0x7b390a46c868ccebf2730121faf777129b47c97c,ERC-1155,1,15,yes,0.11,,,,2,,yes
+biginc-letters,0x7b390a46c868ccebf2730121faf777129b47c97c,ERC-1155,2,15,yes,0.14,,,,2,,yes
 citizens-of-bulliever-island,0x329fa32f6520fb67bb3c1fc3a6909beb8239544c,ERC-721,,10,yes,,,,,,,
 rektdogs,0xace8187b113a38f83bd9c896c6878b175c234dcc,ERC-721,,15,yes,,,,,,,
 polygonapetheevolution,0x419e82d502f598ca63d821d3bbd8dfefaf9bbc8d,ERC-721,,15,yes,,,,,,,
@@ -22,7 +22,7 @@ worldwidewebbland,0xa1d4657e0e6507d5a94d06da93e94dc7c8c44b51,ERC-721,,18,yes,,,,
 otherside-vessels,0x5b1085136a811e55b2bb2ca1ea456ba82126a376,ERC-721,,12,yes,,,,,,,
 reepz,0xf192502dc0a01728955a82a5b84631bf719c8ee2,ERC-721,,15,yes,,,,,,,
 godhatesnftees,0xe6d48bf4ee912235398b96e16db6f310c21e82cb,ERC-721,,12,yes,,,,,,,
-the-meta-key,0x10daa9f4c0f985430fde4959adb2c791ef2ccf83,ERC-1155,10003,10,yes,,,,,,,
+the-meta-key,0x10daa9f4c0f985430fde4959adb2c791ef2ccf83,ERC-1155,10003,10,yes,,,,,2,,yes
 fvck-avatar-essence,0xddb149ae8e6635df01a530da1e46921bd78dc385,ERC-1155,1,15,yes,0.04,,,,,,
 ensmaxis,0xaa462106da447c0440a4be29614c19387a59a331,ERC-721,,15,yes,,,,,,,
 bored-and-dangerous,0xba627f3d081cc97ac0edc40591eda7053ac63532,ERC-721,,15,yes,,,,,,,
