@@ -64,7 +64,7 @@ for i,v in enumerate(collection_list):
         else:
             num_assets = 0
     for z in range(number_offers):
-        if (num_assets > 0) and (num_assets > len(token_id_list)):
+        if (num_assets > 0) and (num_assets > len(token_id_list)-z):
             trait = v['trait'] == 'yes'
             if trait:
                 _type = v['type']
