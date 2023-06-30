@@ -63,7 +63,7 @@ for i,v in enumerate(collection_list):
             assetInfo = data_user_contracts_info[asset_contract]
             if asset is not None:
                 for j in assetInfo['assets']:
-                    token_id = j['token_id']
+                    token_id = j['tokenId']
                     if asset == token_id:
                         num_assets = data_user_contracts_info[asset_contract]['owns_total']
                         break
@@ -82,14 +82,13 @@ for i,v in enumerate(collection_list):
                     if data_user_contracts is None:
                         traits = j['traits']
                     else:
-                        metadata = j['metadata_json']
-                        metadata_json = json.loads(metadata)
-                        traits = metadata_json['attributes']
+                        traits = j['meta']['attributes']
                     for k in traits:
-                        if k['trait_type'] == _type and k['value'] == _value:
-                            token_id = j['token_id']
+                        key = 'trait_type' if data_user_contracts is None else 'key'
+                        if k[key] == _type and k['value'] == _value:
+                            token_id = j['token_id'] if data_user_contracts is None else j['tokenId']
                             if token_id not in token_id_list:
-                                last_sale_price = float(j['last_sale']['total_price'])/1E18 if data_user_contracts is None else j['latest_trade_price']
+                                last_sale_price = float(j['last_sale']['total_price'])/1E18 if data_user_contracts is None else float(j['lastSale']['price'])
                                 limit_price = last_sale_price if v['limit price']=='' else float(v['limit price'])
                                 limit_price = limit_price * (1 + float(v['limit variation'])/100) if v['limit price']!='' else limit_price
                                 collection_element.update({"limit price": limit_price, "bought": True, "token id": token_id})
@@ -117,12 +116,12 @@ for i,v in enumerate(collection_list):
                                 break
             else:
                 for j in assetInfo['assets']:
-                    token_id = j['token_id']
+                    token_id = j['token_id'] if data_user_contracts is None else j['tokenId']
                     if asset is not None:
                         if asset != token_id:
                             continue
                     if token_id not in token_id_list:
-                        last_sale_price = float(j['last_sale']['total_price'])/1E18 if data_user_contracts is None else j['latest_trade_price']
+                        last_sale_price = float(j['last_sale']['total_price'])/1E18 if data_user_contracts is None else float(j['lastSale']['price'])
                         limit_price = last_sale_price
                         collection_element.update({"limit price": limit_price, "bought": True, "token id": token_id})
                         token_id_list.append(token_id)
