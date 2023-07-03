@@ -1,10 +1,11 @@
 import os
 import json
 import csv
-from actions.user_tokens_info import getAssetInfo, getAssetInfo2
+from actions.user_tokens_info import getAssetInfo, getAssetInfo2, getAssetInfo3
 from actions.bidding import getBiddingMessage
 from actions.listing import getListingMessage
 from actions.token_listed_price import getListedPrice
+from actions.token_events import getTokenEvents
 from weth_balance import getWETHbalance
 
 address = os.environ.get('ADDRESS')
@@ -44,6 +45,7 @@ for i,v in enumerate(collection_list):
     collection_element = collection_list[i]
     slug = v['slug']
     message = None
+    asset_contract = v['contract'].lower()
     number_offers = int(v['number offers']) if v['number offers'] != '' else 1
     if i>0:
         if slug != collection_list[i-1]['slug']:
@@ -53,10 +55,10 @@ for i,v in enumerate(collection_list):
         assetInfo = getAssetInfo(address, slug, asset)
         try:
             num_assets = len(assetInfo['assets'])
+            chain = assetInfo[0]['asset_contract']['chain_identifier']
         except KeyError:
             continue
     else:
-        asset_contract = v['contract'].lower()
         if asset_contract in data_user_contracts:
             num_assets = data_user_contracts_info[asset_contract]['owns_total']
             chain = data_user_contracts_info[asset_contract]['chain']
@@ -121,8 +123,13 @@ for i,v in enumerate(collection_list):
                         if asset != token_id:
                             continue
                     if token_id not in token_id_list:
-                        last_sale_price = float(j['last_sale']['total_price'])/1E18 if data_user_contracts is None else float(j['lastSale']['price'])
-                        limit_price = last_sale_price
+                        if v['token standard']=='ERC-1155':
+                            limit_price = getTokenEvents(chain,asset_contract,asset)
+                            if limit_price is None:
+                                    limit_price = getAssetInfo3(asset_contract, address, asset)
+                        else:
+                            last_sale_price = float(j['last_sale']['total_price'])/1E18 if data_user_contracts is None else float(j['lastSale']['price'])
+                            limit_price = last_sale_price
                         collection_element.update({"limit price": limit_price, "bought": True, "token id": token_id})
                         token_id_list.append(token_id)
                         print("List token")
