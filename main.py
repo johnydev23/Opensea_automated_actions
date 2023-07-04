@@ -92,7 +92,6 @@ for i,v in enumerate(collection_list):
                             if token_id not in token_id_list:
                                 last_sale_price = float(j['last_sale']['total_price'])/1E18 if data_user_contracts is None else float(j['lastSale']['price'])
                                 limit_price = last_sale_price if v['limit price']=='' else float(v['limit price'])
-                                limit_price = limit_price * (1 + float(v['limit variation'])/100) if v['limit price']!='' else limit_price
                                 collection_element.update({"limit price": limit_price, "bought": True, "token id": token_id})
                                 token_id_list.append(token_id)
                                 print("List token")
