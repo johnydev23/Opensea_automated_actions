@@ -44,7 +44,6 @@ def add_element(element):
 for i,v in enumerate(collection_list):
     collection_element = collection_list[i]
     slug = v['slug']
-    message = None
     asset_contract = v['contract'].lower()
     number_offers = int(v['number offers']) if v['number offers'] != '' else 1
     if i>0:
@@ -73,13 +72,14 @@ for i,v in enumerate(collection_list):
                         num_assets = 0
         else:
             num_assets = 0
+    found = False
     for z in range(number_offers):
+        message = None
         if (num_assets > 0) and (num_assets > len(token_id_list)-z):
             trait = v['trait'] == 'yes'
             if trait:
                 _type = v['type']
                 _value = v['value']
-                found = False
                 for j in assetInfo['assets']:
                     if data_user_contracts is None:
                         traits = j['traits']
@@ -131,6 +131,7 @@ for i,v in enumerate(collection_list):
                             limit_price = last_sale_price
                         collection_element.update({"limit price": limit_price, "bought": True, "token id": token_id})
                         token_id_list.append(token_id)
+                        found = True
                         print("List token")
                         if data_user_contracts is None:
                             listed = j['seaport_sell_orders']        
@@ -153,7 +154,7 @@ for i,v in enumerate(collection_list):
                             if address.upper() != offerer:
                                 message = getListingMessage(collection_element, address)
                         break
-        else:
+        if found == False:
             print("Make offer")
             limit_price, message = getBiddingMessage(v, address, balance, z)
             collection_element.update({"limit price": limit_price, "bought": False})
