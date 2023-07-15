@@ -73,7 +73,7 @@ for i,v in enumerate(collection_list):
         else:
             num_assets = 0
     found = False
-    for z in range(number_offers):
+    for z in range(number_offers if number_offers > 0 else 1):
         message = None
         if (num_assets > 0) and (num_assets > len(token_id_list)-z):
             trait = v['trait'] == 'yes'
@@ -154,7 +154,7 @@ for i,v in enumerate(collection_list):
                             if address.upper() != offerer:
                                 message = getListingMessage(collection_element, address)
                         break
-        if found == False:
+        if found == False and number_offers>0:
             print("Make offer")
             limit_price, message = getBiddingMessage(v, address, balance, z)
             collection_element.update({"limit price": limit_price, "bought": False})
