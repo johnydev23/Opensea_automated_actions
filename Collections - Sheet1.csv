@@ -1,6 +1,6 @@
 slug,contract,token standard,assets,limit variation,limit price enabled,limit price,trait,type,value,number offers,increment,different times
 rottenbananos,0x0912dad1db4643368b029166af217b8a9818db15,ERC-1155,0,10,yes,,,,,2,1,yes
-citizens-of-bulliever-island,0x329fa32f6520fb67bb3c1fc3a6909beb8239544c,ERC-721,,10,yes,,,,,,,
+citizens-of-bulliever-island,0x329fa32f6520fb67bb3c1fc3a6909beb8239544c,ERC-721,,15,yes,,,,,,,
 rektdogs,0xace8187b113a38f83bd9c896c6878b175c234dcc,ERC-721,,25,yes,,,,,,,
 polygonapetheevolution,0x419e82d502f598ca63d821d3bbd8dfefaf9bbc8d,ERC-721,,25,yes,,,,,,,
 galactic-eagle-gang-1,0xfcaa34d7ef46d1e4cf5d7933e6be8c57374a6fa7,ERC-721,,25,yes,,,,,,,
