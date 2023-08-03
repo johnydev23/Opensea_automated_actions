@@ -145,13 +145,14 @@ for i,v in enumerate(collection_list):
                             listed = getListedPrice(asset_contract,token_id,chain)
                             try:
                                 offerer = listed['orders'][0]['protocol_data']['parameters']['offerer'].upper()
+                                taker = listed['orders'][0]['taker']
                             except KeyError:
                                 offerer = address.upper()
                             except IndexError:
                                 offerer = None
                             except TypeError:
                                 offerer = address.upper()
-                            if address.upper() != offerer:
+                            if address.upper() != offerer or taker is not None:
                                 message = getListingMessage(collection_element, address)
                         break
         if found == False and number_offers>0:
