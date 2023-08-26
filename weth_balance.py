@@ -23,8 +23,11 @@ def getWETHbalance(address):
         contract = web3.eth.contract(web3.to_checksum_address(
             value), abi=contract_abi)
 
-        balance_in_wei = contract.functions.balanceOf(address).call()
-        balance_in_eth = balance_in_wei / 1E18
+        try:
+            balance_in_wei = contract.functions.balanceOf(address).call()
+            balance_in_eth = balance_in_wei / 1E18
+        except:
+            balance_in_eth = 0.15
         
         weth_balance[key] = balance_in_eth
 

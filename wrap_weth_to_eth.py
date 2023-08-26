@@ -43,12 +43,12 @@ except ValueError:
 gas_price_wei = web3.eth.gas_price
 gas_price_eth = web3.from_wei(gas_price_wei, 'ether')
 
-if (gas_price_eth * 55876) < 0.0035:
+if (gas_price_eth * 40000) < 0.0035:
     if balance_eth > 0.15:
         transaction = contract.functions.deposit().build_transaction({
             'from': account_address,
             'value': amount_to_wrap,
-            'gas': 55876,
+            'gas': 40000,
             'maxFeePerGas': gas_price_wei,
             'maxPriorityFeePerGas': gas_price_wei,
             'nonce': web3.eth.get_transaction_count(account_address),

@@ -143,6 +143,7 @@ for i,v in enumerate(collection_list):
                                     message = getListingMessage(collection_element, address)
                         else:
                             listed = getListedPrice(asset_contract,token_id,chain)
+                            taker = None
                             try:
                                 offerer = listed['orders'][0]['protocol_data']['parameters']['offerer'].upper()
                                 taker = listed['orders'][0]['taker']
