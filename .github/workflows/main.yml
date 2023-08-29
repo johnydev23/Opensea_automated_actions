@@ -43,6 +43,7 @@ jobs:
             API_KEY_3: ${{ secrets.API_KEY_3 }}
             ETHEREUM_RPC: ${{ secrets.ETHEREUM_RPC }}
             POLYGON_RPC: ${{ secrets.POLYGON_RPC }}
+            API_KEY_MONGODB: ${{ secrets.API_KEY_MONGODB }}
         run: |
           python3 main.py
           echo "## Getting messages" >> $GITHUB_STEP_SUMMARY
