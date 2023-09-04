@@ -44,7 +44,7 @@ def add_element(element):
 for i,v in enumerate(collection_list):
     collection_element = collection_list[i]
     slug = v['slug']
-    asset_contract = v['contract'].lower()
+    asset_contract = v['contract'].upper()
     number_offers = int(v['number offers']) if v['number offers'] != '' else 1
     if i>0:
         if slug != collection_list[i-1]['slug']:
