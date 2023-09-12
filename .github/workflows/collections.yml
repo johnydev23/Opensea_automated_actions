@@ -1,0 +1,58 @@
+name: "Update Collections"
+on:
+  workflow_dispatch: {}
+
+jobs:
+  actions:
+    runs-on: ubuntu-22.04
+    permissions: write-all
+    steps:
+      - name: "Check out the repo"
+        uses: "actions/checkout@v3"
+      
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+      
+      - name: Install pip
+        run: |
+          python -m ensurepip --upgrade
+      
+      - name: Install dependencies with pip
+        run: |
+          pip install pymongo==4.5.0
+      
+      - name: Update collections from db
+        env:
+            URL_MONGODB: ${{ secrets.URL_MONGODB }}
+            WORKER: ${{ env.WORKER }}
+        run: |
+          python3 update_collections.py
+          echo "## Updating collections" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Passed" >> $GITHUB_STEP_SUMMARY
+
+      - name: Get current date
+        id: date
+        run: |
+          export TZ=America/Argentina/Buenos_Aires
+          echo "JOB_DATE=$(date +'%Y-%m-%d %H:%Mhs')" >> $GITHUB_ENV
+          echo "## Getting job date and hour" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Passed" >> $GITHUB_STEP_SUMMARY
+      
+      - name : "Ensure trusted environment"
+        run :  git config --global --add safe.directory /__w/Opensea_automated_actions/Opensea_automated_actions
+      
+      - name: "Add change name summary"
+        run: |
+          echo "## Commiting results" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Passed" >> $GITHUB_STEP_SUMMARY
+      
+      - name: "Update commit"
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "request: ${{ env.JOB_DATE }}"
+          #commit_options: "--amend"
+          push_options: "--force"
+          skip_fetch: true
