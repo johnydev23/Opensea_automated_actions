@@ -27,7 +27,7 @@ jobs:
       - name: Update collections from db
         env:
             URL_MONGODB: ${{ secrets.URL_MONGODB }}
-            WORKER: ${{ env.WORKER }}
+            WORKER: ${{ vars.WORKER }}
         run: |
           python3 update_collections.py
           echo "## Updating collections" >> $GITHUB_STEP_SUMMARY
