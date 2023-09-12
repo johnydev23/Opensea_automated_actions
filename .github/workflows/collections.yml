@@ -52,7 +52,7 @@ jobs:
       - name: "Update commit"
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "request: ${{ env.JOB_DATE }}"
+          commit_message: "update: ${{ env.JOB_DATE }}"
           #commit_options: "--amend"
           push_options: "--force"
           skip_fetch: true
