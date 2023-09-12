@@ -13,8 +13,8 @@ slug,contract,token standard,assets,limit variation,limit price enabled,limit pr
 acclimatedmooncats,0xc3f733ca98e0dad0386979eb96fb1722a1a05e69,ERC-721,,20,yes,,,,,,,,,,,,1
 adidasoriginals,0x28472a58a490c5e09a238847f66a68a47cc76f0f,ERC-1155,1,15,yes,,,,,2,1,,,,,,1
 alpha-pass-4,0x0d2e7fc72f669cc287fc4a2d32bda20ee5923d43,ERC-721,,50,no,,,,,,,,,,,,1
-archeworld-land-polygon,0x56d23f924cd526e5590ed94193a892e913e38079,ERC-721,,50,yes,0.2,yes,Size,MEGA,,,,,,,,1
 archeworld-land-polygon,0x56d23f924cd526e5590ed94193a892e913e38079,ERC-721,,40,yes,0.15,yes,Size,LARGE,,,,,,,,1
+archeworld-land-polygon,0x56d23f924cd526e5590ed94193a892e913e38079,ERC-721,,50,yes,0.2,yes,Size,MEGA,,,,,,,,1
 asm-brains,0xd0318da435dbce0b347cc6faa330b5a9889e3585,ERC-721,,25,yes,0.24,,,,,,,,,,,1
 azukielementals,0xb6a37b5d14d502c3ab0ae6f3a0e058bc9517786e,ERC-721,,20,yes,,,,,,,,,,,,1
 biginc-letters,0x7b390a46c868ccebf2730121faf777129b47c97c,ERC-1155,1,30,yes,0.038,,,,,,,,,,,1
@@ -27,8 +27,8 @@ cool-cats-nft,0x1a92f7381b9f03921564a437210bb9396471050c,ERC-721,,20,yes,,,,,,,,
 crypto-phunks,0xf07468ead8cf26c752c676e43c814fee9c8cf402,ERC-721,,20,yes,,,,,3,2,,,,,,1
 crypto-unicorns-land-market,0xa2a13ce1824f3916fc84c65e559391fc6674e6e8,ERC-721,,20,yes,,yes,Rarity,Rare,,,,,,,,1
 crypto-unicorns-shadowcorns-market,0xa7d50ee3d7485288107664cf758e877a0d351725,ERC-721,,20,yes,,,,,,,,,,,,1
-curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,3,20,yes,0.134,,,,,,,,,,,1
-curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,10,20,yes,0.134,,,,,,,,,,,1
+curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,3,20,yes,0.12,,,,,,,,,,,1
+curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,10,20,yes,0.11,,,,,,,,,,,1
 drill-club-official,0x39cd103414106b922eb09c7d45df89608b59e887,ERC-721,,25,yes,,,,,,,,,,,,1
 fat-rat-mafia,0x2b9fd4d651414e51c9ba56ae1add36bb71cca24b,ERC-721,,20,yes,,,,,,,,,,,,1
 fat-rat-mafia,0x2b9fd4d651414e51c9ba56ae1add36bb71cca24b,ERC-721,,20,yes,0.05,yes,Gasmask,All black,,,,,,,,1
@@ -66,8 +66,8 @@ rtfkt-mnlth-x,0x56a67d475ded20f1120d6377988ae12992888ac4,ERC-1155,1,20,yes,,,,,,
 rtfkt-podx,0xb7be4001bff2c5f4a61dd2435e4c9a19d8d12343,ERC-1155,1,20,yes,,,,,,,,,,,,1
 ruggenesis-nft,0x8ff1523091c9517bc328223d50b52ef450200339,ERC-721,,20,yes,,,,,,,,,,,,1
 sappy-seals,0x364c828ee171616a39897688a831c2499ad972ec,ERC-721,,20,yes,,,,,,,,,,,,1
-smallbros,0xb18380485f7ba9c23deb729bedd3a3499dbd4449,ERC-721,,50,yes,0.1,yes,HAIR,King,,,,,,,,1
 smallbros,0xb18380485f7ba9c23deb729bedd3a3499dbd4449,ERC-721,,20,yes,,,,,,,,,,,,1
+smallbros,0xb18380485f7ba9c23deb729bedd3a3499dbd4449,ERC-721,,50,yes,0.1,yes,HAIR,King,,,,,,,,1
 super-cool-world,0x670d4dd2e6badfbbd372d0d37e06cd2852754a04,ERC-721,,20,yes,,,,,,,,,,,,1
 the-grapes,0xe1dc516b1486aba548eecd2947a11273518434a4,ERC-721,,20,yes,,,,,,,,,,,,1
 the-meta-key,0x10daa9f4c0f985430fde4959adb2c791ef2ccf83,ERC-1155,10003,20,yes,0.135,,,,,,,,,,,1
