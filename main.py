@@ -7,6 +7,7 @@ from actions.listing import getListingMessage
 from actions.token_listed_price import getListedPrice
 from actions.token_events import getTokenEvents
 from weth_balance import getWETHbalance
+from database.connection import closeConnection
 
 address = os.environ.get('ADDRESS')
 balance = getWETHbalance(address)
@@ -24,6 +25,7 @@ with open(csv_file, 'r') as file:
         collection_list.append(row)
 
 collection_list = sorted(collection_list, key=lambda x: (x['slug'], x['trait']), reverse=True)
+
 collection_info = []
 
 with open("collection_info.json", "w") as jsonfile:
@@ -162,3 +164,5 @@ for i,v in enumerate(collection_list):
             collection_element.update({"limit price": limit_price, "bought": False})
         collection_element.update({"typed_message": message})
         add_element(collection_element)
+
+closeConnection()
