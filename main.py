@@ -8,6 +8,7 @@ from actions.token_listed_price import getListedPrice
 from actions.token_events import getTokenEvents
 from weth_balance import getWETHbalance
 from database.connection import closeConnection
+import time
 
 address = os.environ.get('ADDRESS')
 balance = getWETHbalance(address)
@@ -102,17 +103,28 @@ for i,v in enumerate(collection_list):
                                     listed = j['seaport_sell_orders']
                                     if listed is None:
                                         message = getListingMessage(collection_element, address)
+                                    else:
+                                        actual_time = int(time.time())
+                                        offerer = j['seaport_sell_orders'][0]['protocol_data']['parameters']['offerer'].upper()
+                                        expiration_time = int(j['seaport_sell_orders'][0]['expiration_time'])
+                                        if (address.upper() == offerer and expiration_time-actual_time<=300):
+                                            message = getListingMessage(collection_element, address)
                                 else:
                                     listed = getListedPrice(asset_contract,token_id,chain)
+                                    taker = None
+                                    actual_time = int(time.time())
+                                    expiration_time = actual_time
                                     try:
                                         offerer = listed['orders'][0]['protocol_data']['parameters']['offerer'].upper()
+                                        taker = listed['orders'][0]['taker']
+                                        expiration_time = int(listed['orders'][0]['expiration_time'])
                                     except KeyError:
                                         offerer = address.upper()
                                     except IndexError:
                                         offerer = None
                                     except TypeError:
                                         offerer = address.upper()
-                                    if address.upper() != offerer:
+                                    if address.upper() != offerer or taker is not None or (address.upper() == offerer and expiration_time-actual_time<=300):
                                         message = getListingMessage(collection_element, address)
                                 break
                             if found:
@@ -140,22 +152,27 @@ for i,v in enumerate(collection_list):
                             if listed is None:
                                 message = getListingMessage(collection_element, address)
                             elif v['token standard']=='ERC-1155':
-                                offerer = j['seaport_sell_orders'][0]['protocol_data']['parameters']['offerer'].upper()             
-                                if address.upper() != offerer:
+                                actual_time = int(time.time())
+                                offerer = j['seaport_sell_orders'][0]['protocol_data']['parameters']['offerer'].upper()
+                                expiration_time = int(j['seaport_sell_orders'][0]['expiration_time'])
+                                if (address.upper() != offerer) or (address.upper() == offerer and expiration_time-actual_time<=300):
                                     message = getListingMessage(collection_element, address)
                         else:
                             listed = getListedPrice(asset_contract,token_id,chain)
                             taker = None
+                            actual_time = int(time.time())
+                            expiration_time = actual_time
                             try:
                                 offerer = listed['orders'][0]['protocol_data']['parameters']['offerer'].upper()
                                 taker = listed['orders'][0]['taker']
+                                expiration_time = int(listed['orders'][0]['expiration_time'])
                             except KeyError:
                                 offerer = address.upper()
                             except IndexError:
                                 offerer = None
                             except TypeError:
                                 offerer = address.upper()
-                            if address.upper() != offerer or taker is not None:
+                            if address.upper() != offerer or taker is not None or (address.upper() == offerer and expiration_time-actual_time<=300):
                                 message = getListingMessage(collection_element, address)
                         break
         if found == False and number_offers>0:
