@@ -23,7 +23,7 @@ bored-and-dangerous,0xba627f3d081cc97ac0edc40591eda7053ac63532,ERC-721,,20,no,,,
 bullsandapes-utilities,0x2923c3e5a0f10bc02d8c90287b2af45cd579dec4,ERC-1155,2,25,yes,0.08,,,,,,,,,,,1
 capsulehouse,0xfcb1315c4273954f74cb16d5b663dbf479eec62e,ERC-721,,20,yes,,,,,,,,,,,,1
 cool-cats-nft,0x1a92f7381b9f03921564a437210bb9396471050c,ERC-721,,20,yes,,,,,,,,,,,,1
-crypto-phunks,0xf07468ead8cf26c752c676e43c814fee9c8cf402,ERC-721,,20,yes,,,,,3,2,,,,,,1
+crypto-phunks,0xf07468ead8cf26c752c676e43c814fee9c8cf402,ERC-721,,20,yes,,,,,2,2,,,,,,1
 crypto-unicorns-land-market,0xa2a13ce1824f3916fc84c65e559391fc6674e6e8,ERC-721,,20,yes,,yes,Rarity,Rare,,,,,,,,1
 crypto-unicorns-shadowcorns-market,0xa7d50ee3d7485288107664cf758e877a0d351725,ERC-721,,20,yes,,,,,,,,,,,,1
 curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,3,20,yes,0.12,,,,,,,,,,,1
@@ -70,7 +70,7 @@ smallbros,0xb18380485f7ba9c23deb729bedd3a3499dbd4449,ERC-721,,50,yes,0.1,yes,HAI
 super-cool-world,0x670d4dd2e6badfbbd372d0d37e06cd2852754a04,ERC-721,,25,yes,,,,,,,,,0.1,,,1
 the-grapes,0xe1dc516b1486aba548eecd2947a11273518434a4,ERC-721,,20,yes,,,,,,,,,,,,1
 the-meta-key,0x10daa9f4c0f985430fde4959adb2c791ef2ccf83,ERC-1155,10003,20,yes,0.135,,,,,,,,,,,1
-the-real-vision-collective,0x4344cb95bcb0d9e7296d0de2ff329bfc8d0a84fe,ERC-721,,20,yes,,,,,2,,yes,,,,,1
+the-real-vision-collective,0x4344cb95bcb0d9e7296d0de2ff329bfc8d0a84fe,ERC-721,,20,yes,,,,,,,,,,,,1
 thememes6529,0x33fd426905f149f8376e227d0c9d3340aad17af1,ERC-1155,8,30,yes,0.0425,,,,,,,,,,,1
 town-star,0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c,ERC-1155,32326824857489154029020587706017980088320,20,yes,0.155,,,,,,,,,,,1
 twintigersjacket,0x1e52f7a450b08b1b249a4f4f54518fc5278c2285,ERC-1155,1,40,yes,0.042,,,,,,,,,,,1
