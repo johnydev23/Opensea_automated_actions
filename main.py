@@ -13,7 +13,7 @@ import time
 address = os.environ.get('ADDRESS')
 balance = getWETHbalance(address)
 collection_list = []
-data_user_contracts, data_user_contracts_info = getAssetInfo2(address)
+data_user_contracts, data_user_contracts_info = getAssetInfo2(address, total_items=[])
 
 for filename in os.listdir('.'):
     if filename.endswith('.csv'):
