@@ -1,7 +1,7 @@
 name: "Bidding and Listing"
 on:
-  schedule:
-  - cron: "5,15,25,35,45,55 * * * *"
+  # schedule:
+  # - cron: "5,15,25,35,45,55 * * * *"
   workflow_dispatch: {}
 
 jobs:
