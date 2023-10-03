@@ -50,6 +50,7 @@ lootproject,0xff9c1b15b16263c61d017ee9f65c50e4ae0113d7,ERC-721,,20,yes,,,,,,,,,,
 mee6-genesis-pass,0xe9ab13482aeab3727e976257d8e1f026e12e9ecd,ERC-721,,20,yes,,,,,,,,,,,,1
 mirandus,0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c,ERC-1155,112973745817751569869840369667347046203392,35,yes,,,,,,,,,,,,1
 mirandus,0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c,ERC-1155,125904475760747231481448604749754238238720,35,yes,,,,,,,,,,,,1
+mocaverse,0x59325733eb952a92e069c87f0a6168b29e80627f,ERC-721,,0,yes,,,,,,,,0.06,,,,1
 mutant-hounds,0x354634c4621cdfb7a25e6486cca1e019777d841b,ERC-721,,20,yes,,,,,,,,,,,,1
 mythics-egg,0x13303b4ee819fac204be5ef77523cfcd558c082f,ERC-721,,20,yes,,,,,,,,,,,,1
 nftinit-lifetime,0xe47fd6eafb89abce67071a7739ff2018c218ba8a,ERC-721,,29,yes,,,,,,,,,,,,1
@@ -73,7 +74,7 @@ the-grapes,0xe1dc516b1486aba548eecd2947a11273518434a4,ERC-721,,20,yes,,,,,,,,,,,
 the-meta-key,0x10daa9f4c0f985430fde4959adb2c791ef2ccf83,ERC-1155,10003,20,yes,0.135,,,,,,,,,,,1
 the-real-vision-collective,0x4344cb95bcb0d9e7296d0de2ff329bfc8d0a84fe,ERC-721,,20,yes,,,,,,,,,,,,1
 thememes6529,0x33fd426905f149f8376e227d0c9d3340aad17af1,ERC-1155,8,30,yes,0.0425,,,,,,,,,,,1
-thepotatoz,0x39ee2c7b3cb80254225884ca001f57118c8f21b6,ERC-721,,0,yes,,,,,,,,0.13,0.1,,,1
+thepotatoz,0x39ee2c7b3cb80254225884ca001f57118c8f21b6,ERC-721,,0,yes,,,,,,,,0.1,0.08,,,1
 town-star,0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c,ERC-1155,32326824857489154029020587706017980088320,20,yes,0.155,,,,,,,,,,,1
 twintigersjacket,0x1e52f7a450b08b1b249a4f4f54518fc5278c2285,ERC-1155,1,40,yes,0.135,,,,,,,,,,,1
 unitedplanets,0x7deb7bce4d360ebe68278dee6054b882aa62d19c,ERC-1155,3,25,yes,0.031,,,,,,,,,,,1
