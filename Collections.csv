@@ -66,7 +66,7 @@ rtfkt-mnlth-x,0x56a67d475ded20f1120d6377988ae12992888ac4,ERC-1155,1,20,yes,,,,,,
 rtfkt-podx,0xb7be4001bff2c5f4a61dd2435e4c9a19d8d12343,ERC-1155,1,20,yes,,,,,,,,,,,,1
 ruggenesis-nft,0x8ff1523091c9517bc328223d50b52ef450200339,ERC-721,,20,yes,,,,,,,,,,,,1
 sappy-seals,0x364c828ee171616a39897688a831c2499ad972ec,ERC-721,,20,yes,,,,,,,,,,,,1
-smallbros,0xb18380485f7ba9c23deb729bedd3a3499dbd4449,ERC-721,,20,no,,,,,0,,,,,,,1
+smallbros,0xb18380485f7ba9c23deb729bedd3a3499dbd4449,ERC-721,,20,yes,0.04,yes,BACKGROUND,Gold,,,,,,,,1
 smallbros,0xb18380485f7ba9c23deb729bedd3a3499dbd4449,ERC-721,,50,yes,0.1,yes,HAIR,King,,,,,,,,1
 sunflower-land-buds,0x78a0cea8f323ff80985c5f9d1f9de18bb9e35996,ERC-721,,35,yes,,,,,,,,,,,,1
 super-cool-world,0x670d4dd2e6badfbbd372d0d37e06cd2852754a04,ERC-721,,25,yes,0.32,,,,,,,,0.1,,,1
