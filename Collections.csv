@@ -1,6 +1,5 @@
 slug,contract,token standard,assets,limit variation,limit price enabled,limit price,trait,type,value,number offers,increment,different times,min profit buy,min profit sell,take bids,min profit take bid,worker
 0n1-force,0x3bf2922f4520a8ba0c2efc3d2a1539678dad5e9d,ERC-721,,30,yes,,,,,,,,,,,,1
-10ktf-gucci-grail,0x572e33ffa523865791ab1c26b42a86ac244df784,ERC-721,,20,yes,0.28,,,,,,,,,,,1
 10ktf-stockroom,0x7daec605e9e2a1717326eedfd660601e2753a057,ERC-1155,1,30,yes,0.09,,,,0,,,,,,,1
 10ktf-stockroom,0x7daec605e9e2a1717326eedfd660601e2753a057,ERC-1155,3,20,yes,,,,,0,,,,,,,1
 10ktf-stockroom,0x7daec605e9e2a1717326eedfd660601e2753a057,ERC-1155,13,25,yes,0.16,,,,0,,,,,,,1
