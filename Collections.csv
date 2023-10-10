@@ -5,7 +5,6 @@ slug,contract,token standard,assets,limit variation,limit price enabled,limit pr
 10ktf-stockroom,0x7daec605e9e2a1717326eedfd660601e2753a057,ERC-1155,13,25,yes,0.16,,,,0,,,,,,,1
 10ktf-stockroom,0x7daec605e9e2a1717326eedfd660601e2753a057,ERC-1155,65538,30,yes,0.125,,,,0,,,,,,,1
 10ktf-stockroom,0x7daec605e9e2a1717326eedfd660601e2753a057,ERC-1155,65540,30,yes,0.17,,,,0,,,,,,,1
-10ktf-stockroom,0x7daec605e9e2a1717326eedfd660601e2753a057,ERC-1155,65542,20,yes,0.093,,,,0,,,,,,,1
 10ktf-stockroom,0x7daec605e9e2a1717326eedfd660601e2753a057,ERC-1155,65545,25,yes,0.125,,,,0,,,,,,,1
 10ktf-stockroom,0x7daec605e9e2a1717326eedfd660601e2753a057,ERC-1155,65547,30,yes,0.21,,,,0,,,,,,,1
 3d-invisible-friends,0x49c36afa15c7fdbd57ce3d61d80f39b6615a76ef,ERC-721,,20,yes,,,,,,,,,,,,1
@@ -42,6 +41,7 @@ hedgies,0xf0d2d631a24db247f5eb0421fa3e6a169c72565f,ERC-721,,20,yes,,,,,,,,,,,,1
 invisiblefriends,0x59468516a8259058bad1ca5f8f4bff190d30e066,ERC-721,,20,yes,,,,,,,,,,,,1
 kaiju-kingz,0x0c2e57efddba8c768147d1fdf9176a0a6ebd5d83,ERC-721,,20,yes,,,,,,,,,,,,1
 kubz,0xeb2dfc54ebafca8f50efcc1e21a9d100b5aeb349,ERC-721,,25,yes,,,,,,,,,,,,1
+ledger-market-black-on-black-nano-x,0x0f77625b76e3831914d47a5034323290f9ce8a9e,ERC-721,,0,yes,0.068,,,,,,,0.011,,,,1
 lilpudgys,0x524cab2ec69124574082676e6f654a18df49a048,ERC-721,,20,yes,,,,,,,,,,,,1
 lofipepe,0x0fcbd68251819928c8f6d182fc04be733fa94170,ERC-721,,20,yes,,,,,,,,,,,,1
 lootproject,0xff9c1b15b16263c61d017ee9f65c50e4ae0113d7,ERC-721,,20,yes,,,,,,,,,,,,1
