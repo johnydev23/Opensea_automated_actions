@@ -2,7 +2,6 @@ slug,contract,token standard,assets,limit variation,limit price enabled,limit pr
 0n1-force,0x3bf2922f4520a8ba0c2efc3d2a1539678dad5e9d,ERC-721,,30,yes,,,,,,,,,,,,1
 10ktf-stockroom,0x7daec605e9e2a1717326eedfd660601e2753a057,ERC-1155,1,30,yes,0.09,,,,0,,,,,,,1
 10ktf-stockroom,0x7daec605e9e2a1717326eedfd660601e2753a057,ERC-1155,3,20,yes,,,,,0,,,,,,,1
-10ktf-stockroom,0x7daec605e9e2a1717326eedfd660601e2753a057,ERC-1155,13,25,yes,0.16,,,,0,,,,,,,1
 10ktf-stockroom,0x7daec605e9e2a1717326eedfd660601e2753a057,ERC-1155,65538,30,yes,0.125,,,,0,,,,,,,1
 10ktf-stockroom,0x7daec605e9e2a1717326eedfd660601e2753a057,ERC-1155,65540,30,yes,0.17,,,,0,,,,,,,1
 10ktf-stockroom,0x7daec605e9e2a1717326eedfd660601e2753a057,ERC-1155,65545,25,yes,0.125,,,,0,,,,,,,1
@@ -26,6 +25,7 @@ crypto-unicorns-shadowcorns-market,0xa7d50ee3d7485288107664cf758e877a0d351725,ER
 curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,3,20,yes,0.12,,,,,,,,,,,1
 curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,10,20,yes,0.11,,,,,,,,,,,1
 curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,17,20,yes,0.3,,,,,,,,,,,1
+defiapes,0x3c6fbc94288f5af5201085948ddb18aded2e6879,ERC-721,,0,yes,0.28,,,,,,,0.1,0.05,,,1
 drill-club-official,0x39cd103414106b922eb09c7d45df89608b59e887,ERC-721,,25,yes,,,,,,,,,,,,1
 fat-rat-mafia,0x2b9fd4d651414e51c9ba56ae1add36bb71cca24b,ERC-721,,20,yes,,,,,,,,,,,,1
 fat-rat-mafia,0x2b9fd4d651414e51c9ba56ae1add36bb71cca24b,ERC-721,,20,yes,0.05,yes,Gasmask,All black,,,,,,,,1
