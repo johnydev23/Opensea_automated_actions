@@ -4,8 +4,6 @@ slug,contract,token standard,assets,limit variation,limit price enabled,limit pr
 10ktf-stockroom,0x7daec605e9e2a1717326eedfd660601e2753a057,ERC-1155,3,20,no,,,,,0,,,,,,,1
 10ktf-stockroom,0x7daec605e9e2a1717326eedfd660601e2753a057,ERC-1155,65538,30,no,0.125,,,,0,,,,,,,1
 10ktf-stockroom,0x7daec605e9e2a1717326eedfd660601e2753a057,ERC-1155,65540,30,no,0.17,,,,0,,,,,,,1
-10ktf-stockroom,0x7daec605e9e2a1717326eedfd660601e2753a057,ERC-1155,65545,25,no,0.125,,,,0,,,,,,,1
-10ktf-stockroom,0x7daec605e9e2a1717326eedfd660601e2753a057,ERC-1155,65547,30,no,0.21,,,,0,,,,,,,1
 3d-invisible-friends,0x49c36afa15c7fdbd57ce3d61d80f39b6615a76ef,ERC-721,,20,yes,,,,,,,,,,,,1
 alpha-pass-4,0x0d2e7fc72f669cc287fc4a2d32bda20ee5923d43,ERC-721,,50,no,,,,,,,,,,,,1
 archeworld-land-polygon,0x56d23f924cd526e5590ed94193a892e913e38079,ERC-721,,40,yes,0.15,yes,Size,LARGE,,,,,,,,1
