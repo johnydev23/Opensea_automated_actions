@@ -1,22 +1,20 @@
 slug,contract,token standard,assets,limit variation,limit price enabled,limit price,trait,type,value,number offers,increment,different times,min profit buy,min profit sell,take bids,min profit take bid,worker
-0n1-force,0x3bf2922f4520a8ba0c2efc3d2a1539678dad5e9d,ERC-721,,30,yes,,,,,,,,,,,,1
+0n1-force,0x3bf2922f4520a8ba0c2efc3d2a1539678dad5e9d,ERC-721,,0,yes,,,,,,,,0.1,0.08,,,1
 10ktf-stockroom,0x7daec605e9e2a1717326eedfd660601e2753a057,ERC-1155,1,30,yes,0.09,,,,0,,,,,,,1
 10ktf-stockroom,0x7daec605e9e2a1717326eedfd660601e2753a057,ERC-1155,3,20,yes,,,,,0,,,,,,,1
 10ktf-stockroom,0x7daec605e9e2a1717326eedfd660601e2753a057,ERC-1155,65538,30,yes,0.125,,,,0,,,,,,,1
 10ktf-stockroom,0x7daec605e9e2a1717326eedfd660601e2753a057,ERC-1155,65540,30,yes,0.17,,,,0,,,,,,,1
 3d-invisible-friends,0x49c36afa15c7fdbd57ce3d61d80f39b6615a76ef,ERC-721,,20,yes,,,,,,,,,,,,1
-alpha-pass-4,0x0d2e7fc72f669cc287fc4a2d32bda20ee5923d43,ERC-721,,50,no,,,,,,,,,,,,1
 archeworld-land-polygon,0x56d23f924cd526e5590ed94193a892e913e38079,ERC-721,,40,yes,0.15,yes,Size,LARGE,,,,,,,,1
 archeworld-land-polygon,0x56d23f924cd526e5590ed94193a892e913e38079,ERC-721,,50,yes,0.2,yes,Size,MEGA,,,,,,,,1
-asm-brains,0xd0318da435dbce0b347cc6faa330b5a9889e3585,ERC-721,,25,yes,0.24,,,,,,,,,,,1
+asm-brains,0xd0318da435dbce0b347cc6faa330b5a9889e3585,ERC-721,,0,yes,,,,,,,,0.05,0.03,,,1
 atsnft,0x7cb90567a118cd9f6ca326067a0813b289bdcb54,ERC-721,,0,yes,,yes,Animal,ape,,,,0.1,0.08,,,1
-azukielementals,0xb6a37b5d14d502c3ab0ae6f3a0e058bc9517786e,ERC-721,,20,yes,,,,,,,,,,,,1
-biginc-letters,0x7b390a46c868ccebf2730121faf777129b47c97c,ERC-1155,1,30,yes,0.038,,,,,,,,,,,1
-bokinftofficial,0x248139afb8d3a2e16154fbe4fb528a3a214fd8e7,ERC-721,,40,yes,,yes,Clothing,Skeleton Hoodie,,,,,,,,1
+azukielementals,0xb6a37b5d14d502c3ab0ae6f3a0e058bc9517786e,ERC-721,,0,yes,,,,,,,,0.07,0.05,,,1
+bokinftofficial,0x248139afb8d3a2e16154fbe4fb528a3a214fd8e7,ERC-721,,40,yes,0.04,yes,Clothing,Skeleton Hoodie,,,,,,,,1
 bokinftofficial,0x248139afb8d3a2e16154fbe4fb528a3a214fd8e7,ERC-721,,50,yes,0.03,yes,Clothing,Banana,,,,,,,,1
-bullsandapes-utilities,0x2923c3e5a0f10bc02d8c90287b2af45cd579dec4,ERC-1155,2,25,yes,0.08,,,,,,,,,,,1
+bullsandapes-utilities,0x2923c3e5a0f10bc02d8c90287b2af45cd579dec4,ERC-1155,2,25,yes,0.035,,,,,,,,,,,1
 capsulehouse,0xfcb1315c4273954f74cb16d5b663dbf479eec62e,ERC-721,,20,yes,,,,,,,,,,,,1
-cool-cats-nft,0x1a92f7381b9f03921564a437210bb9396471050c,ERC-721,,20,yes,,,,,,,,,,,,1
+cool-cats-nft,0x1a92f7381b9f03921564a437210bb9396471050c,ERC-721,,0,yes,,,,,,,,0.05,0.03,,,1
 crypto-phunks,0xf07468ead8cf26c752c676e43c814fee9c8cf402,ERC-721,,20,yes,,,,,2,2,,,,,,1
 crypto-unicorns-land-market,0xa2a13ce1824f3916fc84c65e559391fc6674e6e8,ERC-721,,20,yes,,yes,Rarity,Rare,,,,,,,,1
 curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,3,20,yes,0.12,,,,,,,,,,,1
@@ -26,7 +24,7 @@ defiapes,0x3c6fbc94288f5af5201085948ddb18aded2e6879,ERC-721,,0,yes,0.28,,,,,,,0.
 drill-club-official,0x39cd103414106b922eb09c7d45df89608b59e887,ERC-721,,25,yes,,,,,,,,,,,,1
 fat-rat-mafia,0x2b9fd4d651414e51c9ba56ae1add36bb71cca24b,ERC-721,,20,yes,,,,,,,,,,,,1
 fat-rat-mafia,0x2b9fd4d651414e51c9ba56ae1add36bb71cca24b,ERC-721,,20,yes,0.05,yes,Gasmask,All black,,,,,,,,1
-foundersdao,0xd0a07a76746707f6d6d36d9d5897b14a8e9ed493,ERC-721,,20,no,,,,,,,,,,,,1
+foundersdao,0xd0a07a76746707f6d6d36d9d5897b14a8e9ed493,ERC-721,,20,yes,0.09,,,,,,,,,,,1
 galaxy-fight-club,0x3702f4c46785bbd947d59a2516ac1ea30f2babf2,ERC-721,,25,yes,,,,,,,,,,,,1
 genesis-creepz,0x5946aeaab44e65eb370ffaa6a7ef2218cff9b47d,ERC-721,,20,yes,,,,,,,,,,,,1
 genuine-undead,0x209e639a0ec166ac7a1a4ba41968fa967db30221,ERC-721,,20,yes,,,,,,,,,,,,1
