@@ -1,6 +1,7 @@
 slug,contract,token standard,assets,limit variation,limit price enabled,limit price,trait,type,value,number offers,increment,different times,min profit buy,min profit sell,take bids,min profit take bid,worker
 0n1-force,0x3bf2922f4520a8ba0c2efc3d2a1539678dad5e9d,ERC-721,,0,yes,,,,,,,,0.1,0.08,,,1
 3d-invisible-friends,0x49c36afa15c7fdbd57ce3d61d80f39b6615a76ef,ERC-721,,20,yes,,,,,,,,,,,,1
+aikey,0x91b38dcbb99dc51125fc73f05217b23575613117,ERC-721,,90,yes,,,,,,,,,,,,1
 archeworld-land-polygon,0x56d23f924cd526e5590ed94193a892e913e38079,ERC-721,,40,yes,0.15,yes,Size,LARGE,,,,,,,,1
 archeworld-land-polygon,0x56d23f924cd526e5590ed94193a892e913e38079,ERC-721,,50,yes,0.2,yes,Size,MEGA,,,,,,,,1
 asm-brains,0xd0318da435dbce0b347cc6faa330b5a9889e3585,ERC-721,,0,yes,,,,,,,,0.05,0.03,,,1
