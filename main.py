@@ -78,8 +78,8 @@ for i,v in enumerate(collection_list):
     found = False
     for z in range(number_offers if number_offers > 0 else 1):
         message = None
+        trait = v['trait'] == 'yes'
         if (num_assets > 0) and (num_assets > len(token_id_list)-z):
-            trait = v['trait'] == 'yes'
             if trait:
                 _type = v['type']
                 _value = v['value']
