@@ -4,8 +4,8 @@ slug,contract,token standard,assets,limit variation,limit price enabled,limit pr
 aikey,0x91b38dcbb99dc51125fc73f05217b23575613117,ERC-721,,90,yes,,,,,,,,,,,,1
 archeworld-land-polygon,0x56d23f924cd526e5590ed94193a892e913e38079,ERC-721,,40,yes,0.15,yes,Size,LARGE,,,,,,,,1
 archeworld-land-polygon,0x56d23f924cd526e5590ed94193a892e913e38079,ERC-721,,50,yes,0.2,yes,Size,MEGA,,,,,,,,1
-atsnft,0x7cb90567a118cd9f6ca326067a0813b289bdcb54,ERC-721,,0,yes,,yes,Animal,ape,,,,0.1,0.08,,,1
-atsnft,0x7cb90567a118cd9f6ca326067a0813b289bdcb54,ERC-721,,0,yes,0.25,,,,,,,0.035,0.08,,,1
+atsnft,0x7cb90567a118cd9f6ca326067a0813b289bdcb54,ERC-721,,0,yes,,,,,0,,,0.035,0.08,,,1
+atsnft,0x7cb90567a118cd9f6ca326067a0813b289bdcb54,ERC-721,,0,yes,0.25,,,,,,,0.035,0.03,,,1
 azukielementals,0xb6a37b5d14d502c3ab0ae6f3a0e058bc9517786e,ERC-721,,0,yes,,,,,,,,0.07,0.05,,,1
 bokinftofficial,0x248139afb8d3a2e16154fbe4fb528a3a214fd8e7,ERC-721,,40,yes,0.04,yes,Clothing,Skeleton Hoodie,,,,,,,,1
 bokinftofficial,0x248139afb8d3a2e16154fbe4fb528a3a214fd8e7,ERC-721,,50,yes,0.03,yes,Clothing,Banana,,,,,,,,1
