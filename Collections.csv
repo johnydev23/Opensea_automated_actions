@@ -13,7 +13,7 @@ bullsandapes-utilities,0x2923c3e5a0f10bc02d8c90287b2af45cd579dec4,ERC-1155,2,25,
 capsulehouse,0xfcb1315c4273954f74cb16d5b663dbf479eec62e,ERC-721,,20,yes,,,,,,,,,,,,1
 cool-cats-nft,0x1a92f7381b9f03921564a437210bb9396471050c,ERC-721,,0,yes,,,,,,,,0.05,0.03,,,1
 crypto-phunks,0xf07468ead8cf26c752c676e43c814fee9c8cf402,ERC-721,,20,yes,,,,,2,2,,,,,,1
-crypto-unicorns-land-market,0xa2a13ce1824f3916fc84c65e559391fc6674e6e8,ERC-721,,20,yes,,yes,Rarity,Rare,,,,,,,,1
+crypto-unicorns-land-market,0xa2a13ce1824f3916fc84c65e559391fc6674e6e8,ERC-721,,20,no,,yes,Rarity,Rare,0,,,,,,,1
 curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,3,20,yes,0.12,,,,,,,,,,,1
 curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,10,20,yes,0.11,,,,,,,,,,,1
 curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,17,20,yes,0.3,,,,,,,,,,,1
