@@ -17,8 +17,6 @@ curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,3,20,yes,0
 curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,10,20,yes,0.11,,,,,,,,,,,1
 curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,17,20,yes,0.3,,,,,,,,,,,1
 drill-club-official,0x39cd103414106b922eb09c7d45df89608b59e887,ERC-721,,25,yes,,,,,,,,,,,,1
-fat-rat-mafia,0x2b9fd4d651414e51c9ba56ae1add36bb71cca24b,ERC-721,,20,yes,0.05,yes,Gasmask,All black,,,,,,,,1
-fat-rat-mafia,0x2b9fd4d651414e51c9ba56ae1add36bb71cca24b,ERC-721,,20,yes,,,,,,,,,,,,1
 foundersdao,0xd0a07a76746707f6d6d36d9d5897b14a8e9ed493,ERC-721,,20,yes,0.09,,,,,,,,,,,1
 galaxy-fight-club,0x3702f4c46785bbd947d59a2516ac1ea30f2babf2,ERC-721,,25,yes,,,,,,,,,,,,1
 genesis-creepz,0x5946aeaab44e65eb370ffaa6a7ef2218cff9b47d,ERC-721,,20,yes,,,,,,,,,,,,1
@@ -77,6 +75,7 @@ wolf-game-farmer,0xbda2481db91fc0f942ed3f53de378ba45ba9d17e,ERC-721,,20,yes,,,,,
 women-unite-10k-assemble,0xbee7cb80dfd21a9eaae714208f361601f68eb746,ERC-721,,50,yes,0.5,yes,Special Powers,Third Eye Red Trident,,,,,,,,1
 women-unite-10k-assemble,0xbee7cb80dfd21a9eaae714208f361601f68eb746,ERC-721,,0,yes,,,,,,,,0.05,0.03,,,1
 womenunite,0x495f947276749ce646f68ac8c248420045cb7b5e,ERC-1155,110063331335139009547571421808057778384289125434812320670302640638044521105360,30,yes,0.6,,,,,,,,,,,1
+worldwidewebbland,0xa1d4657e0e6507d5a94d06da93e94dc7c8c44b51,ERC-721,,0,yes,,yes,type,large apartment,,,,0.15,0.05,,,1
 worldwidewebbland,0xa1d4657e0e6507d5a94d06da93e94dc7c8c44b51,ERC-721,,20,yes,,yes,type,medium apartment,,,,,,,,1
 worldwidewebbland,0xa1d4657e0e6507d5a94d06da93e94dc7c8c44b51,ERC-721,,20,yes,,,,,,,,,,,,1
 yogapetz,0x142e03367ede17cd851477a4287d1f35676e6dc2,ERC-721,,0,yes,0.45,,,,,,,0.1,0.08,,,1
