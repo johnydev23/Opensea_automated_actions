@@ -1,15 +1,14 @@
 slug,contract,token standard,assets,limit variation,limit price enabled,limit price,trait,type,value,number offers,increment,different times,min profit buy,min profit sell,take bids,min profit take bid,worker
 0n1-force,0x3bf2922f4520a8ba0c2efc3d2a1539678dad5e9d,ERC-721,,0,yes,,,,,,,,0.1,0.08,,,1
 3d-invisible-friends,0x49c36afa15c7fdbd57ce3d61d80f39b6615a76ef,ERC-721,,20,yes,,,,,,,,,,,,1
-aikey,0x91b38dcbb99dc51125fc73f05217b23575613117,ERC-721,,90,yes,,,,,,,,,,,,1
 archeworld-land-polygon,0x56d23f924cd526e5590ed94193a892e913e38079,ERC-721,,40,yes,0.15,yes,Size,LARGE,,,,,,,,1
 archeworld-land-polygon,0x56d23f924cd526e5590ed94193a892e913e38079,ERC-721,,50,yes,0.2,yes,Size,MEGA,,,,,,,,1
 atsnft,0x7cb90567a118cd9f6ca326067a0813b289bdcb54,ERC-721,,0,yes,,,,,0,,,0.035,,,,1
 atsnft,0x7cb90567a118cd9f6ca326067a0813b289bdcb54,ERC-721,,0,yes,0.31,,,,,,,0.035,,,,1
 azukielementals,0xb6a37b5d14d502c3ab0ae6f3a0e058bc9517786e,ERC-721,,0,yes,,,,,,,,0.07,0.05,,,1
+blockgames-dice-5555,0x0581ddf7a136c6837429a46c6cb7b388a3e52971,ERC-721,,0,yes,,,,,,,,0.05,,,,1
 bokinftofficial,0x248139afb8d3a2e16154fbe4fb528a3a214fd8e7,ERC-721,,40,yes,0.04,yes,Clothing,Skeleton Hoodie,,,,,,,,1
 bokinftofficial,0x248139afb8d3a2e16154fbe4fb528a3a214fd8e7,ERC-721,,50,yes,0.03,yes,Clothing,Banana,,,,,,,,1
-bullsandapes-utilities,0x2923c3e5a0f10bc02d8c90287b2af45cd579dec4,ERC-1155,2,25,yes,0.035,,,,,,,,,,,1
 capsulehouse,0xfcb1315c4273954f74cb16d5b663dbf479eec62e,ERC-721,,20,yes,,,,,,,,,,,,1
 cool-cats-nft,0x1a92f7381b9f03921564a437210bb9396471050c,ERC-721,,0,yes,,,,,,,,0.05,0.03,,,1
 crypto-phunks,0xf07468ead8cf26c752c676e43c814fee9c8cf402,ERC-721,,20,yes,,,,,2,2,,,,,,1
@@ -57,6 +56,7 @@ ruggenesis-nft,0x8ff1523091c9517bc328223d50b52ef450200339,ERC-721,,20,yes,,,,,,,
 sappy-seals,0x364c828ee171616a39897688a831c2499ad972ec,ERC-721,,20,yes,,,,,,,,,,,,1
 smallbros,0xb18380485f7ba9c23deb729bedd3a3499dbd4449,ERC-721,,20,yes,0.04,yes,BACKGROUND,Gold,,,,,,,,1
 smallbros,0xb18380485f7ba9c23deb729bedd3a3499dbd4449,ERC-721,,50,yes,0.1,yes,HAIR,King,,,,,,,,1
+sugartownoras,0xd564c25b760cb278a55bdd98831f4ff4b6c97b38,ERC-721,,0,yes,,,,,,,,0.05,,,,1
 sunflower-land-buds,0x78a0cea8f323ff80985c5f9d1f9de18bb9e35996,ERC-721,,30,yes,,,,,,,,,,,,1
 super-cool-world,0x670d4dd2e6badfbbd372d0d37e06cd2852754a04,ERC-721,,25,yes,0.32,,,,,,,,0.1,,,1
 the-meta-key,0x10daa9f4c0f985430fde4959adb2c791ef2ccf83,ERC-1155,10003,20,yes,0.135,,,,,,,,,,,1
