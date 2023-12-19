@@ -14,6 +14,9 @@ from database.connection import closeConnection
 address = os.environ.get('ADDRESS')
 
 balance, data_user_contracts, data_user_contracts_info = getBalanceAndUserAssets(getWETHbalance, getAssetInfo2, address)
+if data_user_contracts is None:
+    print("No user data")
+    quit()
 
 for filename in os.listdir('.'):
     if filename.endswith('.csv'):
@@ -60,7 +63,7 @@ for i,v in enumerate(collection_list):
             token_id_list = []
 
 
-    num_assets, chain, assetInfo = getNumAssets(data_user_contracts, data_user_contracts_info, address, slug, asset, asset_contract)
+    num_assets, chain, assetInfo = getNumAssets(data_user_contracts, data_user_contracts_info, asset, asset_contract)
     if num_assets == None:
         continue
 
@@ -77,7 +80,7 @@ for i,v in enumerate(collection_list):
         if trait and asset_flag:
             _type = v['type']
             _value = v['value']
-            find_trait_results = findTrait(_type, _value, assetInfo, data_user_contracts, token_id_list)
+            find_trait_results = findTrait(_type, _value, assetInfo, token_id_list)
             if find_trait_results:
                 limit_price, token_id, j = find_trait_results
                 found = True
@@ -93,7 +96,7 @@ for i,v in enumerate(collection_list):
                 message = getListingMessage(collection_element, address)
 
         elif asset_flag:
-            find_asset_results = findAsset(assetInfo, data_user_contracts, address, asset, token_id_list, token_standard, chain, asset_contract)
+            find_asset_results = findAsset(assetInfo, asset, token_id_list, token_standard, chain, asset_contract)
             if find_asset_results:
                 limit_price, token_id, j = find_asset_results
                 found = True

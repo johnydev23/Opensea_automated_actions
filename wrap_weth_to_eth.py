@@ -1,27 +1,8 @@
 from web3 import Web3
 import os
+from data.constants import contract_abi, contract_address
 
-contract_address = '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
-contract_abi = [
-    {
-        "constant": False,
-        "inputs": [],
-        "name": "deposit",
-        "outputs": [],
-        "payable": True,
-        "stateMutability": "payable",
-        "type": "function"
-    },
-    {
-        "constant": True,
-        "inputs": [{"name": "owner", "type": "address"}],
-        "name": "balanceOf",
-        "outputs": [{"name": "balance", "type": "uint256"}],
-        "payable": False,
-        "stateMutability": "view",
-        "type": "function"
-    }
-]
+weth_contract = contract_address['ethereum']
 
 ethereum_endpoint = os.environ.get('ETHEREUM_RPC')
 web3 = Web3(Web3.HTTPProvider(ethereum_endpoint))
@@ -30,7 +11,7 @@ account_address = os.environ.get('ADDRESS')
 account_address = web3.to_checksum_address(account_address)
 private_key = os.environ.get('PRIVATE_KEY')
 
-contract = web3.eth.contract(web3.to_checksum_address(contract_address), abi=contract_abi)
+contract = web3.eth.contract(web3.to_checksum_address(weth_contract), abi=contract_abi)
 
 balance_wei = web3.eth.get_balance(account_address)
 balance_eth = web3.from_wei(balance_wei, 'ether')
