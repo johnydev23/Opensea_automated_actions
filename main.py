@@ -13,6 +13,11 @@ from database.connection import closeConnection
 
 address = os.environ.get('ADDRESS')
 
+collection_info = []
+
+with open("collection_info.json", "w") as jsonfile:
+    json.dump(collection_info, jsonfile)
+
 balance, data_user_contracts, data_user_contracts_info = getBalanceAndUserAssets(getWETHbalance, getAssetInfo2, address)
 if data_user_contracts is None:
     print("No user data")
@@ -30,11 +35,6 @@ with open(csv_file, 'r') as file:
         collection_list.append(row)
 
 collection_list = sorted(collection_list, key=lambda x: (x['slug'], x['trait']), reverse=True)
-
-collection_info = []
-
-with open("collection_info.json", "w") as jsonfile:
-    json.dump(collection_info, jsonfile)
 
 token_id_list = []
 
