@@ -56,6 +56,10 @@ ruggenesis-nft,0x8ff1523091c9517bc328223d50b52ef450200339,ERC-721,,yes,yes,20,,y
 sappy-seals,0x364c828ee171616a39897688a831c2499ad972ec,ERC-721,,yes,yes,20,,yes,,no,,,,,,,,,,1
 smallbros,0xb18380485f7ba9c23deb729bedd3a3499dbd4449,ERC-721,,yes,yes,20,,yes,0.04,yes,BACKGROUND,Gold,,,,,,,,1
 smallbros,0xb18380485f7ba9c23deb729bedd3a3499dbd4449,ERC-721,,yes,yes,50,,yes,0.1,yes,HAIR,King,,,,,,,,1
+spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,,yes,,yes,type,Small,,,,0.05,,,,1
+spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,,yes,,yes,type,Medium,,,,0.08,,,,1
+spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,,yes,,yes,type,Large,,,,0.12,,,,1
+spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,,yes,,yes,type,Penthouse,,,,0.5,0.1,,,1
 sugartownoras,0xd564c25b760cb278a55bdd98831f4ff4b6c97b38,ERC-721,,yes,yes,0,,yes,,no,,,,,,0.05,,,,1
 sunflower-land-buds,0x78a0cea8f323ff80985c5f9d1f9de18bb9e35996,ERC-721,,yes,yes,30,,yes,,no,,,,,,,,,,1
 super-cool-world,0x670d4dd2e6badfbbd372d0d37e06cd2852754a04,ERC-721,,yes,yes,25,,yes,0.32,no,,,,,,,0.1,,,1
