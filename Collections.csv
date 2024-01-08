@@ -1,14 +1,14 @@
 slug,contract,token standard,assets,offers enabled,listing enabled,limit variation,absolut variation,limit price enabled,limit price,trait,type,value,number offers,increment,offer duration,listing duration,different times,min profit buy,min profit sell,take bids,min profit take bid,worker
 0n1-force,0x3bf2922f4520a8ba0c2efc3d2a1539678dad5e9d,ERC-721,,yes,yes,0,0.1,yes,,no,,,,,,,,0.1,,yes,,1
 3d-invisible-friends,0x49c36afa15c7fdbd57ce3d61d80f39b6615a76ef,ERC-721,,yes,yes,20,,yes,,no,,,,,,,,,,yes,,1
-atsnft,0x7cb90567a118cd9f6ca326067a0813b289bdcb54,ERC-721,,yes,yes,0,0.035,yes,,no,,,,,,,,0.07,,yes,,1
+atsnft,0x7cb90567a118cd9f6ca326067a0813b289bdcb54,ERC-721,,yes,yes,0,0.07,yes,,no,,,,,,,,0.07,,yes,,1
 azukielementals,0xb6a37b5d14d502c3ab0ae6f3a0e058bc9517786e,ERC-721,,yes,yes,0,0.07,yes,,no,,,,,,,,0.07,0.05,yes,,1
-blockgames-dice-5555,0x0581ddf7a136c6837429a46c6cb7b388a3e52971,ERC-721,,yes,yes,0,0.05,yes,,no,,,,,,,,0.05,,yes,,1
+blockgames-dice-5555,0x0581ddf7a136c6837429a46c6cb7b388a3e52971,ERC-721,,yes,yes,0,0.1,yes,,no,,,,,,,,0.1,,yes,,1
 bokinftofficial,0x248139afb8d3a2e16154fbe4fb528a3a214fd8e7,ERC-721,,yes,yes,40,,yes,0.04,yes,Clothing,Skeleton Hoodie,,,,,,,,yes,,1
 bokinftofficial,0x248139afb8d3a2e16154fbe4fb528a3a214fd8e7,ERC-721,,yes,yes,30,,yes,0.08,yes,Body,Ape,,,,,,,,yes,,1
 bokinftofficial,0x248139afb8d3a2e16154fbe4fb528a3a214fd8e7,ERC-721,,yes,yes,50,,yes,0.03,yes,Clothing,Banana,,,,,,,,yes,,1
 capsulehouse,0xfcb1315c4273954f74cb16d5b663dbf479eec62e,ERC-721,,yes,yes,20,,yes,,no,,,,,,,,,,yes,,1
-cool-cats-nft,0x1a92f7381b9f03921564a437210bb9396471050c,ERC-721,,yes,yes,0,0.1,yes,,no,,,,,,,,0.08,,yes,,1
+cool-cats-nft,0x1a92f7381b9f03921564a437210bb9396471050c,ERC-721,,yes,yes,0,0.1,yes,,no,,,,,,,,0.1,,yes,,1
 crypto-phunks,0xf07468ead8cf26c752c676e43c814fee9c8cf402,ERC-721,,yes,yes,20,,yes,,no,,,2,2,,,,,,yes,,1
 curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,3,yes,yes,20,,yes,0.12,no,,,,,,,,,,yes,,1
 curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,8,yes,yes,20,,yes,0.125,no,,,,,,,,,,yes,,1
@@ -23,16 +23,16 @@ gm-gn-industries,0xc6b597e492989741f6a15a7ea04ca2d076fea711,ERC-1155,1,yes,yes,3
 gm-gn-industries,0xc6b597e492989741f6a15a7ea04ca2d076fea711,ERC-1155,2,yes,yes,30,,yes,0.105,no,,,,,,,,,,yes,,1
 habbo-avatars,0x8a1bbef259b00ced668a8c69e50d92619c672176,ERC-721,,yes,yes,20,,yes,,no,,,,,,,,,,yes,,1
 hedgies,0xf0d2d631a24db247f5eb0421fa3e6a169c72565f,ERC-721,,yes,yes,20,,yes,,no,,,,,,,,,,yes,,1
-invisiblefriends,0x59468516a8259058bad1ca5f8f4bff190d30e066,ERC-721,,yes,yes,0,0.05,yes,,no,,,,,,,,0.05,,yes,,1
+invisiblefriends,0x59468516a8259058bad1ca5f8f4bff190d30e066,ERC-721,,yes,yes,0,0.1,yes,,no,,,,,,,,0.1,,yes,,1
 kaiju-kingz,0x0c2e57efddba8c768147d1fdf9176a0a6ebd5d83,ERC-721,,yes,yes,20,,yes,,no,,,,,,,,,,yes,,1
 kubz,0xeb2dfc54ebafca8f50efcc1e21a9d100b5aeb349,ERC-721,,yes,yes,25,,yes,,no,,,,,,,,,,yes,,1
-ledger-market-black-on-black-nano-x,0x0f77625b76e3831914d47a5034323290f9ce8a9e,ERC-721,,yes,yes,0,0.011,yes,0.068,no,,,,,,,,0.011,,yes,,1
+ledger-market-black-on-black-nano-x,0x0f77625b76e3831914d47a5034323290f9ce8a9e,ERC-721,,yes,yes,0,0.011,yes,0.068,no,,,,,,,,0.02,,yes,,1
 lilpudgys,0x524cab2ec69124574082676e6f654a18df49a048,ERC-721,,yes,yes,0,0.1,yes,,no,,,,,,,,0.1,,yes,,1
 lofipepe,0x0fcbd68251819928c8f6d182fc04be733fa94170,ERC-721,,yes,yes,20,,yes,,no,,,,,,,,,,yes,,1
 mee6-genesis-pass,0xe9ab13482aeab3727e976257d8e1f026e12e9ecd,ERC-721,,yes,yes,20,,yes,,no,,,,,,,,,,yes,,1
 metahero-mintpass,0x797a48c46be32aafcedcfd3d8992493d8a1f256b,ERC-1155,0,yes,yes,0,0.1,yes,,no,,,,,,,,0.1,,yes,,1
 mfers,0x79fcdef22feed20eddacbb2587640e45491b757f,ERC-721,,yes,yes,0,0.1,yes,,no,,,,,,,,0.1,,yes,,1
-mocaverse,0x59325733eb952a92e069c87f0a6168b29e80627f,ERC-721,,yes,yes,0,0.06,yes,,no,,,,,,,,0.06,,yes,,1
+mocaverse,0x59325733eb952a92e069c87f0a6168b29e80627f,ERC-721,,yes,yes,0,0.5,yes,,no,,,,,,,,0.5,,yes,,1
 moonbears-nft,0x3b8420eb6ef77bc25025b32d8205cde2683f979e,ERC-721,,yes,yes,0,0.1,yes,,no,,,,,,,,0.1,0.05,yes,,1
 mutant-hounds,0x354634c4621cdfb7a25e6486cca1e019777d841b,ERC-721,,yes,yes,20,,yes,,no,,,,,,,,,,yes,,1
 mythics-egg,0x13303b4ee819fac204be5ef77523cfcd558c082f,ERC-721,,yes,yes,20,,yes,,no,,,,,,,,,,yes,,1
