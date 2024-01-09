@@ -1,19 +1,17 @@
 from web3 import Web3
-import os
 from data.constants import contract_abi, contract_address
+from data.variables import endpoints
 
-endpoints = {'ethereum': os.environ.get('ETHEREUM_RPC'),
-             'matic': os.environ.get('POLYGON_RPC')}
 
 def getWETHbalance(address):
 
     weth_balance = {}
 
     for key, value in contract_address.items():
-        web3 = Web3(Web3.HTTPProvider(endpoints[key]))
-        address = web3.to_checksum_address(address)
+        w3 = Web3(Web3.HTTPProvider(endpoints[key]))
+        address = w3.to_checksum_address(address)
 
-        contract = web3.eth.contract(web3.to_checksum_address(
+        contract = w3.eth.contract(w3.to_checksum_address(
             value), abi=contract_abi)
 
         try:

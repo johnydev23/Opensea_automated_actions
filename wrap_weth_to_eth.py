@@ -1,28 +1,31 @@
 from web3 import Web3
-import os
 from data.constants import contract_abi, contract_address
+from data.variables import ethereum_endpoint, address, private_key
 
 weth_contract = contract_address['ethereum']
 
-ethereum_endpoint = os.environ.get('ETHEREUM_RPC')
-web3 = Web3(Web3.HTTPProvider(ethereum_endpoint))
+w3 = Web3(Web3.HTTPProvider(ethereum_endpoint))
 
-account_address = os.environ.get('ADDRESS')
-account_address = web3.to_checksum_address(account_address)
-private_key = os.environ.get('PRIVATE_KEY')
+account_address = w3.to_checksum_address(address)
 
-contract = web3.eth.contract(web3.to_checksum_address(weth_contract), abi=contract_abi)
-
-balance_wei = web3.eth.get_balance(account_address)
-balance_eth = web3.from_wei(balance_wei, 'ether')
+contract = w3.eth.contract(w3.to_checksum_address(weth_contract), abi=contract_abi)
 
 try:
-    amount_to_wrap = web3.to_wei(float(balance_eth)-0.0515, 'ether')
+    balance_wei = w3.eth.get_balance(account_address)
+except ValueError as e:
+    print("VALUE ERROR")
+    print(e)
+    quit()
+
+balance_eth = w3.from_wei(balance_wei, 'ether')
+
+try:
+    amount_to_wrap = w3.to_wei(float(balance_eth)-0.0515, 'ether')
 except ValueError:
     quit()
 
-gas_price_wei = web3.eth.gas_price
-gas_price_eth = web3.from_wei(gas_price_wei, 'ether')
+gas_price_wei = w3.eth.gas_price
+gas_price_eth = w3.from_wei(gas_price_wei, 'ether')
 
 if (gas_price_eth * 40000) < 0.0035:
     if balance_eth > 0.20:
@@ -32,10 +35,10 @@ if (gas_price_eth * 40000) < 0.0035:
             'gas': 40000,
             'maxFeePerGas': gas_price_wei,
             'maxPriorityFeePerGas': gas_price_wei,
-            'nonce': web3.eth.get_transaction_count(account_address),
+            'nonce': w3.eth.get_transaction_count(account_address),
             'chainId': 1,
         })
 
-        signed_txn = web3.eth.account.sign_transaction(transaction, private_key=private_key)
+        signed_txn = w3.eth.account.sign_transaction(transaction, private_key=private_key)
 
-        transaction_hash = web3.eth.send_raw_transaction(signed_txn.rawTransaction)
+        transaction_hash = w3.eth.send_raw_transaction(signed_txn.rawTransaction)
