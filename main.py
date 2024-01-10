@@ -56,7 +56,7 @@ if __name__ == '__main__':
         for item in chunk:
             thread = threading.Thread(target=run, args=(item,))
             threads.append(thread)
-            time.sleep(0.25)
+            time.sleep(0.2)
             thread.start()
 
         for thread in threads:
