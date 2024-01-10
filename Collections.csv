@@ -78,7 +78,7 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,limit vari
 77,women-unite-10k-assemble,0xbee7cb80dfd21a9eaae714208f361601f68eb746,ERC-721,,yes,yes,30,,yes,0.7,yes,Special Powers,Third Eye Blue Trident,,,,,no,,,,yes,,1
 78,women-unite-10k-assemble,0xbee7cb80dfd21a9eaae714208f361601f68eb746,ERC-721,,yes,yes,30,,yes,0.5,yes,Special Powers,Third Eye Red Trident,,,,,no,,,,yes,,1
 79,women-unite-10k-assemble,0xbee7cb80dfd21a9eaae714208f361601f68eb746,ERC-721,,yes,yes,40,,yes,0.9,yes,Special Powers,Third Eye Gold Trident,,,,,no,,,,yes,,1
-80,women-unite-10k-assemble,0xbee7cb80dfd21a9eaae714208f361601f68eb746,ERC-721,,yes,yes,0,0.05,no,,no,,,,,,,yes,,0.05,,yes,,1
+80,women-unite-10k-assemble,0xbee7cb80dfd21a9eaae714208f361601f68eb746,ERC-721,,yes,yes,0,0.05,yes,,no,,,,,,,yes,,0.05,,yes,,1
 81,womenunite,0x495f947276749ce646f68ac8c248420045cb7b5e,ERC-1155,110063331335139009547571421808057778384289125434812320670302640638044521105360,yes,yes,30,,yes,0.6,no,,,,,,,no,,,,yes,,1
 82,worldwidewebbland,0xa1d4657e0e6507d5a94d06da93e94dc7c8c44b51,ERC-721,,yes,yes,0,0.15,yes,,yes,type,large apartment,,,,,no,,0.15,0.05,yes,,1
 83,worldwidewebbland,0xa1d4657e0e6507d5a94d06da93e94dc7c8c44b51,ERC-721,,yes,yes,20,,yes,,yes,type,medium apartment,,,,,no,,,,yes,,1
