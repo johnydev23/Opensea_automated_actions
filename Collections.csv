@@ -50,8 +50,8 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 49,smallbros,0xb18380485f7ba9c23deb729bedd3a3499dbd4449,ERC-721,,yes,yes,20,,yes,0.04,yes,BACKGROUND,Gold,no,,,,,no,,,,yes,,1
 50,smallbros,0xb18380485f7ba9c23deb729bedd3a3499dbd4449,ERC-721,,yes,yes,50,,yes,0.1,yes,HAIR,King,no,,,,,no,,,,yes,,1
 51,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.05,yes,,yes,type,Small,yes,,,,,yes,,,,yes,,1
-52,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.08,yes,,yes,type,Medium,no,,,,,no,,,,yes,,1
-53,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.12,yes,,yes,type,Large,no,,,,,no,,,,yes,,1
+52,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.06,yes,,yes,type,Medium,no,,,,,no,,,,yes,,1
+53,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.08,yes,,yes,type,Large,no,,,,,no,,,,yes,,1
 54,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.5,yes,,yes,type,Penthouse,no,,,,,no,,,0.1,yes,,1
 55,sugartownoras,0xd564c25b760cb278a55bdd98831f4ff4b6c97b38,ERC-721,,yes,yes,0,0.05,yes,,no,,,yes,,,,,yes,,,,yes,,1
 56,sunflower-land-buds,0x78a0cea8f323ff80985c5f9d1f9de18bb9e35996,ERC-721,,yes,yes,30,,yes,,no,,,yes,,,,,yes,,,,yes,,1
