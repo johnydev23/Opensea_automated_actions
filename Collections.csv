@@ -5,7 +5,7 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 4,10ktf-stockroom,0x7daec605e9e2a1717326eedfd660601e2753a057,ERC-1155,65540,yes,yes,30,,yes,0.05,no,,,yes,,,,,no,,,,yes,,1
 5,10ktf-stockroom,0x7daec605e9e2a1717326eedfd660601e2753a057,ERC-1155,65549,yes,yes,30,,yes,0.25,no,,,yes,,,,,no,,,,yes,,1
 6,3d-invisible-friends,0x49c36afa15c7fdbd57ce3d61d80f39b6615a76ef,ERC-721,,yes,yes,10,0.01,yes,,no,,,yes,,,,,yes,,,,yes,,1
-7,77bit,0x497a9a79e82e6fc0ff10a16f6f75e6fcd5ae65a8,ERC-721,,yes,yes,10,0.01,yes,,no,,,yes,,,,,yes,,,,yes,,1
+7,asm-brains,0xd0318da435dbce0b347cc6faa330b5a9889e3585,ERC-721,,yes,yes,0,0.05,yes,,no,,,yes,,,,,yes,,,0.01,yes,,1
 8,blockgames-dice-5555,0x0581ddf7a136c6837429a46c6cb7b388a3e52971,ERC-721,,yes,yes,0,0.1,yes,,no,,,yes,,,,,yes,,,,yes,,1
 9,bokinftofficial,0x248139afb8d3a2e16154fbe4fb528a3a214fd8e7,ERC-721,,yes,yes,40,,yes,0.04,yes,Clothing,Skeleton Hoodie,no,,,,,no,,,,yes,,1
 10,bokinftofficial,0x248139afb8d3a2e16154fbe4fb528a3a214fd8e7,ERC-721,,yes,yes,30,,yes,0.08,yes,Body,Ape,no,,,,,no,,,,yes,,1
@@ -49,8 +49,8 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 48,regulars,0x6d0de90cdc47047982238fcf69944555d27ecb25,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
 49,rotanft,0xdfb29501b42f63a947ddc5249f185d6bcbe6986f,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
 50,rtfkt-exodus,0x895554bc4f48fe1c2bf5c198bfa3513da538f86b,ERC-1155,1,yes,yes,20,,yes,,no,,,yes,,,,,no,,,,yes,,1
-51,rtfkt-mnlth,0x86825dfca7a6224cfbd2da48e85df2fc3aa7c4b1,ERC-1155,1,yes,yes,15,,yes,,no,,,yes,,,,,yes,,,,yes,,1
-52,rtfkt-mnlth-x,0x56a67d475ded20f1120d6377988ae12992888ac4,ERC-1155,1,yes,yes,15,,yes,,no,,,yes,,,,,yes,,,,yes,,1
+51,rtfkt-mnlth,0x86825dfca7a6224cfbd2da48e85df2fc3aa7c4b1,ERC-1155,1,yes,yes,15,,yes,,no,,,yes,,,,,yes,,5,,yes,,1
+52,rtfkt-mnlth-x,0x56a67d475ded20f1120d6377988ae12992888ac4,ERC-1155,1,yes,yes,15,,yes,,no,,,yes,,,,,yes,,5,,yes,,1
 53,rtfkt-podx,0xb7be4001bff2c5f4a61dd2435e4c9a19d8d12343,ERC-1155,1,yes,no,20,,yes,0.05,no,,,yes,,,,,yes,,,,yes,,1
 54,rtfkt-podx,0xb7be4001bff2c5f4a61dd2435e4c9a19d8d12343,ERC-1155,1,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
 55,ruggenesis-nft,0x8ff1523091c9517bc328223d50b52ef450200339,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
