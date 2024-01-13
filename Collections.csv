@@ -39,57 +39,58 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 38,moonbears-nft,0x3b8420eb6ef77bc25025b32d8205cde2683f979e,ERC-721,,yes,yes,0,0.1,yes,,no,,,yes,,,,,yes,,,0.05,yes,,1
 39,mutant-hounds,0x354634c4621cdfb7a25e6486cca1e019777d841b,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
 40,mythics-egg,0x13303b4ee819fac204be5ef77523cfcd558c082f,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
-41,ninjalerts-lifetime-license,0x9f608060c234f70d83ba16ad9277cd42f7dcff49,ERC-1155,0,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
-42,opepen-edition,0x6339e5e072086621540d0362c4e3cea0d643e114,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
-43,otherside-vessels,0x5b1085136a811e55b2bb2ca1ea456ba82126a376,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
-44,polygonapetheevolution,0x91b431a541872d0b3c55f3381cb391d9347f1552,ERC-721,,yes,yes,25,,yes,,no,,,yes,,,,,yes,,,,yes,,1
-45,premint-collector,0xe0176ba60efddb29cac5b15338c9962daee9de0c,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
-46,projectatamaofficial,0xef5e3e60bd031498318ac97cf55db74357256282,ERC-721,,yes,yes,35,,yes,,no,,,yes,,,,,yes,,,,yes,,1
-47,ready-player-club,0xcdb7c1a6fe7e112210ca548c214f656763e13533,ERC-721,,yes,yes,0,0.03,yes,0.14,no,,,yes,,,,,yes,,,,yes,,1
-48,regulars,0x6d0de90cdc47047982238fcf69944555d27ecb25,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
-49,rotanft,0xdfb29501b42f63a947ddc5249f185d6bcbe6986f,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
-50,rtfkt-exodus,0x895554bc4f48fe1c2bf5c198bfa3513da538f86b,ERC-1155,1,yes,yes,20,,yes,,no,,,yes,,,,,no,,,,yes,,1
-51,rtfkt-mnlth,0x86825dfca7a6224cfbd2da48e85df2fc3aa7c4b1,ERC-1155,1,yes,yes,15,,yes,,no,,,yes,,,,,yes,,5,,yes,,1
-52,rtfkt-mnlth-x,0x56a67d475ded20f1120d6377988ae12992888ac4,ERC-1155,1,yes,yes,15,,yes,,no,,,yes,,,,,yes,,5,,yes,,1
-53,rtfkt-podx,0xb7be4001bff2c5f4a61dd2435e4c9a19d8d12343,ERC-1155,1,yes,no,20,,yes,0.05,no,,,yes,,,,,yes,,,,yes,,1
-54,rtfkt-podx,0xb7be4001bff2c5f4a61dd2435e4c9a19d8d12343,ERC-1155,1,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
-55,ruggenesis-nft,0x8ff1523091c9517bc328223d50b52ef450200339,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
-56,sappy-seals,0x364c828ee171616a39897688a831c2499ad972ec,ERC-721,,yes,yes,0,0.1,yes,,no,,,yes,,,,,yes,,,,yes,,1
-57,smallbros,0xb18380485f7ba9c23deb729bedd3a3499dbd4449,ERC-721,,yes,yes,20,,yes,0.04,yes,BACKGROUND,Gold,no,,,,,no,,,,yes,,1
-58,smallbros,0xb18380485f7ba9c23deb729bedd3a3499dbd4449,ERC-721,,yes,yes,50,,yes,0.1,yes,HAIR,King,no,,,,,no,,,,yes,,1
-59,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.05,yes,,yes,type,Small,yes,,,,,yes,,,,yes,,1
-60,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.055,yes,,yes,type,Medium,no,,,,,no,,,0.01,yes,,1
-61,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.08,yes,,yes,type,Large,no,,,,,no,,,,yes,,1
-62,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.5,yes,,yes,type,Penthouse,no,,,,,no,,,0.1,yes,,1
-63,sugartownoras,0xd564c25b760cb278a55bdd98831f4ff4b6c97b38,ERC-721,,yes,yes,0,0.05,yes,,no,,,yes,,,,,yes,,,,yes,,1
-64,sunflower-land-buds,0x78a0cea8f323ff80985c5f9d1f9de18bb9e35996,ERC-721,,yes,yes,30,,yes,,no,,,yes,,,,,yes,,,,yes,,1
-65,super-cool-world,0x670d4dd2e6badfbbd372d0d37e06cd2852754a04,ERC-721,,yes,yes,0,0.08,yes,,no,,,yes,,,,,yes,,,0.05,yes,,1
-66,thememes6529,0x33fd426905f149f8376e227d0c9d3340aad17af1,ERC-1155,8,yes,yes,30,,yes,0.0425,no,,,yes,,,,,no,,,,yes,,1
-67,thepotatoz,0x39ee2c7b3cb80254225884ca001f57118c8f21b6,ERC-721,,yes,yes,0,0.2,yes,,no,,,yes,,,,,yes,,,0.08,yes,,1
-68,theuncharted,0xa12f1f767279af5da785984f1432c46d87e46e8c,ERC-1155,0,yes,yes,20,,yes,0.25,no,,,yes,,,,,yes,,,,yes,,1
-69,treeverse-plots,0x1b829b926a14634d36625e60165c0770c09d02b2,ERC-721,,yes,yes,0,0.1,yes,,no,,,yes,,,,,yes,,,,yes,,1
-70,twintigersjacket,0x1e52f7a450b08b1b249a4f4f54518fc5278c2285,ERC-1155,1,yes,yes,25,,yes,0.11,no,,,no,,,,,no,,,,yes,,1
-71,twintigersjacket,0x1e52f7a450b08b1b249a4f4f54518fc5278c2285,ERC-1155,2,yes,yes,20,,yes,0.0395,no,,,yes,,,,,no,,,,yes,,1
-72,unitedplanets,0x7deb7bce4d360ebe68278dee6054b882aa62d19c,ERC-1155,0,yes,yes,0,0.4,yes,1.285,no,,,yes,,,,,no,,,,yes,,1
-73,unitedplanets,0x7deb7bce4d360ebe68278dee6054b882aa62d19c,ERC-1155,1,yes,yes,0,0.2,yes,0.55,no,,,yes,,,,,no,,,,yes,,1
-74,unitedplanets,0x7deb7bce4d360ebe68278dee6054b882aa62d19c,ERC-1155,2,yes,yes,0,0.05,yes,0.31,no,,,yes,,,,,no,,,,yes,,1
-75,unitedplanets,0x7deb7bce4d360ebe68278dee6054b882aa62d19c,ERC-1155,3,yes,yes,20,,yes,0.035,no,,,yes,,,,,no,,,,yes,,1
-76,unitedplanets,0x7deb7bce4d360ebe68278dee6054b882aa62d19c,ERC-1155,4,yes,yes,20,,yes,0.18,no,,,yes,,,,,no,,,,yes,,1
-77,unitedplanets,0x7deb7bce4d360ebe68278dee6054b882aa62d19c,ERC-1155,5,yes,yes,20,,yes,0.045,no,,,yes,,,,,no,,,,yes,,1
-78,unitedplanets,0x7deb7bce4d360ebe68278dee6054b882aa62d19c,ERC-1155,6,yes,yes,20,,yes,0.0475,no,,,yes,,,,,no,,,,yes,,1
-79,unitedplanets,0x7deb7bce4d360ebe68278dee6054b882aa62d19c,ERC-1155,7,yes,yes,20,,yes,0.041,no,,,yes,,,,,no,,,,yes,,1
-80,unitedplanets,0x7deb7bce4d360ebe68278dee6054b882aa62d19c,ERC-1155,8,yes,yes,20,,yes,0.042,no,,,yes,,,,,no,,,,yes,,1
-81,unitedplanets,0x7deb7bce4d360ebe68278dee6054b882aa62d19c,ERC-1155,9,yes,yes,0,0.2,yes,0.9,no,,,yes,,,,,no,,,0.05,yes,,1
-82,unitedplanets,0x7deb7bce4d360ebe68278dee6054b882aa62d19c,ERC-1155,10,yes,yes,0,0.35,yes,2.35,no,,,yes,,,,,no,,,0.1,yes,,1
-83,vv-checks-originals,0x036721e5a769cc48b3189efbb9cce4471e8a48b1,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
-84,wolf-game-farmer,0xbda2481db91fc0f942ed3f53de378ba45ba9d17e,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
-85,women-unite-10k-assemble,0xbee7cb80dfd21a9eaae714208f361601f68eb746,ERC-721,,yes,yes,30,,yes,0.7,yes,Special Powers,Third Eye Blue Trident,no,,,,,no,,,,yes,,1
-86,women-unite-10k-assemble,0xbee7cb80dfd21a9eaae714208f361601f68eb746,ERC-721,,yes,yes,30,,yes,0.5,yes,Special Powers,Third Eye Red Trident,no,,,,,no,,,,yes,,1
-87,women-unite-10k-assemble,0xbee7cb80dfd21a9eaae714208f361601f68eb746,ERC-721,,yes,yes,40,,yes,0.9,yes,Special Powers,Third Eye Gold Trident,no,,,,,no,,,,yes,,1
-88,women-unite-10k-assemble,0xbee7cb80dfd21a9eaae714208f361601f68eb746,ERC-721,,yes,yes,0,0.05,yes,,no,,,yes,,,,,yes,,,,yes,,1
-89,womenunite,0x495f947276749ce646f68ac8c248420045cb7b5e,ERC-1155,110063331335139009547571421808057778384289125434812320670302640638044521105360,yes,yes,30,,yes,0.6,no,,,yes,,,,,no,,,,yes,,1
-90,worldwidewebbland,0xa1d4657e0e6507d5a94d06da93e94dc7c8c44b51,ERC-721,,yes,yes,0,0.15,yes,,yes,type,large apartment,no,,,,,no,,,0.05,yes,,1
-91,worldwidewebbland,0xa1d4657e0e6507d5a94d06da93e94dc7c8c44b51,ERC-721,,yes,yes,20,,yes,,yes,type,medium apartment,no,,,,,no,,,,yes,,1
-92,worldwidewebbland,0xa1d4657e0e6507d5a94d06da93e94dc7c8c44b51,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
-93,yogapetz,0x142e03367ede17cd851477a4287d1f35676e6dc2,ERC-721,,yes,yes,0,0.1,yes,,no,,,yes,,,,,yes,,,,yes,,1
-94,zen-chests,0x7b70695e761eb828abed8c4d506f9af3a76ef4b5,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
+41,ninjalerts-lifetime-license,0x9f608060c234f70d83ba16ad9277cd42f7dcff49,ERC-1155,0,yes,no,20,,yes,0.1,no,,,yes,,,,,yes,,,,yes,,1
+42,ninjalerts-lifetime-license,0x9f608060c234f70d83ba16ad9277cd42f7dcff49,ERC-1155,0,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
+43,opepen-edition,0x6339e5e072086621540d0362c4e3cea0d643e114,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
+44,otherside-vessels,0x5b1085136a811e55b2bb2ca1ea456ba82126a376,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
+45,polygonapetheevolution,0x91b431a541872d0b3c55f3381cb391d9347f1552,ERC-721,,yes,yes,25,,yes,,no,,,yes,,,,,yes,,,,yes,,1
+46,premint-collector,0xe0176ba60efddb29cac5b15338c9962daee9de0c,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
+47,projectatamaofficial,0xef5e3e60bd031498318ac97cf55db74357256282,ERC-721,,yes,yes,35,,yes,,no,,,yes,,,,,yes,,,,yes,,1
+48,ready-player-club,0xcdb7c1a6fe7e112210ca548c214f656763e13533,ERC-721,,yes,yes,0,0.03,yes,0.14,no,,,yes,,,,,yes,,,,yes,,1
+49,regulars,0x6d0de90cdc47047982238fcf69944555d27ecb25,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
+50,rotanft,0xdfb29501b42f63a947ddc5249f185d6bcbe6986f,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
+51,rtfkt-exodus,0x895554bc4f48fe1c2bf5c198bfa3513da538f86b,ERC-1155,1,yes,yes,20,,yes,,no,,,yes,,,,,no,,,,yes,,1
+52,rtfkt-mnlth,0x86825dfca7a6224cfbd2da48e85df2fc3aa7c4b1,ERC-1155,1,yes,yes,15,,yes,,no,,,yes,,,,,yes,,5,,yes,,1
+53,rtfkt-mnlth-x,0x56a67d475ded20f1120d6377988ae12992888ac4,ERC-1155,1,yes,yes,15,,yes,,no,,,yes,,,,,yes,,5,,yes,,1
+54,rtfkt-podx,0xb7be4001bff2c5f4a61dd2435e4c9a19d8d12343,ERC-1155,1,yes,no,20,,yes,0.05,no,,,yes,,,,,yes,,,,yes,,1
+55,rtfkt-podx,0xb7be4001bff2c5f4a61dd2435e4c9a19d8d12343,ERC-1155,1,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
+56,ruggenesis-nft,0x8ff1523091c9517bc328223d50b52ef450200339,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
+57,sappy-seals,0x364c828ee171616a39897688a831c2499ad972ec,ERC-721,,yes,yes,0,0.1,yes,,no,,,yes,,,,,yes,,,,yes,,1
+58,smallbros,0xb18380485f7ba9c23deb729bedd3a3499dbd4449,ERC-721,,yes,yes,20,,yes,0.04,yes,BACKGROUND,Gold,no,,,,,no,,,,yes,,1
+59,smallbros,0xb18380485f7ba9c23deb729bedd3a3499dbd4449,ERC-721,,yes,yes,50,,yes,0.1,yes,HAIR,King,no,,,,,no,,,,yes,,1
+60,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.05,yes,,yes,type,Small,yes,,,,,yes,,,,yes,,1
+61,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.055,yes,,yes,type,Medium,no,,,,,no,,,0.01,yes,,1
+62,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.08,yes,,yes,type,Large,no,,,,,no,,,,yes,,1
+63,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.5,yes,,yes,type,Penthouse,no,,,,,no,,,0.1,yes,,1
+64,sugartownoras,0xd564c25b760cb278a55bdd98831f4ff4b6c97b38,ERC-721,,yes,yes,0,0.05,yes,,no,,,yes,,,,,yes,,,,yes,,1
+65,sunflower-land-buds,0x78a0cea8f323ff80985c5f9d1f9de18bb9e35996,ERC-721,,yes,yes,30,,yes,,no,,,yes,,,,,yes,,,,yes,,1
+66,super-cool-world,0x670d4dd2e6badfbbd372d0d37e06cd2852754a04,ERC-721,,yes,yes,0,0.08,yes,,no,,,yes,,,,,yes,,,0.05,yes,,1
+67,thememes6529,0x33fd426905f149f8376e227d0c9d3340aad17af1,ERC-1155,8,yes,yes,30,,yes,0.0425,no,,,yes,,,,,no,,,,yes,,1
+68,thepotatoz,0x39ee2c7b3cb80254225884ca001f57118c8f21b6,ERC-721,,yes,yes,0,0.2,yes,,no,,,yes,,,,,yes,,,0.08,yes,,1
+69,theuncharted,0xa12f1f767279af5da785984f1432c46d87e46e8c,ERC-1155,0,yes,yes,20,,yes,0.25,no,,,yes,,,,,yes,,,,yes,,1
+70,treeverse-plots,0x1b829b926a14634d36625e60165c0770c09d02b2,ERC-721,,yes,yes,0,0.1,yes,,no,,,yes,,,,,yes,,,,yes,,1
+71,twintigersjacket,0x1e52f7a450b08b1b249a4f4f54518fc5278c2285,ERC-1155,1,yes,yes,25,,yes,0.11,no,,,no,,,,,no,,,,yes,,1
+72,twintigersjacket,0x1e52f7a450b08b1b249a4f4f54518fc5278c2285,ERC-1155,2,yes,yes,20,,yes,0.0395,no,,,yes,,,,,no,,,,yes,,1
+73,unitedplanets,0x7deb7bce4d360ebe68278dee6054b882aa62d19c,ERC-1155,0,yes,yes,0,0.4,yes,1.285,no,,,yes,,,,,no,,,,yes,,1
+74,unitedplanets,0x7deb7bce4d360ebe68278dee6054b882aa62d19c,ERC-1155,1,yes,yes,0,0.2,yes,0.55,no,,,yes,,,,,no,,,,yes,,1
+75,unitedplanets,0x7deb7bce4d360ebe68278dee6054b882aa62d19c,ERC-1155,2,yes,yes,0,0.05,yes,0.31,no,,,yes,,,,,no,,,,yes,,1
+76,unitedplanets,0x7deb7bce4d360ebe68278dee6054b882aa62d19c,ERC-1155,3,yes,yes,20,,yes,0.035,no,,,yes,,,,,no,,,,yes,,1
+77,unitedplanets,0x7deb7bce4d360ebe68278dee6054b882aa62d19c,ERC-1155,4,yes,yes,20,,yes,0.18,no,,,yes,,,,,no,,,,yes,,1
+78,unitedplanets,0x7deb7bce4d360ebe68278dee6054b882aa62d19c,ERC-1155,5,yes,yes,20,,yes,0.045,no,,,yes,,,,,no,,,,yes,,1
+79,unitedplanets,0x7deb7bce4d360ebe68278dee6054b882aa62d19c,ERC-1155,6,yes,yes,20,,yes,0.0475,no,,,yes,,,,,no,,,,yes,,1
+80,unitedplanets,0x7deb7bce4d360ebe68278dee6054b882aa62d19c,ERC-1155,7,yes,yes,20,,yes,0.041,no,,,yes,,,,,no,,,,yes,,1
+81,unitedplanets,0x7deb7bce4d360ebe68278dee6054b882aa62d19c,ERC-1155,8,yes,yes,20,,yes,0.042,no,,,yes,,,,,no,,,,yes,,1
+82,unitedplanets,0x7deb7bce4d360ebe68278dee6054b882aa62d19c,ERC-1155,9,yes,yes,0,0.2,yes,0.9,no,,,yes,,,,,no,,,0.05,yes,,1
+83,unitedplanets,0x7deb7bce4d360ebe68278dee6054b882aa62d19c,ERC-1155,10,yes,yes,0,0.35,yes,2.35,no,,,yes,,,,,no,,,0.1,yes,,1
+84,vv-checks-originals,0x036721e5a769cc48b3189efbb9cce4471e8a48b1,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
+85,wolf-game-farmer,0xbda2481db91fc0f942ed3f53de378ba45ba9d17e,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
+86,women-unite-10k-assemble,0xbee7cb80dfd21a9eaae714208f361601f68eb746,ERC-721,,yes,yes,30,,yes,0.7,yes,Special Powers,Third Eye Blue Trident,no,,,,,no,,,,yes,,1
+87,women-unite-10k-assemble,0xbee7cb80dfd21a9eaae714208f361601f68eb746,ERC-721,,yes,yes,30,,yes,0.5,yes,Special Powers,Third Eye Red Trident,no,,,,,no,,,,yes,,1
+88,women-unite-10k-assemble,0xbee7cb80dfd21a9eaae714208f361601f68eb746,ERC-721,,yes,yes,40,,yes,0.9,yes,Special Powers,Third Eye Gold Trident,no,,,,,no,,,,yes,,1
+89,women-unite-10k-assemble,0xbee7cb80dfd21a9eaae714208f361601f68eb746,ERC-721,,yes,yes,0,0.05,yes,,no,,,yes,,,,,yes,,,,yes,,1
+90,womenunite,0x495f947276749ce646f68ac8c248420045cb7b5e,ERC-1155,110063331335139009547571421808057778384289125434812320670302640638044521105360,yes,yes,30,,yes,0.6,no,,,yes,,,,,no,,,,yes,,1
+91,worldwidewebbland,0xa1d4657e0e6507d5a94d06da93e94dc7c8c44b51,ERC-721,,yes,yes,0,0.15,yes,,yes,type,large apartment,no,,,,,no,,,0.05,yes,,1
+92,worldwidewebbland,0xa1d4657e0e6507d5a94d06da93e94dc7c8c44b51,ERC-721,,yes,yes,20,,yes,,yes,type,medium apartment,no,,,,,no,,,,yes,,1
+93,worldwidewebbland,0xa1d4657e0e6507d5a94d06da93e94dc7c8c44b51,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
+94,yogapetz,0x142e03367ede17cd851477a4287d1f35676e6dc2,ERC-721,,yes,yes,0,0.1,yes,,no,,,yes,,,,,yes,,,,yes,,1
+95,zen-chests,0x7b70695e761eb828abed8c4d506f9af3a76ef4b5,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
