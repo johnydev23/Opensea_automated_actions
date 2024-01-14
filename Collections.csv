@@ -60,7 +60,7 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 59,sappy-seals,0x364c828ee171616a39897688a831c2499ad972ec,ERC-721,,yes,yes,0,0.1,yes,,no,,,yes,,,,,yes,,,,yes,,1
 60,smallbros,0xb18380485f7ba9c23deb729bedd3a3499dbd4449,ERC-721,,yes,yes,20,,yes,0.04,yes,BACKGROUND,Gold,no,,,,,no,,,,yes,,1
 61,smallbros,0xb18380485f7ba9c23deb729bedd3a3499dbd4449,ERC-721,,yes,yes,50,,yes,0.1,yes,HAIR,King,no,,,,,no,,,,yes,,1
-62,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.05,yes,,yes,type,Small,yes,,,,,yes,,,,yes,,1
+62,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,no,yes,0,0.05,yes,,no,,,yes,,,,,yes,,,,yes,,1
 63,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.055,yes,,yes,type,Medium,no,,,,,no,,,0.01,yes,,1
 64,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.08,yes,,yes,type,Large,no,,,,,no,,,,yes,,1
 65,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.5,yes,,yes,type,Penthouse,no,,,,,no,,,0.1,yes,,1
