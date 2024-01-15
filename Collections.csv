@@ -14,7 +14,7 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 13,curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,3,yes,yes,20,,yes,0.12,no,,,yes,,,,,yes,,,,yes,,1
 14,curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,8,yes,yes,20,,yes,0.125,no,,,yes,,,,,yes,,,,yes,,1
 15,curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,10,yes,yes,20,,yes,0.11,no,,,yes,,,,,yes,,,,yes,,1
-16,curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,17,yes,yes,20,,yes,0.3,no,,,yes,,,,,yes,,,0.5,yes,,1
+16,curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,17,yes,yes,20,,yes,0.3,no,,,yes,,,,,yes,,,0.2,yes,,1
 17,foundersdao,0xd0a07a76746707f6d6d36d9d5897b14a8e9ed493,ERC-721,,yes,yes,10,0.01,yes,,no,,,yes,,,,,yes,,,,yes,,1
 18,galaxy-fight-club,0x3702f4c46785bbd947d59a2516ac1ea30f2babf2,ERC-721,,yes,yes,25,,yes,,no,,,yes,,,,,yes,,,,yes,,1
 19,genesis-creepz,0x5946aeaab44e65eb370ffaa6a7ef2218cff9b47d,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
