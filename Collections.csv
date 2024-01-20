@@ -10,7 +10,7 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 9,apeironplanet,0x24f9b0837424c62d2247d8a11a6d6139e4ab5ed2,ERC-721,,yes,yes,20,0.01,yes,,yes,Planet Type,Mountainous,yes,,,,,yes,1,,,yes,,1
 10,apeironplanet,0x24f9b0837424c62d2247d8a11a6d6139e4ab5ed2,ERC-721,,yes,yes,20,0.01,yes,,yes,Planet Type,Wasteland,yes,,,,,yes,1,,,yes,,1
 11,apeironplanet,0x24f9b0837424c62d2247d8a11a6d6139e4ab5ed2,ERC-721,,yes,yes,20,0.01,yes,,yes,Planet Type,Foresty,yes,,,,,yes,1,,,yes,,1
-12,apeironplanet,0x24f9b0837424c62d2247d8a11a6d6139e4ab5ed2,ERC-721,,yes,no,20,0.01,yes,,no,,,yes,,,,,yes,1,,,yes,,1
+12,based-onchain-dinos,0xd4c5292b9689238f0a51c8505b1d1d6714ce95a0,ERC-721,,yes,yes,20,0.01,yes,,no,,,yes,,,,,yes,,,,yes,,1
 13,bokinftofficial,0x248139afb8d3a2e16154fbe4fb528a3a214fd8e7,ERC-721,,yes,yes,40,,yes,0.04,yes,Clothing,Skeleton Hoodie,no,,,,,no,,,,yes,,1
 14,bokinftofficial,0x248139afb8d3a2e16154fbe4fb528a3a214fd8e7,ERC-721,,yes,yes,30,,yes,0.08,yes,Body,Ape,no,,,,,no,,,,yes,,1
 15,bokinftofficial,0x248139afb8d3a2e16154fbe4fb528a3a214fd8e7,ERC-721,,yes,yes,50,,yes,0.03,yes,Clothing,Banana,no,,,,,no,,,,yes,,1
