@@ -1,6 +1,7 @@
 const fs = require('fs');
 const sigUtil = require('eth-sig-util');
 const ethUtil = require('ethereumjs-util');
+require('dotenv').config();
 
 function signTypedMessage(message) {
     if (message === null){
@@ -19,7 +20,7 @@ const jsonData = fs.readFileSync(filePath, 'utf8');
 const collectionInfo = JSON.parse(jsonData);
 
 for (let i = 0; i < collectionInfo.length; i++) {
-    const message = collectionInfo[i].typed_message;
+    const message = collectionInfo[i].typed_message || null;
     const signature = signTypedMessage(message);
     collectionInfo[i].signature = signature;
 }
