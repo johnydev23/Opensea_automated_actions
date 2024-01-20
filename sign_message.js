@@ -1,7 +1,6 @@
 const fs = require('fs');
 const sigUtil = require('eth-sig-util');
 const ethUtil = require('ethereumjs-util');
-require('dotenv').config();
 
 function signTypedMessage(message) {
     if (message === null){
