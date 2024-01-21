@@ -44,7 +44,7 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 43,moonbears-nft,0x3b8420eb6ef77bc25025b32d8205cde2683f979e,ERC-721,,yes,yes,0,0.1,yes,,no,,,yes,,,,,yes,,,0.05,yes,,1
 44,mutant-hounds,0x354634c4621cdfb7a25e6486cca1e019777d841b,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
 45,mythics-egg,0x13303b4ee819fac204be5ef77523cfcd558c082f,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
-46,ninjalerts-lifetime-license,0x9f608060c234f70d83ba16ad9277cd42f7dcff49,ERC-1155,0,yes,no,20,,yes,0.07,no,,,yes,,,,,yes,3,,,yes,,1
+46,ninjalerts-lifetime-license,0x9f608060c234f70d83ba16ad9277cd42f7dcff49,ERC-1155,0,yes,no,20,,yes,0.085,no,,,yes,,,,,yes,3,,,yes,,1
 47,ninjalerts-lifetime-license,0x9f608060c234f70d83ba16ad9277cd42f7dcff49,ERC-1155,0,yes,yes,20,,yes,,no,,,yes,,,,,yes,3,,,yes,,1
 48,opepen-edition,0x6339e5e072086621540d0362c4e3cea0d643e114,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
 49,otherside-vessels,0x5b1085136a811e55b2bb2ca1ea456ba82126a376,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
