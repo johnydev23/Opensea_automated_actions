@@ -1,5 +1,5 @@
 from web3 import Web3
-from data.constants import operator_address_dict, limit_gas_dict, chain_id_dict
+from data.constants import operator_address_dict, tx_fee_approval_dict, chain_id_dict, gas_limit_approval_dict
 from data.variables import endpoints, address, private_key
 
 
@@ -80,15 +80,17 @@ def setApproved(asset_contract:str, chain='matic'):
     gas_price_wei = w3.eth.gas_price
     gas_price_eth = w3.from_wei(gas_price_wei, 'ether')
 
-    limit_gas = limit_gas_dict[chain]
+    tx_fee = tx_fee_approval_dict[chain]
     chain_id = chain_id_dict[chain]
 
-    if (gas_price_eth * 69335) < limit_gas:
-        if balance_eth > limit_gas:
+    gas_limit = gas_limit_approval_dict[chain]
+
+    if (gas_price_eth * gas_limit) < tx_fee:
+        if balance_eth > tx_fee:
             transaction = contract.functions.setApprovalForAll(operator_address, True).build_transaction({
                 'from': account_address,
                 'value': 0,
-                'gas': 69335,
+                'gas': gas_limit,
                 'maxFeePerGas': gas_price_wei,
                 'maxPriorityFeePerGas': gas_price_wei,
                 'nonce': w3.eth.get_transaction_count(account_address),

@@ -32,6 +32,9 @@ jobs:
             ADDRESS: ${{ secrets.ADDRESS }}
             PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
             ETHEREUM_RPC: ${{ secrets.ETHEREUM_RPC }}
+            POLYGON_RPC: ${{ secrets.POLYGON_RPC }}
+            BASE_RPC: ${{ secrets.BASE_RPC }}
+            ARBITRUM_RPC: ${{ secrets.ARBITRUM_RPC }}
         run: |
           python3 wrap_weth_to_eth.py
           echo "## Wraping weth" >> $GITHUB_STEP_SUMMARY
