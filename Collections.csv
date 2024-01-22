@@ -78,7 +78,7 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 77,sunflower-land-buds,0x78a0cea8f323ff80985c5f9d1f9de18bb9e35996,ERC-721,,yes,yes,30,,yes,,no,,,yes,,,,,yes,,,,yes,,1
 78,super-cool-world,0x670d4dd2e6badfbbd372d0d37e06cd2852754a04,ERC-721,,yes,yes,0,0.08,yes,,no,,,yes,,,,,yes,,,0.05,yes,,1
 79,the-meta-key,0x10daa9f4c0f985430fde4959adb2c791ef2ccf83,ERC-1155,1,yes,yes,20,0.1,yes,0.42,no,,,yes,,,,,no,,5,,yes,,1
-80,the-meta-key,0x10daa9f4c0f985430fde4959adb2c791ef2ccf83,ERC-1155,2,yes,yes,15,,yes,0.21,no,,,yes,,,,,no,,5,,yes,,1
+80,the-meta-key,0x10daa9f4c0f985430fde4959adb2c791ef2ccf83,ERC-1155,2,yes,yes,15,,yes,0.21,no,,,yes,,,,,no,,5,0.01,yes,,1
 81,the-meta-key,0x10daa9f4c0f985430fde4959adb2c791ef2ccf83,ERC-1155,10003,yes,yes,20,,yes,0.125,no,,,yes,,,,,no,,5,,yes,,1
 82,the-meta-key,0x10daa9f4c0f985430fde4959adb2c791ef2ccf83,ERC-1155,10004,yes,yes,20,,yes,0.035,no,,,yes,,,,,no,,5,,yes,,1
 83,the-weirdo-ghost-gang,0x9401518f4ebba857baa879d9f76e1cc8b31ed197,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
