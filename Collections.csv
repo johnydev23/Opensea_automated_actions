@@ -124,3 +124,4 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 123,zerion-genesis-collection,0x74ee68a33f6c9f113e22b3b77418b75f85d07d22,ERC-1155,2,yes,yes,50,,yes,,no,,,yes,,,,,no,,,,yes,,1
 124,zerion-genesis-collection,0x74ee68a33f6c9f113e22b3b77418b75f85d07d22,ERC-1155,3,yes,yes,50,,yes,,no,,,yes,,,,,no,,,,yes,,1
 125,zerion-genesis-collection,0x74ee68a33f6c9f113e22b3b77418b75f85d07d22,ERC-1155,4,yes,yes,50,,yes,,no,,,yes,,,,,no,,,,yes,,1
+126,ztx-genesis-homes,0x35373efc2fd7d852729cae869cc32acc979100bd,ERC-721,,yes,yes,10,0.05,yes,,no,,,yes,,,,,yes,,,,yes,,1
