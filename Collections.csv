@@ -13,8 +13,8 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 12,baka-bears,0xe5b68556c12f37fa12f15ae87ea32f15a8c4e7b9,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
 13,based-onchain-dinos,0xd4c5292b9689238f0a51c8505b1d1d6714ce95a0,ERC-721,,yes,yes,20,0.01,yes,,no,,,yes,,,,,yes,,,,yes,,1
 14,bokinftofficial,0x248139afb8d3a2e16154fbe4fb528a3a214fd8e7,ERC-721,,yes,yes,40,,yes,0.04,yes,Clothing,Skeleton Hoodie,no,,,,,no,,,,yes,,1
-15,bokinftofficial,0x248139afb8d3a2e16154fbe4fb528a3a214fd8e7,ERC-721,,yes,yes,30,,yes,0.08,yes,Body,Ape,no,,,,,no,,,,yes,,1
-16,bokinftofficial,0x248139afb8d3a2e16154fbe4fb528a3a214fd8e7,ERC-721,,yes,yes,50,,yes,0.03,yes,Clothing,Banana,no,,,,,no,,,,yes,,1
+15,bokinftofficial,0x248139afb8d3a2e16154fbe4fb528a3a214fd8e7,ERC-721,,yes,yes,50,,yes,0.03,yes,Clothing,Banana,no,,,,,no,,,,yes,,1
+16,bokinftofficial,0x248139afb8d3a2e16154fbe4fb528a3a214fd8e7,ERC-721,,yes,yes,30,,yes,0.08,yes,Body,Ape,no,,,,,no,,,,yes,,1
 17,captain-company-clockwork-lootbox,0xdeebfe062ea7f30b2b13e3b075fa0bb1f7cebb85,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
 18,captain-company-ships,0x110df204913976caafd2a7c2738b039b1dbf9088,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
 19,crypto-phunks,0xf07468ead8cf26c752c676e43c814fee9c8cf402,ERC-721,,yes,yes,20,,yes,,no,,,yes,2,2,,,yes,,,,yes,,1
@@ -68,12 +68,12 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 67,setter-token-rewards,0x340806a6aa3e60e360fd2803b77ad78176c61e02,ERC-721,,yes,yes,20,,yes,0.04,yes,Tier,Rare,no,,,,,no,2,,,yes,,1
 68,setter-token-rewards,0x340806a6aa3e60e360fd2803b77ad78176c61e02,ERC-721,,yes,yes,20,,yes,0.08,yes,Tier,Legendary,no,,,,,no,2,,,yes,,1
 69,setter-token-rewards,0x340806a6aa3e60e360fd2803b77ad78176c61e02,ERC-721,,yes,yes,20,,yes,0.12,yes,Tier,Mythical,no,,,,,no,2,,,yes,,1
-70,smallbros,0xb18380485f7ba9c23deb729bedd3a3499dbd4449,ERC-721,,yes,yes,20,,yes,0.04,yes,BACKGROUND,Gold,no,,,,,no,,,,yes,,1
-71,smallbros,0xb18380485f7ba9c23deb729bedd3a3499dbd4449,ERC-721,,yes,yes,50,,yes,0.1,yes,HAIR,King,no,,,,,no,,,,yes,,1
-72,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,no,yes,0,0.05,yes,,no,,,yes,,,,,yes,,,,yes,,1
-73,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.055,yes,,yes,type,Medium,no,,,,,no,,,0.01,yes,,1
-74,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.08,yes,,yes,type,Large,no,,,,,no,,,0.04,yes,,1
-75,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.5,yes,,yes,type,Penthouse,no,,,,,no,,,0.1,yes,,1
+70,smallbros,0xb18380485f7ba9c23deb729bedd3a3499dbd4449,ERC-721,,yes,yes,50,,yes,0.1,yes,HAIR,King,no,,,,,no,,,,yes,,1
+71,smallbros,0xb18380485f7ba9c23deb729bedd3a3499dbd4449,ERC-721,,yes,yes,20,,yes,0.04,yes,BACKGROUND,Gold,no,,,,,no,,,,yes,,1
+72,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.055,yes,,yes,type,Medium,no,,,,,no,,,0.01,yes,,1
+73,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.08,yes,,yes,type,Large,no,,,,,no,,,0.04,yes,,1
+74,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.5,yes,,yes,type,Penthouse,no,,,,,no,,,0.1,yes,,1
+75,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,no,yes,0,0.05,yes,,no,,,yes,,,,,yes,,,,yes,,1
 76,sugartownoras,0xd564c25b760cb278a55bdd98831f4ff4b6c97b38,ERC-721,,yes,yes,0,0.05,yes,,no,,,yes,,,,,yes,,,,yes,,1
 77,sunflower-land-buds,0x78a0cea8f323ff80985c5f9d1f9de18bb9e35996,ERC-721,,yes,yes,30,,yes,,no,,,yes,,,,,yes,,,,yes,,1
 78,super-cool-world,0x670d4dd2e6badfbbd372d0d37e06cd2852754a04,ERC-721,,yes,yes,0,0.08,yes,,no,,,yes,,,,,yes,,,0.05,yes,,1
