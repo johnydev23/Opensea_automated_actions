@@ -67,9 +67,9 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 66,ruggenesis-nft,0x8ff1523091c9517bc328223d50b52ef450200339,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
 67,sappy-seals,0x364c828ee171616a39897688a831c2499ad972ec,ERC-721,,yes,yes,0,0.1,yes,,no,,,yes,,,,,yes,,,,yes,,1
 68,setter-token-rewards,0x340806a6aa3e60e360fd2803b77ad78176c61e02,ERC-721,,yes,yes,20,,yes,0.02,yes,Tier,Uncommon,yes,,,,,no,2,,,yes,,1
-69,setter-token-rewards,0x340806a6aa3e60e360fd2803b77ad78176c61e02,ERC-721,,yes,yes,20,,yes,0.04,yes,Tier,Rare,no,,,,,no,2,,,yes,,1
-70,setter-token-rewards,0x340806a6aa3e60e360fd2803b77ad78176c61e02,ERC-721,,yes,yes,20,,yes,0.08,yes,Tier,Legendary,no,,,,,no,2,,,yes,,1
-71,setter-token-rewards,0x340806a6aa3e60e360fd2803b77ad78176c61e02,ERC-721,,yes,yes,20,,yes,0.12,yes,Tier,Mythical,no,,,,,no,2,,,yes,,1
+69,setter-token-rewards,0x340806a6aa3e60e360fd2803b77ad78176c61e02,ERC-721,,yes,yes,20,,yes,0.042,yes,Tier,Rare,no,,,,,no,2,,,yes,,1
+70,setter-token-rewards,0x340806a6aa3e60e360fd2803b77ad78176c61e02,ERC-721,,yes,yes,20,,yes,0.095,yes,Tier,Legendary,no,,,,,no,2,,,yes,,1
+71,setter-token-rewards,0x340806a6aa3e60e360fd2803b77ad78176c61e02,ERC-721,,yes,yes,20,,yes,0.14,yes,Tier,Mythical,no,,,,,no,2,,,yes,,1
 72,smallbros,0xb18380485f7ba9c23deb729bedd3a3499dbd4449,ERC-721,,yes,yes,50,,yes,0.1,yes,HAIR,King,no,,,,,no,,,,yes,,1
 73,smallbros,0xb18380485f7ba9c23deb729bedd3a3499dbd4449,ERC-721,,yes,yes,20,,yes,0.04,yes,BACKGROUND,Gold,no,,,,,no,,,,yes,,1
 74,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.055,yes,,yes,type,Medium,no,,,,,no,,,0.01,yes,,1
