@@ -1,11 +1,10 @@
 from web3 import Web3
 from data.constants import contract_abi, contract_address, balance_left_dict, gas_limit_wrap_dict, chain_id_dict, tx_fee_wrap_dict, wrap_when_amount_dict
 from data.variables import endpoints, address, private_key
+from src.swap_params import getSwapParams
 
 
 for key,value in contract_address.items():
-    if key == 'matic':
-        continue
 
     weth_contract = value
 
@@ -40,17 +39,44 @@ for key,value in contract_address.items():
     tx_fee = tx_fee_wrap_dict[key]
     wrap_when_amount_is = wrap_when_amount_dict[key]
 
+    to = ""
+    data = ""
+    if key == 'matic':
+        gas_price_gwei = w3.from_wei(gas_price_wei, 'gwei')
+        amount_to_swap = w3.from_wei(amount_to_wrap, 'ether')
+        tx_params = getSwapParams(account_address, token_out=weth_contract, swap_amount=amount_to_swap, gas_price=gas_price_gwei)
+        if tx_params:
+            # gas_limit = tx_params['data']['estimatedGas']
+            to = tx_params['data']['to']
+            to_formatted = to
+            data = tx_params['data']['data']
+        else:
+            continue
+
     if (gas_price_eth * gas_limit) < tx_fee:
         if balance_eth > wrap_when_amount_is:
-            transaction = contract.functions.deposit().build_transaction({
-                'from': account_address,
-                'value': amount_to_wrap,
-                'gas': gas_limit,
-                'maxFeePerGas': gas_price_wei,
-                'maxPriorityFeePerGas': gas_price_wei,
-                'nonce': w3.eth.get_transaction_count(account_address),
-                'chainId': chain_id,
-            })
+            if key == 'matic':
+                transaction = {
+                    'from': account_address,
+                    'to': to_formatted,
+                    'value': amount_to_wrap,
+                    'gas': gas_limit,
+                    'maxFeePerGas': gas_price_wei,
+                    'maxPriorityFeePerGas': gas_price_wei,
+                    'data': data,
+                    'nonce': w3.eth.get_transaction_count(account_address),
+                    'chainId': chain_id,
+                }
+            else:
+                transaction = contract.functions.deposit().build_transaction({
+                    'from': account_address,
+                    'value': amount_to_wrap,
+                    'gas': gas_limit,
+                    'maxFeePerGas': gas_price_wei,
+                    'maxPriorityFeePerGas': gas_price_wei,
+                    'nonce': w3.eth.get_transaction_count(account_address),
+                    'chainId': chain_id,
+                })
 
             signed_txn = w3.eth.account.sign_transaction(transaction, private_key=private_key)
 
