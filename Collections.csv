@@ -54,9 +54,9 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 53,ninjalerts-lifetime-license,0x9f608060c234f70d83ba16ad9277cd42f7dcff49,ERC-1155,0,yes,yes,20,,yes,,no,,,yes,,,,,yes,3,,,yes,,1
 54,opepen-edition,0x6339e5e072086621540d0362c4e3cea0d643e114,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
 55,otherside-vessels,0x5b1085136a811e55b2bb2ca1ea456ba82126a376,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
-56,planetfall-on-base,0x8bb4033af06b363a8391f795a39281bcc3b6197d,ERC-1155,100200106,yes,yes,20,,yes,0.015,no,,,no,,,,,no,2,,,yes,,1
-57,planetfall-on-base,0x8bb4033af06b363a8391f795a39281bcc3b6197d,ERC-1155,100200171,yes,yes,20,,yes,0.015,no,,,no,,,,,no,2,,,yes,,1
-58,planetfall-on-base,0x8bb4033af06b363a8391f795a39281bcc3b6197d,ERC-1155,100200259,yes,yes,20,,yes,0.025,no,,,no,,,,,no,2,,,yes,,1
+56,planetfall-on-base,0x8bb4033af06b363a8391f795a39281bcc3b6197d,ERC-1155,100200106,no,yes,20,,yes,0.015,no,,,no,,,,,no,2,,,yes,,1
+57,planetfall-on-base,0x8bb4033af06b363a8391f795a39281bcc3b6197d,ERC-1155,100200171,no,yes,20,,yes,0.015,no,,,no,,,,,no,2,,,yes,,1
+58,planetfall-on-base,0x8bb4033af06b363a8391f795a39281bcc3b6197d,ERC-1155,100200259,no,yes,20,,yes,0.025,no,,,no,,,,,no,2,,,yes,,1
 59,polygonapetheevolution,0x91b431a541872d0b3c55f3381cb391d9347f1552,ERC-721,,yes,yes,25,,yes,,no,,,yes,,,,,yes,,,,yes,,1
 60,premint-collector,0xe0176ba60efddb29cac5b15338c9962daee9de0c,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
 61,projectatamaofficial,0xef5e3e60bd031498318ac97cf55db74357256282,ERC-721,,yes,yes,35,,yes,,no,,,yes,,,,,yes,,,,yes,,1
@@ -128,4 +128,4 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 127,zerion-genesis-collection,0x74ee68a33f6c9f113e22b3b77418b75f85d07d22,ERC-1155,2,yes,yes,50,,yes,,no,,,yes,,,,,no,,,,yes,,1
 128,zerion-genesis-collection,0x74ee68a33f6c9f113e22b3b77418b75f85d07d22,ERC-1155,3,yes,yes,50,,yes,,no,,,yes,,,,,no,,,,yes,,1
 129,zerion-genesis-collection,0x74ee68a33f6c9f113e22b3b77418b75f85d07d22,ERC-1155,4,yes,yes,50,,yes,,no,,,yes,,,,,no,,,,yes,,1
-130,ztx-genesis-homes,0x35373efc2fd7d852729cae869cc32acc979100bd,ERC-721,,yes,yes,10,0.05,yes,,no,,,yes,,,,,yes,,,,yes,,1
+130,ztx-genesis-homes,0x35373efc2fd7d852729cae869cc32acc979100bd,ERC-721,,yes,yes,10,0.05,yes,,no,,,yes,,,,,yes,,,0.02,yes,,1
