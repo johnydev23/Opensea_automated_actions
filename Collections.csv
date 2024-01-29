@@ -61,7 +61,7 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 60,premint-collector,0xe0176ba60efddb29cac5b15338c9962daee9de0c,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
 61,projectatamaofficial,0xef5e3e60bd031498318ac97cf55db74357256282,ERC-721,,yes,yes,35,,yes,,no,,,yes,,,,,yes,,,,yes,,1
 62,ready-player-club,0xcdb7c1a6fe7e112210ca548c214f656763e13533,ERC-721,,yes,yes,0,0.03,yes,0.14,no,,,yes,,,,,yes,,,,yes,,1
-63,regulars,0x6d0de90cdc47047982238fcf69944555d27ecb25,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
+63,regulars,0x6d0de90cdc47047982238fcf69944555d27ecb25,ERC-721,,yes,yes,20,,no,,no,,,yes,,,,,yes,,,,yes,,1
 64,rotanft,0xdfb29501b42f63a947ddc5249f185d6bcbe6986f,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
 65,rtfkt-exodus,0x895554bc4f48fe1c2bf5c198bfa3513da538f86b,ERC-1155,1,yes,yes,20,,yes,,no,,,yes,,,,,no,,,,yes,,1
 66,rtfkt-mnlth,0x86825dfca7a6224cfbd2da48e85df2fc3aa7c4b1,ERC-1155,1,yes,yes,15,,yes,,no,,,yes,,,,,yes,,5,,yes,,1
