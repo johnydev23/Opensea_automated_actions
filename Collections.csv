@@ -37,7 +37,7 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 36,godhatesnftees,0xe6d48bf4ee912235398b96e16db6f310c21e82cb,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
 37,habbo-avatars,0x8a1bbef259b00ced668a8c69e50d92619c672176,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
 38,hedgies,0xf0d2d631a24db247f5eb0421fa3e6a169c72565f,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
-39,invisiblefriends,0x59468516a8259058bad1ca5f8f4bff190d30e066,ERC-721,,yes,yes,0,0.1,yes,,no,,,yes,,,,,yes,,,,yes,,1
+39,invisiblefriends,0x59468516a8259058bad1ca5f8f4bff190d30e066,ERC-721,,yes,yes,0,0.1,no,,no,,,yes,,,,,yes,,,,yes,,1
 40,kaiju-kingz,0x0c2e57efddba8c768147d1fdf9176a0a6ebd5d83,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,yes,,1
 41,kubz,0xeb2dfc54ebafca8f50efcc1e21a9d100b5aeb349,ERC-721,,yes,yes,25,,yes,,no,,,yes,,,,,yes,,,,yes,,1
 42,ledger-market-black-on-black-nano-x,0x0f77625b76e3831914d47a5034323290f9ce8a9e,ERC-721,,yes,yes,20,0.011,yes,0.068,no,,,yes,,,,,yes,,,,yes,,1
@@ -117,7 +117,7 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 116,women-unite-10k-assemble,0xbee7cb80dfd21a9eaae714208f361601f68eb746,ERC-721,,yes,yes,30,,yes,0.5,yes,Special Powers,Third Eye Red Trident,no,,,,,no,2,,,yes,,1
 117,women-unite-10k-assemble,0xbee7cb80dfd21a9eaae714208f361601f68eb746,ERC-721,,yes,yes,40,,yes,0.9,yes,Special Powers,Third Eye Gold Trident,no,,,,,no,2,,,yes,,1
 118,women-unite-10k-assemble,0xbee7cb80dfd21a9eaae714208f361601f68eb746,ERC-721,,yes,no,20,,yes,0.16,no,,,yes,,,,,yes,2,,,yes,,1
-119,women-unite-10k-assemble,0xbee7cb80dfd21a9eaae714208f361601f68eb746,ERC-721,,yes,yes,0,0.05,yes,,no,,,yes,,,,,yes,2,,,yes,,1
+119,women-unite-10k-assemble,0xbee7cb80dfd21a9eaae714208f361601f68eb746,ERC-721,,yes,yes,0,0.05,no,,no,,,yes,,,,,yes,2,,,yes,,1
 120,womenunite,0x495f947276749ce646f68ac8c248420045cb7b5e,ERC-1155,110063331335139009547571421808057778384289125434812320670302640638044521105360,yes,yes,30,,yes,0.6,no,,,yes,,,,,no,,,,yes,,1
 121,world-of-women-nft,0xe785e82358879f061bc3dcac6f0444462d4b5330,ERC-721,,yes,yes,0,0.1,yes,,no,,,yes,,,,,yes,,,0.02,yes,,1
 122,worldwidewebbland,0xa1d4657e0e6507d5a94d06da93e94dc7c8c44b51,ERC-721,,yes,yes,0,0.15,yes,,yes,type,large apartment,no,,,,,no,,,0.05,yes,,1
