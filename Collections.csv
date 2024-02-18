@@ -54,7 +54,7 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 53,ninjalerts-lifetime-license,0x9f608060c234f70d83ba16ad9277cd42f7dcff49,ERC-1155,0,yes,no,20,,yes,0.085,no,,,yes,,,,,yes,3,,,no,,,yes,,1
 54,ninjalerts-lifetime-license,0x9f608060c234f70d83ba16ad9277cd42f7dcff49,ERC-1155,0,yes,yes,20,,yes,,no,,,yes,,,,,yes,3,,,no,,,yes,,1
 55,opepen-edition,0x6339e5e072086621540d0362c4e3cea0d643e114,ERC-721,,yes,yes,20,,yes,0.35,yes,Edition Size,Five,no,,,,,no,,,,no,,,yes,,1
-56,opepen-edition,0x6339e5e072086621540d0362c4e3cea0d643e114,ERC-721,,yes,yes,20,,yes,0.4,yes,Edition Size,Five,no,,,,,no,,,,no,,,yes,,1
+56,opepen-edition,0x6339e5e072086621540d0362c4e3cea0d643e114,ERC-721,,yes,yes,15,0.08,yes,0.65,yes,Edition Size,Four,no,,,,,no,,,,no,,,yes,,1
 57,otherside-vessels,0x5b1085136a811e55b2bb2ca1ea456ba82126a376,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,no,,,yes,,1
 58,planetfall-on-base,0x8bb4033af06b363a8391f795a39281bcc3b6197d,ERC-1155,100200106,yes,yes,20,,yes,0.015,no,,,no,,,,,no,2,,,no,,,yes,,1
 59,planetfall-on-base,0x8bb4033af06b363a8391f795a39281bcc3b6197d,ERC-1155,100200171,yes,yes,20,,yes,0.015,no,,,no,,,,,no,2,,,no,,,yes,,1
