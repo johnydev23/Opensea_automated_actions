@@ -26,7 +26,7 @@ jobs:
         run: |
           pip install -r requirements.txt
           
-      - name: Set up Node 16
+      - name: Set up Node 20
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
