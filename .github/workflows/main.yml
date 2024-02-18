@@ -10,10 +10,10 @@ jobs:
     permissions: write-all
     steps:
       - name: "Check out the repo"
-        uses: "actions/checkout@v3"
+        uses: "actions/checkout@v4"
       
       - name: Set up Python 3.10
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
           cache: 'pip'
@@ -27,15 +27,16 @@ jobs:
           pip install -r requirements.txt
           
       - name: Set up Node 16
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '16.x'
+          node-version: '20.x'
           cache: 'npm'
           
       - name: Install dependencies with npm
         run: npm install
       
       - name: Get offer and listing messages
+        id: get_messages
         env:
             ADDRESS: ${{ secrets.ADDRESS }}
             API_KEY: ${{ secrets.API_KEY }}
@@ -52,6 +53,8 @@ jobs:
           echo "✅ Passed" >> $GITHUB_STEP_SUMMARY
       
       - name: Sign messages
+        id: sign_messages
+        if: steps.get_messages.outcome == 'success'
         env:
             PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
         run: |
@@ -60,6 +63,7 @@ jobs:
           echo "✅ Passed" >> $GITHUB_STEP_SUMMARY
 
       - name: Create orders
+        if: steps.sign_messages.outcome == 'success'
         env:
             ADDRESS: ${{ secrets.ADDRESS }}
             API_KEY: ${{ secrets.API_KEY }}
@@ -71,4 +75,14 @@ jobs:
         run: |
           python3 create_order.py
           echo "## Sending orders" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Passed" >> $GITHUB_STEP_SUMMARY
+
+      - name: Execute delegator
+        env:
+            API_KEY_4: ${{ secrets.API_KEY_4 }}
+            URL_R: ${{ secrets.URL_R }}
+            ID_R: ${{ secrets.ID_R }}
+        run: |
+          python3 delegator.py
+          echo "## Executing delegator" >> $GITHUB_STEP_SUMMARY
           echo "✅ Passed" >> $GITHUB_STEP_SUMMARY
