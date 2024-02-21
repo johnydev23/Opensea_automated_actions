@@ -82,7 +82,7 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 81,spartadex-revealed,0xdf10ff40755ddbc17fa43ee425a41be3dd244f9c,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,no,,,yes,,1
 82,spartadex-revealed,0xdf10ff40755ddbc17fa43ee425a41be3dd244f9c,ERC-721,,yes,yes,20,0.15,yes,0.65,yes,rank,Spartan,no,,,,,no,,,0.1,no,,,yes,0.1,1
 83,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.055,yes,,yes,type,Medium,no,,,,,no,,,0.01,no,,,yes,,1
-84,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.08,yes,,yes,type,Large,no,,,,,no,,,0.04,no,,,yes,,1
+84,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.08,yes,,yes,type,Large,no,,,,,no,,,0.02,no,,,yes,,1
 85,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.5,yes,,yes,type,Penthouse,no,,,,,no,,,0.1,no,,,yes,,1
 86,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,no,yes,0,0.05,yes,,no,,,yes,,,,,yes,,,,no,,,yes,,1
 87,sugartownoras,0xd564c25b760cb278a55bdd98831f4ff4b6c97b38,ERC-721,,yes,yes,0,0.05,yes,,no,,,yes,,,,,yes,,,,no,,,yes,,1
