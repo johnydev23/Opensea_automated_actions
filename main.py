@@ -4,6 +4,7 @@ import csv
 from services.bidding import getBiddingMessage
 from services.listing import getListingMessage
 from utils.add_element_utils import save_collection_info
+from utils.clear_variables import clearGlobalVariables
 from utils.set_actions import setActions
 from utils.concurrent_utils import getBalanceAndUserAssets
 from database.connection import closeConnection
@@ -49,18 +50,23 @@ if __name__ == '__main__':
     chunk_size = 10
 
     chunks = [action_list[i:i + chunk_size] for i in range(0, len(action_list), chunk_size)]
-
+    chunk_counter = 0
     for chunk in chunks:
 
         threads = []
         for item in chunk:
             thread = threading.Thread(target=run, args=(item,))
             threads.append(thread)
-            time.sleep(0.2)
+            time.sleep(1)
             thread.start()
 
         for thread in threads:
             thread.join()
+        
+        chunk_counter += 1
+
+        if chunk_counter%3==0:
+            clearGlobalVariables()
         
     save_collection_info()
 

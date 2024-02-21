@@ -45,7 +45,7 @@ if __name__ == '__main__':
     for item in collection_info:
         thread = threading.Thread(target=createOrder, args=(item,))
         threads.append(thread)
-        time.sleep(0.3)
+        time.sleep(1)
         thread.start()
     
     for thread in threads:
