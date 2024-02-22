@@ -82,7 +82,7 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 81,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,no,yes,0,0.05,yes,,no,,,yes,,,,,yes,,,,no,,,yes,,1
 82,sugartownoras,0xd564c25b760cb278a55bdd98831f4ff4b6c97b38,ERC-721,,yes,yes,0,0.05,yes,,no,,,yes,,,,,yes,,,,no,,,yes,,1
 83,sunflower-land-buds,0x78a0cea8f323ff80985c5f9d1f9de18bb9e35996,ERC-721,,yes,yes,30,,yes,,no,,,yes,,,,,yes,,,,no,,,yes,,1
-84,super-cool-world,0x670d4dd2e6badfbbd372d0d37e06cd2852754a04,ERC-721,,yes,yes,10,0.08,yes,,no,,,yes,,,,,yes,,,,no,,,yes,,1
+84,super-cool-world,0x670d4dd2e6badfbbd372d0d37e06cd2852754a04,ERC-721,,no,yes,10,0.08,no,,no,,,yes,,,,,yes,,,,no,,,yes,,1
 85,the-meta-key,0x10daa9f4c0f985430fde4959adb2c791ef2ccf83,ERC-1155,1,yes,yes,20,0.1,yes,0.42,no,,,yes,,,,,no,,5,,no,,,yes,,1
 86,the-meta-key,0x10daa9f4c0f985430fde4959adb2c791ef2ccf83,ERC-1155,2,yes,yes,15,,yes,0.21,no,,,yes,,,,,no,,5,,no,,,yes,,1
 87,the-meta-key,0x10daa9f4c0f985430fde4959adb2c791ef2ccf83,ERC-1155,10003,yes,yes,20,,yes,0.125,no,,,yes,,,,,no,,5,,no,,,yes,,1
