@@ -25,15 +25,6 @@ jobs:
       - name: Install dependencies with pip
         run: |
           pip install -r requirements.txt
-          
-      - name: Set up Node 20
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20.x'
-          cache: 'npm'
-          
-      - name: Install dependencies with npm
-        run: npm install
       
       - name: Get offer and listing messages
         id: get_messages
@@ -51,19 +42,9 @@ jobs:
           python3 main.py
           echo "## Getting messages" >> $GITHUB_STEP_SUMMARY
           echo "✅ Passed" >> $GITHUB_STEP_SUMMARY
-      
-      - name: Sign messages
-        id: sign_messages
-        if: steps.get_messages.outcome == 'success'
-        env:
-            PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-        run: |
-          node sign_message.js
-          echo "## Getting signed messages" >> $GITHUB_STEP_SUMMARY
-          echo "✅ Passed" >> $GITHUB_STEP_SUMMARY
 
       - name: Create orders
-        if: steps.sign_messages.outcome == 'success'
+        if: steps.get_messages.outcome == 'success'
         env:
             ADDRESS: ${{ secrets.ADDRESS }}
             API_KEY: ${{ secrets.API_KEY }}
