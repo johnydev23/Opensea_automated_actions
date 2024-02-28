@@ -5,6 +5,7 @@ from services.bidding import getBiddingMessage
 from services.listing import getListingMessage
 from utils.add_element_utils import save_collection_info
 from utils.clear_variables import clearGlobalVariables
+from utils.db_data_utils import getDataDB
 from utils.set_actions import setActions
 from utils.concurrent_utils import getBalanceAndUserAssets
 from database.connection import closeConnection
@@ -51,6 +52,9 @@ if __name__ == '__main__':
 
     chunks = [action_list[i:i + chunk_size] for i in range(0, len(action_list), chunk_size)]
     chunk_counter = 0
+
+    getDataDB()
+    
     for chunk in chunks:
 
         threads = []
