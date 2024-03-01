@@ -66,7 +66,7 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 65,setter-token-rewards,0x340806a6aa3e60e360fd2803b77ad78176c61e02,ERC-721,,yes,yes,20,,yes,0.13,yes,Tier,Legendary,no,,,,,no,2,,,no,,,,yes,,1
 66,setter-token-rewards,0x340806a6aa3e60e360fd2803b77ad78176c61e02,ERC-721,,yes,yes,20,,yes,0.17,yes,Tier,Mythical,no,,,,,no,2,,,no,,,,yes,,1
 67,smallbros,0xb18380485f7ba9c23deb729bedd3a3499dbd4449,ERC-721,,yes,yes,25,,yes,0.07,yes,HAIR,King,no,,,,,no,,,,no,,,,yes,,1
-68,spartadex-revealed,0xdf10ff40755ddbc17fa43ee425a41be3dd244f9c,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,no,,,,yes,,1
+68,spartadex-revealed,0xdf10ff40755ddbc17fa43ee425a41be3dd244f9c,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,0.0004,no,,,,yes,,1
 69,spartadex-revealed,0xdf10ff40755ddbc17fa43ee425a41be3dd244f9c,ERC-721,,yes,yes,20,0.15,yes,0.65,yes,rank,Spartan,no,,,,,no,,,0.1,no,,,,yes,0.1,1
 70,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.055,yes,,yes,type,Medium,no,,,,,no,,,0.01,no,,,,yes,,1
 71,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.08,yes,,yes,type,Large,no,,,,,no,,,0.02,no,,,,yes,,1
