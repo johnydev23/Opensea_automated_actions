@@ -9,9 +9,9 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 8,based-fellas,0x217ec1ac929a17481446a76ff9b95b9a64f298cf,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,no,,,,yes,,1
 9,based-onchain-dinos,0xd4c5292b9689238f0a51c8505b1d1d6714ce95a0,ERC-721,,yes,no,25,,yes,0.04,no,,,yes,,,,,yes,2,,,no,,,,yes,,1
 10,based-onchain-dinos,0xd4c5292b9689238f0a51c8505b1d1d6714ce95a0,ERC-721,,yes,yes,15,,yes,,no,,,yes,,,,,yes,2,,,no,,,,yes,,1
-11,captain-company-clockwork-lootbox,0xdeebfe062ea7f30b2b13e3b075fa0bb1f7cebb85,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,no,,,,yes,,1
+11,captain-company-clockwork-lootbox,0xdeebfe062ea7f30b2b13e3b075fa0bb1f7cebb85,ERC-721,,yes,yes,15,,yes,,no,,,yes,,,,,yes,,,,no,,,,yes,,1
 12,captain-company-ships,0x110df204913976caafd2a7c2738b039b1dbf9088,ERC-721,,yes,yes,15,,yes,,no,,,yes,,,,,yes,2,,,no,,,,yes,,1
-13,captain-company-ships,0x110df204913976caafd2a7c2738b039b1dbf9088,ERC-721,,yes,no,20,,yes,0.03,no,,,yes,,,,,yes,2,,,no,,,,yes,,1
+13,captain-company-ships,0x110df204913976caafd2a7c2738b039b1dbf9088,ERC-721,,yes,no,25,,yes,,no,,,yes,,,,,yes,2,,,no,,,,yes,,1
 14,crypto-phunks,0xf07468ead8cf26c752c676e43c814fee9c8cf402,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,no,,,,yes,,1
 15,crypto-unicorns-land-market,0xa2a13ce1824f3916fc84c65e559391fc6674e6e8,ERC-721,,yes,yes,20,,yes,,yes,Rarity,Mythic,no,,,,,no,,,,no,,,,yes,,1
 16,crypto-unicorns-shadowcorns-market,0xa7d50ee3d7485288107664cf758e877a0d351725,ERC-721,,yes,yes,50,,yes,0.25,yes,Rarity,Rare,no,,,,,no,,,,no,,,,yes,,1
