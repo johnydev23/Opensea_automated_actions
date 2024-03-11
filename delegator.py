@@ -1,3 +1,4 @@
-from utils.start_bot import startBot
+from utils.start_bot_utils import startBotUtils
 
-startBot()
+if __name__ == '__main__':
+    startBotUtils()

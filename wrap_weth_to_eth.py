@@ -1,7 +1,21 @@
 from web3 import Web3
-from data.constants import contract_abi, contract_address, balance_left_dict, gas_limit_wrap_dict, chain_id_dict, tx_fee_wrap_dict, wrap_when_amount_dict
+from data.constants import contract_abi, contract_address, balance_left_dict, gas_limit_wrap_dict, chain_id_dict, tx_fee_wrap_dict, wrap_when_amount_dict, bidding_contracts_eth
 from data.variables import endpoints, address, private_key
 from src.swap_params import getSwapParams
+
+def getBiddingBalance(address:str, w3:Web3, bidding_contract:str) -> float:
+
+    account_address = w3.to_checksum_address(address)
+
+    contract = w3.eth.contract(w3.to_checksum_address(bidding_contract), abi=contract_abi)
+
+    try:
+        balance_in_wei = contract.functions.balanceOf(account_address).call()
+        balance_in_eth = balance_in_wei / 1E18
+    except:
+        balance_in_eth = 0.15
+
+    return balance_in_eth
 
 
 for key,value in contract_address.items():
@@ -11,6 +25,13 @@ for key,value in contract_address.items():
     w3 = Web3(Web3.HTTPProvider(endpoints[key]))
 
     account_address = w3.to_checksum_address(address)
+
+    if key == 'ethereum':
+        beth_contract_eth = bidding_contracts_eth['Blur']
+        bidding_balance_opensea = getBiddingBalance(address, w3, value)
+        bidding_balance_blur = getBiddingBalance(address, w3, beth_contract_eth)
+        if bidding_balance_opensea>bidding_balance_blur:
+            weth_contract = beth_contract_eth
 
     contract = w3.eth.contract(w3.to_checksum_address(weth_contract), abi=contract_abi)
 
@@ -48,11 +69,11 @@ for key,value in contract_address.items():
         if tx_params:
             # gas_limit = tx_params['data']['estimatedGas']
             to = tx_params['data']['to']
-            to_formatted = to
+            to_formatted = w3.to_checksum_address(to)
             data = tx_params['data']['data']
         else:
             continue
-
+    
     if (gas_price_eth * gas_limit) < tx_fee:
         if balance_eth > wrap_when_amount_is:
             if key == 'matic':
