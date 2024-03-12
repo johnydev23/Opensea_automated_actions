@@ -85,6 +85,21 @@ def setApproved(asset_contract:str, chain='matic'):
 
     gas_limit = gas_limit_approval_dict[chain]
 
+    try:
+        transaction = contract.functions.setApprovalForAll(operator_address, True).build_transaction({
+            'from': account_address,
+            'value': 0,
+            'gas': gas_limit,
+            'maxFeePerGas': gas_price_wei,
+            'maxPriorityFeePerGas': gas_price_wei,
+            'nonce': w3.eth.get_transaction_count(account_address),
+            'chainId': chain_id,
+        })
+
+        gas_limit = int(w3.eth.estimate_gas(transaction=transaction, block_identifier='latest') * 1.2)
+    except:
+        pass
+
     if (gas_price_eth * gas_limit) < tx_fee:
         if balance_eth > tx_fee:
             transaction = contract.functions.setApprovalForAll(operator_address, True).build_transaction({
