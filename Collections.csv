@@ -112,7 +112,7 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 111,world-of-women-nft,0xe785e82358879f061bc3dcac6f0444462d4b5330,ERC-721,,yes,yes,0,0.1,yes,,no,,,yes,,,,,yes,,,0.02,no,,,,yes,,1
 112,worldwidewebbland,0xa1d4657e0e6507d5a94d06da93e94dc7c8c44b51,ERC-721,,yes,yes,10,0.1,yes,,yes,type,large apartment,no,,,,,no,,,0.05,no,,,,yes,,1
 113,worldwidewebbland,0xa1d4657e0e6507d5a94d06da93e94dc7c8c44b51,ERC-721,,yes,yes,20,,yes,,yes,type,medium apartment,no,,,,,no,,,,no,,,,yes,,1
-114,worldwidewebbland,0xa1d4657e0e6507d5a94d06da93e94dc7c8c44b51,ERC-721,,yes,yes,20,,yes,,no,type,small apartment,yes,,,,,yes,,,,no,,,,yes,,1
+114,worldwidewebbland,0xa1d4657e0e6507d5a94d06da93e94dc7c8c44b51,ERC-721,,yes,yes,20,,yes,,yes,type,small apartment,yes,,,,,yes,,,,no,,,,yes,,1
 115,yogapetz,0x142e03367ede17cd851477a4287d1f35676e6dc2,ERC-721,,yes,yes,0,0.1,yes,,no,,,yes,,,,,yes,,,,no,,,,yes,,1
 116,zen-chests,0x7b70695e761eb828abed8c4d506f9af3a76ef4b5,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,no,,,,yes,,1
 117,zenacademy,0xf64e6fb725f04042b5197e2529b84be4a925902c,ERC-1155,1,yes,yes,20,,yes,,no,,,yes,,,,,no,,,,no,,,,yes,,1
