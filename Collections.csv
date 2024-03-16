@@ -36,8 +36,8 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 35,ninjalerts-lifetime-license,0x9f608060c234f70d83ba16ad9277cd42f7dcff49,ERC-1155,0,yes,no,20,,yes,0.05,no,,,yes,,,,,yes,2,,,no,,,,yes,,1
 36,ninjalerts-lifetime-license,0x9f608060c234f70d83ba16ad9277cd42f7dcff49,ERC-1155,0,yes,yes,30,,yes,0.08,no,,,yes,,,,,yes,2,,,no,,,,yes,,1
 37,onchain-gaias,0xa449b4f43d9a33fcdcf397b9cc7aa909012709fd,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,no,,,,yes,,1
-38,opepen-edition,0x6339e5e072086621540d0362c4e3cea0d643e114,ERC-721,,yes,yes,20,,yes,0.35,yes,Edition Size,Five,no,,,,,no,,,,no,,,,yes,,1
-39,opepen-edition,0x6339e5e072086621540d0362c4e3cea0d643e114,ERC-721,,yes,yes,15,0.08,yes,0.65,yes,Edition Size,Four,no,,,,,no,,,,no,,,,yes,,1
+38,opepen-edition,0x6339e5e072086621540d0362c4e3cea0d643e114,ERC-721,,yes,yes,20,,yes,0.35,yes,Edition Size,Five,no,,,,,no,,,0.05,no,,,,yes,,1
+39,opepen-edition,0x6339e5e072086621540d0362c4e3cea0d643e114,ERC-721,,yes,yes,15,0.08,yes,0.65,yes,Edition Size,Four,no,,,,,no,,,0.05,no,,,,yes,,1
 40,pepe-editions-by-matt-furie,0x4faab2f1851b58c26028ab7ba2873ff3c7b52d4c,ERC-1155,2,yes,yes,20,,yes,0.1,no,,,no,,,,,no,,,,no,,,,yes,,1
 41,pepe-editions-by-matt-furie,0x4faab2f1851b58c26028ab7ba2873ff3c7b52d4c,ERC-1155,3,yes,yes,20,,yes,0.02,no,,,no,,,,,no,,,,no,,,,yes,,1
 42,pepe-editions-by-matt-furie,0x4faab2f1851b58c26028ab7ba2873ff3c7b52d4c,ERC-1155,4,yes,yes,40,,yes,0.4,no,,,no,,,,,no,,,,no,,,,yes,,1
