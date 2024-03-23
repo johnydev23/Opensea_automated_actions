@@ -3,7 +3,7 @@ from data.constants import contract_abi, contract_address
 from data.variables import endpoints
 
 
-def getWETHbalance(address):
+def getWETHbalance(address) -> dict:
 
     weth_balance = {}
 
