@@ -68,7 +68,7 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 67,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.08,yes,,yes,type,Large,no,,,,,no,,,0.02,no,,,,yes,,1
 68,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.5,yes,,yes,type,Penthouse,no,,,,,no,,,0.1,no,,,,yes,,1
 69,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,no,yes,0,0.05,yes,,no,,,yes,,,,,yes,,,,no,,,,yes,,1
-70,sugartownoras,0xd564c25b760cb278a55bdd98831f4ff4b6c97b38,ERC-721,,no,no,20,,yes,0.3,yes,Type,Gradient Blue,no,,,,,no,,,0.03,no,,,0.35,yes,,1
+70,sugartownoras,0xd564c25b760cb278a55bdd98831f4ff4b6c97b38,ERC-721,,yes,yes,20,,yes,0.3,yes,Type,Gradient Blue,no,,,,,no,,,0.03,no,,,0.35,yes,,1
 71,sugartownoras,0xd564c25b760cb278a55bdd98831f4ff4b6c97b38,ERC-721,,yes,yes,20,,yes,0.45,yes,Type,Water,no,,,,,no,,,0.15,no,,,1,yes,0.1,1
 72,sugartownoras,0xd564c25b760cb278a55bdd98831f4ff4b6c97b38,ERC-721,,yes,yes,20,,yes,0.45,yes,Type,Leaf,no,,,,,no,,,0.2,no,,,1,yes,0.15,1
 73,sunflower-land-buds,0x78a0cea8f323ff80985c5f9d1f9de18bb9e35996,ERC-721,,yes,yes,10,,yes,,no,,,yes,,,,,yes,,,,no,,,,yes,,1
