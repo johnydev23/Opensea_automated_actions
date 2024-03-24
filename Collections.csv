@@ -63,7 +63,7 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 62,smallbros,0xb18380485f7ba9c23deb729bedd3a3499dbd4449,ERC-721,,yes,yes,25,,yes,0.07,yes,HAIR,King,no,,,,,no,,,,no,,,,yes,,1
 63,smowl,0x03b8d129a8f6dc62a797b59aa5eebb11ad63dada,ERC-721,,yes,yes,70,,yes,,no,,,yes,,,,,no,,,,yes,,,,yes,,1
 64,spartadex-revealed,0xdf10ff40755ddbc17fa43ee425a41be3dd244f9c,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,0.0004,no,,,,yes,,1
-65,spartadex-revealed,0xdf10ff40755ddbc17fa43ee425a41be3dd244f9c,ERC-721,,yes,yes,20,0.15,yes,0.65,yes,rank,Spartan,no,,,,,no,,,0.1,no,,,,yes,0.1,1
+65,spartadex-revealed,0xdf10ff40755ddbc17fa43ee425a41be3dd244f9c,ERC-721,,yes,yes,15,0.12,yes,0.4,yes,rank,Spartan,no,,,,,no,,,0.1,no,,,,yes,0.1,1
 66,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.055,yes,,yes,type,Medium,no,,,,,no,,,0.01,no,,,,yes,,1
 67,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.08,yes,,yes,type,Large,no,,,,,no,,,0.02,no,,,,yes,,1
 68,spellborne-apartments,0x6e1404a557850551edaa9fd1311c9297baf7bd52,ERC-721,,yes,yes,0,0.5,yes,,yes,type,Penthouse,no,,,,,no,,,0.1,no,,,,yes,,1
