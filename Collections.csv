@@ -10,10 +10,10 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 9,crypto-unicorns-land-market,0xa2a13ce1824f3916fc84c65e559391fc6674e6e8,ERC-721,,yes,yes,20,,yes,,yes,Rarity,Mythic,no,,,,,no,,,,no,,,,yes,,1
 10,crypto-unicorns-shadowcorns-market,0xa7d50ee3d7485288107664cf758e877a0d351725,ERC-721,,yes,yes,50,,yes,0.25,yes,Rarity,Rare,no,,,,,no,,,,no,,,,yes,,1
 11,cubhub,0x648cc6abcf7fe24afb76e6c15cdd9dfb41e9bcdb,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,no,,,,yes,,1
-12,curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,3,no,yes,20,,no,0.06,no,,,no,,,,,no,2,,,no,,,,yes,,1
-13,curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,8,no,yes,20,,no,0.08,no,,,no,,,,,no,2,,,no,,,,yes,,1
-14,curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,10,no,yes,20,,no,0.06,no,,,no,,,,,no,2,,,no,,,,yes,,1
-15,curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,17,no,yes,20,,no,0.11,no,,,no,,,,,no,2,,,no,,,,yes,,1
+12,curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,3,no,yes,20,,yes,0.06,no,,,no,,,,,no,2,,,no,,,,yes,,1
+13,curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,8,no,yes,20,,yes,0.08,no,,,no,,,,,no,2,,,no,,,,yes,,1
+14,curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,10,no,yes,20,,yes,0.06,no,,,no,,,,,no,2,,,no,,,,yes,,1
+15,curiocardswrapper,0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313,ERC-1155,17,no,yes,20,,yes,0.11,no,,,no,,,,,no,2,,,no,,,,yes,,1
 16,degen-haberdashers,0x85e7df5708902be39891d59abef8e21ede91e8bf,ERC-721,,yes,yes,30,,yes,,no,,,yes,,,,,yes,,,,no,,,,yes,,1
 17,foundersdao,0xd0a07a76746707f6d6d36d9d5897b14a8e9ed493,ERC-721,,yes,yes,20,0.02,yes,,no,,,yes,,,,,yes,,,,no,,,,yes,,1
 18,galaxy-fight-club,0x3702f4c46785bbd947d59a2516ac1ea30f2babf2,ERC-721,,yes,yes,25,,yes,,no,,,yes,,,,,yes,,,,no,,,,yes,,1
