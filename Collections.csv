@@ -43,9 +43,9 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 42,pepe-editions-by-matt-furie,0x4faab2f1851b58c26028ab7ba2873ff3c7b52d4c,ERC-1155,3,yes,yes,20,,yes,0.02,no,,,no,,,,,no,,,,no,,,,yes,,1
 43,pepe-editions-by-matt-furie,0x4faab2f1851b58c26028ab7ba2873ff3c7b52d4c,ERC-1155,4,yes,yes,40,,yes,0.4,no,,,no,,,,,no,,,,no,,,,yes,,1
 44,pepe-editions-by-matt-furie,0x4faab2f1851b58c26028ab7ba2873ff3c7b52d4c,ERC-1155,5,yes,yes,30,,yes,0.3,no,,,no,,,,,no,,,,no,,,,yes,,1
-45,planetfall-on-base,0x8bb4033af06b363a8391f795a39281bcc3b6197d,ERC-1155,100200106,yes,yes,20,,yes,0.015,no,,,no,,,,,no,2,,0.000033,no,,,,yes,,1
-46,planetfall-on-base,0x8bb4033af06b363a8391f795a39281bcc3b6197d,ERC-1155,100200171,yes,yes,20,,yes,0.015,no,,,no,,,,,no,2,,0.000033,no,,,,yes,,1
-47,planetfall-on-base,0x8bb4033af06b363a8391f795a39281bcc3b6197d,ERC-1155,100200259,yes,yes,20,,yes,0.025,no,,,no,,,,,no,2,,0.000033,no,,,,yes,,1
+45,planetfall-on-base,0x8bb4033af06b363a8391f795a39281bcc3b6197d,ERC-1155,100200106,yes,yes,35,,yes,0.015,no,,,no,,,,,no,2,,0.000033,no,,,,yes,,1
+46,planetfall-on-base,0x8bb4033af06b363a8391f795a39281bcc3b6197d,ERC-1155,100200171,yes,yes,35,,yes,0.015,no,,,no,,,,,no,2,,0.000033,no,,,,yes,,1
+47,planetfall-on-base,0x8bb4033af06b363a8391f795a39281bcc3b6197d,ERC-1155,100200259,yes,yes,35,,yes,0.025,no,,,no,,,,,no,2,,0.000033,no,,,,yes,,1
 48,premint-collector,0xe0176ba60efddb29cac5b15338c9962daee9de0c,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,no,,,,yes,,1
 49,primapes-alpha,0x72c3205acf3eb2b37b0082240bf0b909a46c0993,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,no,,,,yes,,1
 50,primitives-6,0x424d781e0163b5a42ca2f27d036c2d5c561022c3,ERC-721,,yes,yes,15,,yes,,no,,,yes,,,,,yes,,,,no,,,,yes,,1
