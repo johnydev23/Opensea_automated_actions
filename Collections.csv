@@ -48,7 +48,7 @@ ID,slug,contract,token standard,assets,offers enabled,listing enabled,relative v
 47,planetfall-on-base,0x8bb4033af06b363a8391f795a39281bcc3b6197d,ERC-1155,100200259,yes,yes,20,,yes,0.025,no,,,no,,,,,no,2,,0.000033,no,,,,yes,,1
 48,premint-collector,0xe0176ba60efddb29cac5b15338c9962daee9de0c,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,no,,,,yes,,1
 49,primapes-alpha,0x72c3205acf3eb2b37b0082240bf0b909a46c0993,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,no,,,,yes,,1
-50,primitives-6,0x424d781e0163b5a42ca2f27d036c2d5c561022c3,ERC-721,,yes,yes,20,,yes,,no,,,yes,,,,,yes,,,,no,,,,yes,,1
+50,primitives-6,0x424d781e0163b5a42ca2f27d036c2d5c561022c3,ERC-721,,yes,yes,15,,yes,,no,,,yes,,,,,yes,,,,no,,,,yes,,1
 51,projectatamaofficial,0xef5e3e60bd031498318ac97cf55db74357256282,ERC-721,,yes,yes,35,,yes,,no,,,yes,,,,,yes,,,,no,,,,yes,,1
 52,ready-player-club,0xcdb7c1a6fe7e112210ca548c214f656763e13533,ERC-721,,yes,yes,20,0.03,yes,0.14,no,,,yes,,,,,yes,,,,no,,,,yes,,1
 53,rtfkt-exodus,0x895554bc4f48fe1c2bf5c198bfa3513da538f86b,ERC-1155,1,yes,yes,20,,yes,,no,,,yes,,,,,no,,,,no,,,,yes,,1
