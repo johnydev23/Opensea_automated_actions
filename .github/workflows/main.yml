@@ -38,6 +38,7 @@ jobs:
             BASE_RPC: ${{ secrets.BASE_RPC }}
             ARBITRUM_RPC: ${{ secrets.ARBITRUM_RPC }}
             URL_MONGODB: ${{ secrets.URL_MONGODB }}
+            WORKER: ${{ vars.WORKER }}
         run: |
           python3 main.py
           echo "## Getting messages" >> $GITHUB_STEP_SUMMARY
