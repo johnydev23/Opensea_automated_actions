@@ -78,6 +78,7 @@ for key,value in contract_address.items():
             to = tx_params['data']['to']
             to_formatted = w3.to_checksum_address(to)
             data = tx_params['data']['data']
+            amount_to_wrap = int(tx_params['data']['value'])
         else:
             continue
     else:

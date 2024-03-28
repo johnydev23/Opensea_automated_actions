@@ -8,6 +8,7 @@ from utils.clear_variables import clearGlobalVariables
 from utils.db_data_utils import getDataDB, saveDataDB
 from utils.set_actions import setActions
 from utils.concurrent_utils import getBalanceAndUserAssets
+from utils.update_collections import updateCollections
 from database.connection import closeConnection
 from data.variables import address
 import threading
@@ -23,6 +24,8 @@ def run(item:dict):
 
 
 if __name__ == '__main__':
+
+    updateCollections()
 
     collection_list = []
 
