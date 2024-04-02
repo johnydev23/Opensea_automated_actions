@@ -42,6 +42,8 @@ def createOrder(j:dict):
             parameters = j['typed_message']['message']
             # signature = j['signature']
             if j['assets'] == '' or trait:
+                print("===========================")
+                print(j['typed_message'])
                 createOffer(slug, _type, _value, parameters, signature, _id)
             else:
                 chainId = j['typed_message']['domain']['chainId']
