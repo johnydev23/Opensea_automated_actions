@@ -41,7 +41,7 @@ jobs:
             URL_MONGODB: ${{ secrets.URL_MONGODB }}
             WORKER: ${{ vars.WORKER }}
         run: |
-          python3 main.py
+          python main.py
           echo "## Getting messages" >> $GITHUB_STEP_SUMMARY
           echo "✅ Passed" >> $GITHUB_STEP_SUMMARY
 
@@ -56,7 +56,7 @@ jobs:
             BASE_RPC: ${{ secrets.BASE_RPC }}
             ARBITRUM_RPC: ${{ secrets.ARBITRUM_RPC }}
         run: |
-          python3 create_order.py
+          python create_order.py
           echo "## Sending orders" >> $GITHUB_STEP_SUMMARY
           echo "✅ Passed" >> $GITHUB_STEP_SUMMARY
 
