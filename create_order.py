@@ -52,6 +52,10 @@ if __name__ == '__main__':
 
     with open("collection_info.json") as jsonfile:
         collection_info = json.load(jsonfile)
+    
+    for item in collection_info:
+        print("=============================")
+        print(item)
 
     threads = []
     for item in collection_info:
