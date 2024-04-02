@@ -66,6 +66,6 @@ jobs:
             URL_R: ${{ secrets.URL_R }}
             ID_R: ${{ secrets.ID_R }}
         run: |
-          python3 delegator.py
+          python delegator.py
           echo "## Executing delegator" >> $GITHUB_STEP_SUMMARY
           echo "✅ Passed" >> $GITHUB_STEP_SUMMARY
