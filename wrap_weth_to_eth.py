@@ -1,7 +1,7 @@
 from web3 import Web3
 from data.constants import contract_abi, contract_address, balance_left_dict, gas_limit_wrap_dict, chain_id_dict, tx_fee_wrap_dict, wrap_when_amount_dict, bidding_contracts_eth
 from data.variables import endpoints, address, private_key
-from decimal import Decimal
+from decimal import ROUND_DOWN, Decimal
 from src.swap_params import getSwapParams
 
 def getBiddingBalance(address:str, w3:Web3, bidding_contract:str) -> float:
@@ -72,13 +72,14 @@ for key,value in contract_address.items():
     if key == 'matic':
         gas_price_gwei = w3.from_wei(gas_price_wei, 'gwei')
         amount_to_swap = w3.from_wei(amount_to_wrap, 'ether')
+        amount_to_swap = Decimal(f"{amount_to_swap}").quantize(Decimal("0.000001"), rounding=ROUND_DOWN)
         tx_params = getSwapParams(account_address, token_out=weth_contract, swap_amount=amount_to_swap, gas_price=gas_price_gwei)
         if tx_params:
-            gas_limit = int(tx_params['data']['estimatedGas'])
-            to = tx_params['data']['to']
+            gas_limit = int(int(tx_params['estimatedGas']) * 1.2)
+            to = tx_params['to']
             to_formatted = w3.to_checksum_address(to)
-            data = tx_params['data']['data']
-            amount_to_wrap = int(tx_params['data']['value'])
+            data = tx_params['data']
+            amount_to_wrap = int(tx_params['value'])
         else:
             continue
     else:
