@@ -74,12 +74,13 @@ for key,value in contract_address.items():
         amount_to_swap = w3.from_wei(amount_to_wrap, 'ether')
         amount_to_swap = Decimal(f"{amount_to_swap}").quantize(Decimal("0.000001"), rounding=ROUND_DOWN)
         tx_params = getSwapParams(account_address, token_out=weth_contract, swap_amount=amount_to_swap, gas_price=gas_price_gwei)
-        if tx_params:
-            gas_limit = int(int(tx_params['estimatedGas']) * 1.2)
-            to = tx_params['to']
+        status_code:int = tx_params.get('code', 400)
+        if tx_params and status_code == 200:
+            gas_limit = int(int(tx_params['data']['estimatedGas']) * 1.1)
+            to = tx_params['data']['to']
             to_formatted = w3.to_checksum_address(to)
-            data = tx_params['data']
-            amount_to_wrap = int(tx_params['value'])
+            data = tx_params['data']['data']
+            amount_to_wrap = int(tx_params['data']['value'])
         else:
             continue
     else:
