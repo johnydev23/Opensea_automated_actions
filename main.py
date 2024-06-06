@@ -52,10 +52,9 @@ if __name__ == '__main__':
 
     action_list = setActions(collection_list, data_user_contracts, data_user_contracts_info)
 
-    chunk_size = 10
+    chunk_size = 30
 
     chunks = [action_list[i:i + chunk_size] for i in range(0, len(action_list), chunk_size)]
-    chunk_counter = 0
 
     getAllDataDB()
     
@@ -65,16 +64,14 @@ if __name__ == '__main__':
         for item in chunk:
             thread = threading.Thread(target=run, args=(item,))
             threads.append(thread)
-            time.sleep(1)
+            time.sleep(0.1)
             thread.start()
 
         for thread in threads:
             thread.join()
         
-        chunk_counter += 1
+        clearGlobalVariables()
 
-        if chunk_counter%3==0:
-            clearGlobalVariables()
         
     save_collection_info()
     saveAllDataDB()
