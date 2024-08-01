@@ -1,5 +1,6 @@
 from web3 import Web3
 from data.constants import contract_abi, contract_address, balance_left_dict, gas_limit_wrap_dict, chain_id_dict, tx_fee_wrap_dict, wrap_when_amount_dict, bidding_contracts_eth
+from data.constants import bidding_contracts_blast
 from data.variables import endpoints, address, private_key
 from decimal import ROUND_DOWN, Decimal
 from src.swap_params import getSwapParams
@@ -33,6 +34,9 @@ for key,value in contract_address.items():
         bidding_balance_blur = getBiddingBalance(address, w3, beth_contract_eth)
         if bidding_balance_opensea>bidding_balance_blur:
             weth_contract = beth_contract_eth
+    elif key == 'blast':
+        beth_contract_eth = bidding_contracts_blast['Blur']
+        weth_contract = beth_contract_eth
 
     contract = w3.eth.contract(w3.to_checksum_address(weth_contract), abi=contract_abi)
 
@@ -126,4 +130,4 @@ for key,value in contract_address.items():
 
             signed_txn = w3.eth.account.sign_transaction(transaction, private_key=private_key)
 
-            transaction_hash = w3.eth.send_raw_transaction(signed_txn.raw_transaction)
+            transaction_hash = w3.eth.send_raw_transaction(signed_txn.rawTransaction)
