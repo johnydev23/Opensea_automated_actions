@@ -130,4 +130,4 @@ for key,value in contract_address.items():
 
             signed_txn = w3.eth.account.sign_transaction(transaction, private_key=private_key)
 
-            transaction_hash = w3.eth.send_raw_transaction(signed_txn.rawTransaction)
+            transaction_hash = w3.eth.send_raw_transaction(signed_txn.raw_transaction)
