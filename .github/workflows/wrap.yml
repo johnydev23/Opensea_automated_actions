@@ -37,6 +37,11 @@ jobs:
             BASE_RPC: ${{ secrets.BASE_RPC }}
             ARBITRUM_RPC: ${{ secrets.ARBITRUM_RPC }}
             BLAST_RPC: ${{ secrets.BLAST_RPC }}
+            ETHEREUM_RPC_2: ${{ secrets.ETHEREUM_RPC_2 }}
+            POLYGON_RPC_2: ${{ secrets.POLYGON_RPC_2 }}
+            BASE_RPC_2: ${{ secrets.BASE_RPC_2 }}
+            ARBITRUM_RPC_2: ${{ secrets.ARBITRUM_RPC_2 }}
+            BLAST_RPC_2: ${{ secrets.BLAST_RPC_2 }}
         run: |
           python wrap_weth_to_eth.py
           echo "## Wraping weth" >> $GITHUB_STEP_SUMMARY
