@@ -115,6 +115,6 @@ def setApproved(asset_contract:str, chain='matic'):
             signed_txn = w3.eth.account.sign_transaction(
                 transaction, private_key=private_key)
 
-            w3.eth.send_raw_transaction(signed_txn.rawTransaction)
+            w3.eth.send_raw_transaction(signed_txn.raw_transaction)
 
             approval_contracts_global.append(asset_contract.upper())
