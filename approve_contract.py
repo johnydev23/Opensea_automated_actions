@@ -1,9 +1,9 @@
 from web3 import Web3
 from data.constants import operator_address_dict, tx_fee_approval_dict, chain_id_dict, gas_limit_approval_dict
-from data.variables import endpoints, address, private_key
+from data.variables import endpoints, endpoints_2, address, private_key
 
 
-def isApprovedForAll(asset_contract, chain='matic'):
+def isApprovedForAll(asset_contract, chain='matic', counter = 1):
 
     contract_abi = [
         {
@@ -16,7 +16,12 @@ def isApprovedForAll(asset_contract, chain='matic'):
         }
     ]
 
-    endpoint = endpoints[chain]
+    if counter==1:
+        endpoints_rpc = endpoints
+    else:
+        endpoints_rpc = endpoints_2
+
+    endpoint = endpoints_rpc[chain]
     w3 = Web3(Web3.HTTPProvider(endpoint))
 
     operator_address = operator_address_dict[chain]
@@ -30,17 +35,24 @@ def isApprovedForAll(asset_contract, chain='matic'):
     try:
         is_approved = contract.functions.isApprovedForAll(account_address, operator_address).call()
     except:
+        if counter < 2:
+            return isApprovedForAll(asset_contract, chain, counter+1)
         is_approved = True
 
     return is_approved
 
 approval_contracts_global = []
 
-def setApproved(asset_contract:str, chain='matic'):
+def setApproved(asset_contract:str, chain='matic', counter = 1):
     global approval_contracts_global
 
     if asset_contract.upper() in approval_contracts_global:
         return
+    
+    if counter==1:
+        endpoints_rpc = endpoints
+    else:
+        endpoints_rpc = endpoints_2
 
     contract_abi = [
         {
@@ -63,7 +75,7 @@ def setApproved(asset_contract:str, chain='matic'):
         }
     ]
 
-    endpoint = endpoints[chain]
+    endpoint = endpoints_rpc[chain]
     w3 = Web3(Web3.HTTPProvider(endpoint))
 
     operator_address = operator_address_dict[chain]
@@ -115,6 +127,13 @@ def setApproved(asset_contract:str, chain='matic'):
             signed_txn = w3.eth.account.sign_transaction(
                 transaction, private_key=private_key)
 
-            w3.eth.send_raw_transaction(signed_txn.raw_transaction)
+            try:
+                w3.eth.send_raw_transaction(signed_txn.raw_transaction)
+            except Exception as e:
+                print(e)
+                if counter < 2:
+                    print("Trying again...")
+                    return setApproved(asset_contract, chain, counter+1)
+                
 
             approval_contracts_global.append(asset_contract.upper())
