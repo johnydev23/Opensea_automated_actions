@@ -32,12 +32,12 @@ def isApprovedForAll(asset_contract, chain='matic', counter = 1):
 
     contract = w3.eth.contract(asset_contract, abi=contract_abi)
 
+    is_approved = True
     try:
         is_approved = contract.functions.isApprovedForAll(account_address, operator_address).call()
     except:
         if counter < 2:
             return isApprovedForAll(asset_contract, chain, counter+1)
-        is_approved = True
 
     return is_approved
 
