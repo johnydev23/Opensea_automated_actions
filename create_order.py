@@ -4,6 +4,7 @@ import threading
 from src.create_offer import createOffer
 from src.create_single_offer import createSingleOffer
 from src.create_listing_order import createListingOrder
+from decimal import Decimal
 from data.constants import chainId_dict
 from utils.sign_str_message import signTypedMessage
 from data.variables import lock
@@ -44,8 +45,24 @@ def createOrder(j:dict):
             parameters = j['typed_message']['message']
             # signature = j['signature']
             if j['assets'] == '' or trait:
+                collectionOffer_response = {}
                 with lock:
-                    createOffer(slug, _type, _value, parameters, signature, _id)
+                    collectionOffer_response = createOffer(slug, _type, _value, parameters, signature, _id)
+                if collectionOffer_response:
+                    order_hash = collectionOffer_response['order_hash']
+                    chain = collectionOffer_response['chain']
+                    price = collectionOffer_response['price']
+                    currency = price['currency']
+                    protocol_address = collectionOffer_response['protocol_address']
+                    if currency in ('ETH','WETH'):
+                        offer_value_wei = price['value']
+                        decimals = price['decimals']
+                        offer_value_eth = float(Decimal(offer_value_wei)/Decimal(f"{10**decimals}"))
+                        j['my offer'] = offer_value_eth
+                    j['order_hash'] = order_hash
+                    j['chain'] = chain
+                    j['protocol_address'] = protocol_address
+
             else:
                 chainId = j['typed_message']['domain']['chainId']
                 chain = chainId_dict[chainId]
@@ -65,3 +82,6 @@ if __name__ == '__main__':
     
     for thread in threads:
         thread.join()
+    
+    # with open("collection_info.json", "w") as jsonfile:
+    #     json.dump(collection_info, jsonfile)
