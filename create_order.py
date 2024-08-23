@@ -52,6 +52,7 @@ def createOrder(j:dict):
                     order_hash = collectionOffer_response['order_hash']
                     chain = collectionOffer_response['chain']
                     price = collectionOffer_response['price']
+                    criteria = collectionOffer_response['criteria']
                     currency = price['currency']
                     protocol_address = collectionOffer_response['protocol_address']
                     if currency in ('ETH','WETH'):
@@ -62,12 +63,26 @@ def createOrder(j:dict):
                     j['order_hash'] = order_hash
                     j['chain'] = chain
                     j['protocol_address'] = protocol_address
+                    j['criteria'] = criteria
 
             else:
                 chainId = j['typed_message']['domain']['chainId']
                 chain = chainId_dict[chainId]
                 with lock:
-                    createSingleOffer(parameters, signature, chain, _id)
+                    singleOffer_response = createSingleOffer(parameters, signature, chain, _id)
+                if singleOffer_response:
+                    order_hash = singleOffer_response['order']['order_hash']
+                    currency = singleOffer_response['order']['maker_asset_bundle']['assets'][0]['asset_contract']['symbol']
+                    protocol_address = singleOffer_response['order']['protocol_address']
+                    if currency in ('ETH','WETH'):
+                        offer_value_wei = singleOffer_response['order']['current_price']
+                        decimals = singleOffer_response['order']['maker_asset_bundle']['assets'][0]['decimals']
+                        offer_value_eth = float(Decimal(offer_value_wei)/Decimal(f"{10**decimals}"))
+                        j['my offer'] = offer_value_eth
+                    j['order_hash'] = order_hash
+                    j['chain'] = chain
+                    j['protocol_address'] = protocol_address
+
     
 if __name__ == '__main__':
 
