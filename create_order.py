@@ -33,8 +33,22 @@ def createOrder(j:dict):
             # signature = j['signature']
             chainId = j['typed_message']['domain']['chainId']
             chain = chainId_dict[chainId]
+            listing_response = {}
             with lock:
-                createListingOrder(parameters, signature, chain, _id)
+                listing_response = createListingOrder(parameters, signature, chain, _id)
+            if listing_response:
+                order_hash = listing_response['order']['order_hash']
+                protocol_address = listing_response['order']['protocol_address']
+                currency = listing_response['order']['taker_asset_bundle']['assets'][0]['asset_contract']['symbol']
+                if currency in ('ETH','WETH'):
+                    listing_value_wei = listing_response['order']['current_price']
+                    decimals = listing_response['order']['taker_asset_bundle']['assets'][0]['decimals']
+                    listing_value_eth = float(Decimal(listing_value_wei)/Decimal(f"{10**decimals}"))
+                    j['my_price'] = listing_value_eth
+                j['order_hash'] = order_hash
+                j['chain'] = chain
+                j['protocol_address'] = protocol_address
+                j['timestamp'] = int(time.time())
     else:
         if j['typed_message'] is not None:
             slug = str(j['slug'])
@@ -59,15 +73,17 @@ def createOrder(j:dict):
                         offer_value_wei = price['value']
                         decimals = price['decimals']
                         offer_value_eth = float(Decimal(offer_value_wei)/Decimal(f"{10**decimals}"))
-                        j['my offer'] = offer_value_eth
+                        j['my_price'] = offer_value_eth
                     j['order_hash'] = order_hash
                     j['chain'] = chain
                     j['protocol_address'] = protocol_address
                     j['criteria'] = criteria
+                    j['timestamp'] = int(time.time())
 
             else:
                 chainId = j['typed_message']['domain']['chainId']
                 chain = chainId_dict[chainId]
+                singleOffer_response = {}
                 with lock:
                     singleOffer_response = createSingleOffer(parameters, signature, chain, _id)
                 if singleOffer_response:
@@ -78,10 +94,11 @@ def createOrder(j:dict):
                         offer_value_wei = singleOffer_response['order']['current_price']
                         decimals = singleOffer_response['order']['maker_asset_bundle']['assets'][0]['decimals']
                         offer_value_eth = float(Decimal(offer_value_wei)/Decimal(f"{10**decimals}"))
-                        j['my offer'] = offer_value_eth
+                        j['my_price'] = offer_value_eth
                     j['order_hash'] = order_hash
                     j['chain'] = chain
                     j['protocol_address'] = protocol_address
+                    j['timestamp'] = int(time.time())
 
     
 if __name__ == '__main__':
