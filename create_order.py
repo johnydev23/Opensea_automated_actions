@@ -6,7 +6,9 @@ from src.create_single_offer import createSingleOffer
 from src.create_listing_order import createListingOrder
 from decimal import Decimal
 from data.constants import chainId_dict
+from utils.db_data_utils import saveCompetitiveData
 from utils.sign_str_message import signTypedMessage
+from database.connection import closeConnection
 from data.variables import lock
 
 def createOrder(j:dict):
@@ -30,7 +32,6 @@ def createOrder(j:dict):
         if j['typed_message'] is not None:
             signature = signTypedMessage(j['typed_message'])
             parameters = j['typed_message']['message']
-            # signature = j['signature']
             chainId = j['typed_message']['domain']['chainId']
             chain = chainId_dict[chainId]
             listing_response = {}
@@ -57,7 +58,6 @@ def createOrder(j:dict):
             _value = None if (j['type'] == '' or not trait) else j['value']
             signature = signTypedMessage(j['typed_message'])
             parameters = j['typed_message']['message']
-            # signature = j['signature']
             if j['assets'] == '' or trait:
                 collectionOffer_response = {}
                 with lock:
@@ -114,6 +114,6 @@ if __name__ == '__main__':
     
     for thread in threads:
         thread.join()
-    
-    # with open("collection_info.json", "w") as jsonfile:
-    #     json.dump(collection_info, jsonfile)
+
+    saveCompetitiveData(collection_info)
+    closeConnection()
