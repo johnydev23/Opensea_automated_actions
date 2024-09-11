@@ -67,6 +67,8 @@ jobs:
             BASE_RPC_2: ${{ secrets.BASE_RPC_2 }}
             ARBITRUM_RPC_2: ${{ secrets.ARBITRUM_RPC_2 }}
             BLAST_RPC_2: ${{ secrets.BLAST_RPC_2 }}
+            URL_MONGODB: ${{ secrets.URL_MONGODB }}
+            WORKER: ${{ vars.WORKER }}
         run: |
           python create_order.py
           echo "## Sending orders" >> $GITHUB_STEP_SUMMARY

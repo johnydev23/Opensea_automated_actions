@@ -9,7 +9,6 @@ from utils.db_data_utils import getAllDataDB, saveAllDataDB
 from utils.set_actions import setActions
 from utils.concurrent_utils import getBalanceAndUserAssets
 from utils.update_collections import updateCollections
-from database.connection import closeConnection
 from data.variables import address
 import threading
 import time
@@ -72,8 +71,5 @@ if __name__ == '__main__':
         
         clearGlobalVariables()
 
-        
     save_collection_info()
     saveAllDataDB()
-
-    closeConnection()
