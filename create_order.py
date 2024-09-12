@@ -104,7 +104,7 @@ def createOrder(j:dict):
 if __name__ == '__main__':
 
     with open("collection_info.json") as jsonfile:
-        collection_info = json.load(jsonfile)
+        collection_info:list[dict] = json.load(jsonfile)
 
     threads = []
     for item in collection_info:
