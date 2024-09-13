@@ -17,6 +17,12 @@ def createOrder(j:dict):
     except KeyError:
         return
     
+    order_hash = j.get('order_hash')
+    if order_hash:
+        time_now = int(time.time())
+        j['timestamp'] = time_now
+        return
+    
     _id = str(j['ID'])
 
 
@@ -49,7 +55,9 @@ def createOrder(j:dict):
                 j['order_hash'] = order_hash
                 j['chain'] = chain
                 j['protocol_address'] = protocol_address
-                j['timestamp'] = int(time.time())
+                time_now = int(time.time())
+                j['order_timestamp'] = time_now
+                j['timestamp'] = time_now
     else:
         if j['typed_message'] is not None:
             slug = str(j['slug'])
@@ -78,7 +86,9 @@ def createOrder(j:dict):
                     j['chain'] = chain
                     j['protocol_address'] = protocol_address
                     j['criteria'] = criteria
-                    j['timestamp'] = int(time.time())
+                    time_now = int(time.time())
+                    j['order_timestamp'] = time_now
+                    j['timestamp'] = time_now
 
             else:
                 chainId = j['typed_message']['domain']['chainId']
@@ -98,7 +108,9 @@ def createOrder(j:dict):
                     j['order_hash'] = order_hash
                     j['chain'] = chain
                     j['protocol_address'] = protocol_address
-                    j['timestamp'] = int(time.time())
+                    time_now = int(time.time())
+                    j['order_timestamp'] = time_now
+                    j['timestamp'] = time_now
 
     
 if __name__ == '__main__':
