@@ -89,6 +89,7 @@ def createOrder(j:dict):
                     time_now = int(time.time())
                     j['order_timestamp'] = time_now
                     j['timestamp'] = time_now
+                    j['itemType'] = [2, 4] if j['token standard'] == 'ERC-721' else [3, 5]
 
             else:
                 chainId = j['typed_message']['domain']['chainId']
@@ -111,6 +112,7 @@ def createOrder(j:dict):
                     time_now = int(time.time())
                     j['order_timestamp'] = time_now
                     j['timestamp'] = time_now
+                    j['itemType'] = [2, 4] if j['token standard'] == 'ERC-721' else [3, 5]
 
     
 if __name__ == '__main__':
