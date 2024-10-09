@@ -21,6 +21,7 @@ def createOrder(j:dict):
     if order_hash:
         time_now = int(time.time())
         j['timestamp'] = time_now
+        j['itemType'] = [2, 4] if j['token standard'] == 'ERC-721' else [3, 5]
         return
     
     _id = str(j['ID'])
@@ -58,6 +59,7 @@ def createOrder(j:dict):
                 time_now = int(time.time())
                 j['order_timestamp'] = time_now
                 j['timestamp'] = time_now
+                j['itemType'] = [2, 4] if j['token standard'] == 'ERC-721' else [3, 5]
     else:
         if j['typed_message'] is not None:
             slug = str(j['slug'])
