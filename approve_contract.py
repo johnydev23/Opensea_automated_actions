@@ -110,7 +110,12 @@ def setApproved(asset_contract:str, chain='matic', counter = 1):
 
         gas_limit = int(w3.eth.estimate_gas(transaction=transaction, block_identifier='latest') * 1.2)
     except:
-        pass
+        if counter < 2:
+            print("Trying again...")
+            return setApproved(asset_contract, chain, counter+1)
+        else:
+            print("Gas cannot be estimated")
+            return
 
     if (gas_price_eth * gas_limit) < tx_fee:
         if balance_eth > tx_fee:
