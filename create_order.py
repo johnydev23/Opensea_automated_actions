@@ -1,11 +1,12 @@
 import json
 import time
 import threading
+from src.cancel_order_src import cancelOrderSrc
 from src.create_offer import createOffer
 from src.create_single_offer import createSingleOffer
 from src.create_listing_order import createListingOrder
 from decimal import Decimal
-from data.constants import chainId_dict
+from data.constants import chainId_dict, chain_dict, types_cancelOffer
 from utils.db_data_utils import saveCompetitiveData
 from utils.sign_str_message import signTypedMessage
 from database.connection import closeConnection
@@ -116,6 +117,30 @@ def createOrder(j:dict):
                     j['timestamp'] = time_now
                     j['itemType'] = [2, 4] if j['token standard'] == 'ERC-721' else [3, 5]
 
+def cancelOrder(i:list[str]):
+
+    order_hash = i[0]
+    chain = i[1]
+    protocol_address = i[2]
+
+    domain = {
+        "name": "Seaport",
+        "version": "1.6",
+        "chainId": chain_dict[chain],
+        "verifyingContract": protocol_address
+    }
+
+    typed_message_cancel_order:dict = {
+        "types": types_cancelOffer,
+        "primaryType": 'OrderHash',
+        "domain": domain,
+        "message": {"orderHash": order_hash}
+    }
+
+    signature = signTypedMessage(typed_message_cancel_order)
+    with lock:
+        cancelOrderSrc(chain, protocol_address, order_hash, signature)
+
     
 if __name__ == '__main__':
 
@@ -125,6 +150,18 @@ if __name__ == '__main__':
     threads = []
     for item in collection_info:
         thread = threading.Thread(target=createOrder, args=(item,))
+        threads.append(thread)
+        thread.start()
+    
+    for thread in threads:
+        thread.join()
+    
+    with open("offers_to_cancel.json") as jsonfile:
+        offers_to_cancel:list[list] = json.load(jsonfile)
+
+    threads = []
+    for item in offers_to_cancel:
+        thread = threading.Thread(target=cancelOrder, args=(item,))
         threads.append(thread)
         thread.start()
     
