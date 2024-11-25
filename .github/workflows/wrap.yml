@@ -26,7 +26,6 @@ jobs:
       - name: Install dependencies with pip
         run: |
           pip install web3==6.0.0
-          pip install typing-extensions==4.9.0
           pip install eth-account
       
       - name: Wrap weth to eth
