@@ -20,6 +20,8 @@ def run(item:dict):
         getBiddingMessage(item, address, balance)
     elif action == 'list token':
         getListingMessage(item, address)
+    elif action == 'check offers':
+        getListingMessage(item, address, True)
 
 
 if __name__ == '__main__':

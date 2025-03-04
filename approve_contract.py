@@ -89,8 +89,11 @@ def setApproved(asset_contract:str, chain='matic', counter = 1):
     balance_wei = w3.eth.get_balance(account_address)
     balance_eth = w3.from_wei(balance_wei, 'ether')
 
-    gas_price_wei = w3.eth.gas_price
-    gas_price_eth = w3.from_wei(gas_price_wei, 'ether')
+    base_fee = w3.eth.fee_history(1, 'latest')['baseFeePerGas'][-1]
+    priority_fee = w3.eth.max_priority_fee
+    max_fee_per_gas = int((base_fee + priority_fee) * 1.1)
+
+    gas_price_eth = w3.from_wei(max_fee_per_gas, 'ether')
 
     tx_fee = tx_fee_approval_dict[chain]
     chain_id = chain_id_dict[chain]
@@ -102,8 +105,8 @@ def setApproved(asset_contract:str, chain='matic', counter = 1):
             'from': account_address,
             'value': 0,
             'gas': gas_limit,
-            'maxFeePerGas': gas_price_wei,
-            'maxPriorityFeePerGas': gas_price_wei,
+            'maxFeePerGas': max_fee_per_gas,
+            'maxPriorityFeePerGas': priority_fee,
             'nonce': w3.eth.get_transaction_count(account_address),
             'chainId': chain_id,
         })
@@ -123,8 +126,8 @@ def setApproved(asset_contract:str, chain='matic', counter = 1):
                 'from': account_address,
                 'value': 0,
                 'gas': gas_limit,
-                'maxFeePerGas': gas_price_wei,
-                'maxPriorityFeePerGas': gas_price_wei,
+                'maxFeePerGas': max_fee_per_gas,
+                'maxPriorityFeePerGas': priority_fee,
                 'nonce': w3.eth.get_transaction_count(account_address),
                 'chainId': chain_id,
             })
