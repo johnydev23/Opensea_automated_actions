@@ -80,7 +80,7 @@ def createOrder(j:dict):
                     criteria = collectionOffer_response['criteria']
                     currency = price['currency']
                     protocol_address = collectionOffer_response['protocol_address']
-                    if currency in ('ETH','WETH'):
+                    if currency in ('ETH','WETH', 'APE', 'WAPE'):
                         offer_value_wei = price['value']
                         decimals = price['decimals']
                         offer_value_eth = float(Decimal(offer_value_wei)/Decimal(f"{10**decimals}"))
@@ -104,7 +104,7 @@ def createOrder(j:dict):
                     order_hash = singleOffer_response['order']['order_hash']
                     currency = singleOffer_response['order']['maker_asset_bundle']['assets'][0]['asset_contract']['symbol']
                     protocol_address = singleOffer_response['order']['protocol_address']
-                    if currency in ('ETH','WETH'):
+                    if currency in ('ETH','WETH', 'APE', 'WAPE'):
                         offer_value_wei = singleOffer_response['order']['current_price']
                         decimals = singleOffer_response['order']['maker_asset_bundle']['assets'][0]['decimals']
                         offer_value_eth = float(Decimal(offer_value_wei)/Decimal(f"{10**decimals}"))
