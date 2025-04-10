@@ -8,7 +8,7 @@ from utils.clear_variables import clearGlobalVariables
 from utils.db_data_utils import getAllDataDB, saveAllDataDB
 from utils.set_actions import setActions
 from utils.concurrent_utils import getBalanceAndUserAssets
-from utils.update_collections import updateCollections
+from utils.update_collections import setBlockchains, updateCollections
 from data.variables import address
 import threading
 import time
@@ -33,16 +33,10 @@ if __name__ == '__main__':
     with open("collection_info.json", "w") as jsonfile:
         json.dump(collection_list, jsonfile)
 
-    balance, data_user_contracts, data_user_contracts_info = getBalanceAndUserAssets(address)
-    if data_user_contracts is None:
-        print("No user data")
-        quit()
-
     for filename in os.listdir('.'):
         if filename.endswith('.csv'):
             csv_file = filename
             break
-
 
     with open(csv_file, 'r') as file:
         csv_reader = csv.DictReader(file)
@@ -50,6 +44,13 @@ if __name__ == '__main__':
             collection_list.append(row)
 
     collection_list = sorted(collection_list, key=lambda x: (x['slug'], x['trait']), reverse=True)
+
+    setBlockchains(collection_list)
+
+    balance, data_user_contracts, data_user_contracts_info = getBalanceAndUserAssets(address)
+    if data_user_contracts is None:
+        print("No user data")
+        quit()
 
     action_list = setActions(collection_list, data_user_contracts, data_user_contracts_info)
 

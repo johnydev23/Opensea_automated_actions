@@ -40,11 +40,13 @@ jobs:
             BASE_RPC: ${{ secrets.BASE_RPC }}
             ARBITRUM_RPC: ${{ secrets.ARBITRUM_RPC }}
             BLAST_RPC: ${{ secrets.BLAST_RPC }}
+            APECHAIN_RPC: ${{ secrets.APECHAIN_RPC }}
             ETHEREUM_RPC_2: ${{ secrets.ETHEREUM_RPC_2 }}
             POLYGON_RPC_2: ${{ secrets.POLYGON_RPC_2 }}
             BASE_RPC_2: ${{ secrets.BASE_RPC_2 }}
             ARBITRUM_RPC_2: ${{ secrets.ARBITRUM_RPC_2 }}
             BLAST_RPC_2: ${{ secrets.BLAST_RPC_2 }}
+            APECHAIN_RPC_2: ${{ secrets.APECHAIN_RPC_2 }}
             TENDERLY_ETH_NODE: ${{ secrets.TENDERLY_ETH_NODE }}
             URL_MONGODB: ${{ secrets.URL_MONGODB }}
             WORKER: ${{ vars.WORKER }}

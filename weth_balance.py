@@ -1,5 +1,5 @@
 from web3 import Web3
-from data.constants import contract_abi, contract_address
+from data.constants import contract_abi, contract_address, blockchains
 from data.variables import endpoints, endpoints_2
 
 
@@ -31,8 +31,9 @@ def getWETHbalance(address) -> dict:
     weth_balance = {}
 
     for key, value in contract_address.items():
-        balance_in_eth = getWETHbalanceChain(address, key, value)
-        
-        weth_balance[key] = balance_in_eth
+        if key in blockchains:
+            balance_in_eth = getWETHbalanceChain(address, key, value)
+            
+            weth_balance[key] = balance_in_eth
 
     return weth_balance
