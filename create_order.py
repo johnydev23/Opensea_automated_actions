@@ -49,7 +49,7 @@ def createOrder(j:dict):
                 order_hash = listing_response['order']['order_hash']
                 protocol_address = listing_response['order']['protocol_address']
                 currency = listing_response['order']['taker_asset_bundle']['assets'][0]['asset_contract']['symbol']
-                if currency in ('ETH','WETH'):
+                if currency in ('ETH','WETH', 'APE', 'WAPE'):
                     listing_value_wei = listing_response['order']['current_price']
                     decimals = listing_response['order']['taker_asset_bundle']['assets'][0]['decimals']
                     listing_value_eth = float(Decimal(listing_value_wei)/Decimal(f"{10**decimals}"))
