@@ -6,7 +6,7 @@ from src.create_offer import createOffer
 from src.create_single_offer import createSingleOffer
 from src.create_listing_order import createListingOrder
 from decimal import Decimal
-from data.constants import chainId_dict, chain_dict, types_cancelOffer
+from data.constants import chainId_dict, chain_dict, types_cancelOffer, symbols
 from utils.db_data_utils import saveCompetitiveData
 from utils.sign_str_message import signTypedMessage
 from database.connection import closeConnection
@@ -49,7 +49,7 @@ def createOrder(j:dict):
                 order_hash = listing_response['order']['order_hash']
                 protocol_address = listing_response['order']['protocol_address']
                 currency = listing_response['order']['taker_asset_bundle']['assets'][0]['asset_contract']['symbol']
-                if currency in ('ETH','WETH', 'APE', 'WAPE'):
+                if currency in symbols:
                     listing_value_wei = listing_response['order']['current_price']
                     decimals = listing_response['order']['taker_asset_bundle']['assets'][0]['decimals']
                     listing_value_eth = float(Decimal(listing_value_wei)/Decimal(f"{10**decimals}"))
@@ -80,7 +80,7 @@ def createOrder(j:dict):
                     criteria = collectionOffer_response['criteria']
                     currency = price['currency']
                     protocol_address = collectionOffer_response['protocol_address']
-                    if currency in ('ETH','WETH', 'APE', 'WAPE'):
+                    if currency in symbols:
                         offer_value_wei = price['value']
                         decimals = price['decimals']
                         offer_value_eth = float(Decimal(offer_value_wei)/Decimal(f"{10**decimals}"))
@@ -104,7 +104,7 @@ def createOrder(j:dict):
                     order_hash = singleOffer_response['order']['order_hash']
                     currency = singleOffer_response['order']['maker_asset_bundle']['assets'][0]['asset_contract']['symbol']
                     protocol_address = singleOffer_response['order']['protocol_address']
-                    if currency in ('ETH','WETH', 'APE', 'WAPE'):
+                    if currency in symbols:
                         offer_value_wei = singleOffer_response['order']['current_price']
                         decimals = singleOffer_response['order']['maker_asset_bundle']['assets'][0]['decimals']
                         offer_value_eth = float(Decimal(offer_value_wei)/Decimal(f"{10**decimals}"))
