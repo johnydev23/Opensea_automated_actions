@@ -1,3 +1,4 @@
+import traceback
 from web3 import Web3
 from data.constants import operator_address_dict, tx_fee_approval_dict, chain_id_dict, gas_limit_approval_dict
 from data.variables import endpoints, endpoints_2, address, private_key
@@ -35,7 +36,9 @@ def isApprovedForAll(asset_contract, chain='matic', counter = 1):
     is_approved = True
     try:
         is_approved = contract.functions.isApprovedForAll(account_address, operator_address).call()
-    except:
+    except Exception as e:
+        print("Error checking if operator is approved:", e)
+        traceback.print_exc()
         if counter < 2:
             return isApprovedForAll(asset_contract, chain, counter+1)
 
