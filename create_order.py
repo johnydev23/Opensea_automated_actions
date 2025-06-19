@@ -93,6 +93,7 @@ def createOrder(j:dict):
                     j['order_timestamp'] = time_now
                     j['timestamp'] = time_now
                     j['itemType'] = [2, 4] if j['token standard'] == 'ERC-721' else [3, 5]
+                    j['normal_offer'] = True
 
             else:
                 chainId = j['typed_message']['domain']['chainId']
@@ -116,6 +117,7 @@ def createOrder(j:dict):
                     j['order_timestamp'] = time_now
                     j['timestamp'] = time_now
                     j['itemType'] = [2, 4] if j['token standard'] == 'ERC-721' else [3, 5]
+                    j['normal_offer'] = True
 
 def cancelOrder(i:list[str]):
 
