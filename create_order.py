@@ -8,6 +8,7 @@ from src.create_listing_order import createListingOrder
 from decimal import Decimal
 from data.constants import chainId_dict, chain_dict, types_cancelOffer, symbols
 from utils.db_data_utils import saveCompetitiveData
+from utils.helpers import orderZCollectionInfo
 from utils.sign_str_message import signTypedMessage
 from database.connection import closeConnection
 from data.variables import lock
@@ -38,29 +39,39 @@ def createOrder(j:dict):
     
     if bought==True:
         if j['typed_message'] is not None:
-            signature = signTypedMessage(j['typed_message'])
             parameters = j['typed_message']['message']
             chainId = j['typed_message']['domain']['chainId']
             chain = chainId_dict[chainId]
             listing_response = {}
-            with lock:
-                listing_response = createListingOrder(parameters, signature, chain, _id)
-            if listing_response:
-                order_hash = listing_response['order']['order_hash']
-                protocol_address = listing_response['order']['protocol_address']
-                currency = listing_response['order']['taker_asset_bundle']['assets'][0]['asset_contract']['symbol']
-                if currency in symbols:
-                    listing_value_wei = listing_response['order']['current_price']
-                    decimals = listing_response['order']['taker_asset_bundle']['assets'][0]['decimals']
-                    listing_value_eth = float(Decimal(listing_value_wei)/Decimal(f"{10**decimals}"))
-                    j['my_price'] = listing_value_eth
-                j['order_hash'] = order_hash
+            if j['competitive listing'] == 'no':
+                signature = signTypedMessage(j['typed_message'])
+                with lock:
+                    listing_response = createListingOrder(parameters, signature, chain, _id)
+                if listing_response:
+                    order_hash = listing_response['order']['order_hash']
+                    protocol_address = listing_response['order']['protocol_address']
+                    currency = listing_response['order']['taker_asset_bundle']['assets'][0]['asset_contract']['symbol']
+                    if currency in symbols:
+                        listing_value_wei = listing_response['order']['current_price']
+                        decimals = listing_response['order']['taker_asset_bundle']['assets'][0]['decimals']
+                        listing_value_eth = float(Decimal(listing_value_wei)/Decimal(f"{10**decimals}"))
+                        j['my_price'] = listing_value_eth
+                    j['order_hash'] = order_hash
+                    j['chain'] = chain
+                    j['protocol_address'] = protocol_address
+                    time_now = int(time.time())
+                    j['order_timestamp'] = time_now
+                    j['timestamp'] = time_now
+                    j['itemType'] = [2, 4] if j['token standard'] == 'ERC-721' else [3, 5]
+            else:
                 j['chain'] = chain
+                protocol_address = j['typed_message']['domain']['verifyingContract']
                 j['protocol_address'] = protocol_address
                 time_now = int(time.time())
                 j['order_timestamp'] = time_now
                 j['timestamp'] = time_now
                 j['itemType'] = [2, 4] if j['token standard'] == 'ERC-721' else [3, 5]
+                print("Create listing order:", j['slug'], j['token id'], "price:", j['my_price'])
     else:
         if j['typed_message'] is not None:
             slug = str(j['slug'])
@@ -71,53 +82,76 @@ def createOrder(j:dict):
             parameters = j['typed_message']['message']
             if j['assets'] == '' or trait:
                 collectionOffer_response = {}
-                with lock:
-                    collectionOffer_response = createOffer(slug, _type, _value, parameters, signature, _id)
-                if collectionOffer_response:
-                    order_hash = collectionOffer_response['order_hash']
-                    chain = collectionOffer_response['chain']
-                    price = collectionOffer_response['price']
-                    criteria = collectionOffer_response['criteria']
-                    currency = price['currency']
-                    protocol_address = collectionOffer_response['protocol_address']
-                    if currency in symbols:
-                        offer_value_wei = price['value']
-                        decimals = price['decimals']
-                        offer_value_eth = float(Decimal(offer_value_wei)/Decimal(f"{10**decimals}"))
-                        j['my_price'] = offer_value_eth
-                    j['order_hash'] = order_hash
+                if j['competitive bidding'] == 'no':
+                    with lock:
+                        collectionOffer_response = createOffer(slug, _type, _value, parameters, signature, _id)
+                    if collectionOffer_response:
+                        order_hash = collectionOffer_response['order_hash']
+                        chain = collectionOffer_response['chain']
+                        price = collectionOffer_response['price']
+                        criteria = collectionOffer_response['criteria']
+                        currency = price['currency']
+                        protocol_address = collectionOffer_response['protocol_address']
+                        if currency in symbols:
+                            offer_value_wei = price['value']
+                            decimals = price['decimals']
+                            offer_value_eth = float(Decimal(offer_value_wei)/Decimal(f"{10**decimals}"))
+                            j['my_price'] = offer_value_eth
+                        j['order_hash'] = order_hash
+                        j['chain'] = chain
+                        j['protocol_address'] = protocol_address
+                        j['criteria'] = criteria
+                        time_now = int(time.time())
+                        j['order_timestamp'] = time_now
+                        j['timestamp'] = time_now
+                        j['itemType'] = [2, 4] if j['token standard'] == 'ERC-721' else [3, 5]
+                        j['normal_offer'] = True
+                else:
+                    chainId = j['typed_message']['domain']['chainId']
+                    chain = chainId_dict[chainId]
                     j['chain'] = chain
+                    protocol_address = j['typed_message']['domain']['verifyingContract']
                     j['protocol_address'] = protocol_address
-                    j['criteria'] = criteria
+                    j['criteria'] = {}
                     time_now = int(time.time())
                     j['order_timestamp'] = time_now
                     j['timestamp'] = time_now
                     j['itemType'] = [2, 4] if j['token standard'] == 'ERC-721' else [3, 5]
-                    j['normal_offer'] = True
+                    print("Create collection offer:", j['slug'], j['type'], j['value'], "price:", j['my_price'])
 
             else:
                 chainId = j['typed_message']['domain']['chainId']
                 chain = chainId_dict[chainId]
                 singleOffer_response = {}
-                with lock:
-                    singleOffer_response = createSingleOffer(parameters, signature, chain, _id)
-                if singleOffer_response:
-                    order_hash = singleOffer_response['order']['order_hash']
-                    currency = singleOffer_response['order']['maker_asset_bundle']['assets'][0]['asset_contract']['symbol']
-                    protocol_address = singleOffer_response['order']['protocol_address']
-                    if currency in symbols:
-                        offer_value_wei = singleOffer_response['order']['current_price']
-                        decimals = singleOffer_response['order']['maker_asset_bundle']['assets'][0]['decimals']
-                        offer_value_eth = float(Decimal(offer_value_wei)/Decimal(f"{10**decimals}"))
-                        j['my_price'] = offer_value_eth
-                    j['order_hash'] = order_hash
+                if j['competitive bidding'] == 'no':
+                    with lock:
+                        singleOffer_response = createSingleOffer(parameters, signature, chain, _id)
+                    if singleOffer_response:
+                        order_hash = singleOffer_response['order']['order_hash']
+                        currency = singleOffer_response['order']['maker_asset_bundle']['assets'][0]['asset_contract']['symbol']
+                        protocol_address = singleOffer_response['order']['protocol_address']
+                        if currency in symbols:
+                            offer_value_wei = singleOffer_response['order']['current_price']
+                            decimals = singleOffer_response['order']['maker_asset_bundle']['assets'][0]['decimals']
+                            offer_value_eth = float(Decimal(offer_value_wei)/Decimal(f"{10**decimals}"))
+                            j['my_price'] = offer_value_eth
+                        j['order_hash'] = order_hash
+                        j['chain'] = chain
+                        j['protocol_address'] = protocol_address
+                        time_now = int(time.time())
+                        j['order_timestamp'] = time_now
+                        j['timestamp'] = time_now
+                        j['itemType'] = [2, 4] if j['token standard'] == 'ERC-721' else [3, 5]
+                        j['normal_offer'] = True
+                else:
                     j['chain'] = chain
+                    protocol_address = j['typed_message']['domain']['verifyingContract']
                     j['protocol_address'] = protocol_address
                     time_now = int(time.time())
                     j['order_timestamp'] = time_now
                     j['timestamp'] = time_now
                     j['itemType'] = [2, 4] if j['token standard'] == 'ERC-721' else [3, 5]
-                    j['normal_offer'] = True
+                    print("Create single offer:", j['slug'], j['assets'], "price:", j['my_price'])
 
 def cancelOrder(i:list[str]):
 
@@ -148,6 +182,8 @@ if __name__ == '__main__':
 
     with open("collection_info.json") as jsonfile:
         collection_info:list[dict] = json.load(jsonfile)
+
+    collection_info = orderZCollectionInfo(collection_info)
 
     threads = []
     for item in collection_info:
