@@ -40,6 +40,8 @@ jobs:
             APECHAIN_RPC: ${{ secrets.APECHAIN_RPC }}
             BERACHAIN_RPC: ${{ secrets.BERACHAIN_RPC }}
             RONIN_RPC: ${{ secrets.RONIN_RPC }}
+            ZORA_RPC: ${{ secrets.ZORA_RPC }}
+            ABSTRACT_RPC: ${{ secrets.ABSTRACT_RPC }}
             ETHEREUM_RPC_2: ${{ secrets.ETHEREUM_RPC_2 }}
             POLYGON_RPC_2: ${{ secrets.POLYGON_RPC_2 }}
             BASE_RPC_2: ${{ secrets.BASE_RPC_2 }}
@@ -48,6 +50,8 @@ jobs:
             APECHAIN_RPC_2: ${{ secrets.APECHAIN_RPC_2 }}
             BERACHAIN_RPC_2: ${{ secrets.BERACHAIN_RPC_2 }}
             RONIN_RPC_2: ${{ secrets.RONIN_RPC_2 }}
+            ZORA_RPC_2: ${{ secrets.ZORA_RPC_2 }}
+            ABSTRACT_RPC_2: ${{ secrets.ABSTRACT_RPC_2 }}
         run: |
           python wrap_weth_to_eth.py
           echo "## Wraping weth" >> $GITHUB_STEP_SUMMARY
