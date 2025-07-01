@@ -1,4 +1,5 @@
 from web3 import Web3
+from requests.exceptions import HTTPError
 from data.constants import operator_address_dict, tx_fee_approval_dict, chain_id_dict, gas_limit_approval_dict
 from data.variables import endpoints, endpoints_2, address, private_key
 
@@ -86,7 +87,13 @@ def setApproved(asset_contract:str, chain='matic', counter = 1):
 
     contract = w3.eth.contract(asset_contract, abi=contract_abi)
 
-    balance_wei = w3.eth.get_balance(account_address)
+    try:
+        balance_wei = w3.eth.get_balance(account_address)
+    except HTTPError:
+        print("Error getting balance, trying again...")
+        if counter < 2:
+            return setApproved(asset_contract, chain, counter+1)
+        return
     balance_eth = w3.from_wei(balance_wei, 'ether')
 
     base_fee = w3.eth.fee_history(1, 'latest')['baseFeePerGas'][-1]
