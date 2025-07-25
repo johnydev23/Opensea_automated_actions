@@ -13,6 +13,10 @@ from database.connection import closeConnection
 from data.variables import lock
 
 def createOrder(j:dict):
+
+    time_now = int(time.time())
+    j['timestamp'] = time_now
+
     try:
         bought:bool = j['bought']
     except KeyError:
@@ -20,8 +24,6 @@ def createOrder(j:dict):
     
     order_hash = j.get('order_hash')
     if order_hash:
-        time_now = int(time.time())
-        j['timestamp'] = time_now
         j['itemType'] = [2, 4] if j['token standard'] == 'ERC-721' else [3, 5]
         return
     
