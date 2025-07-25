@@ -81,7 +81,10 @@ def createOrder(j:dict):
                     if collectionOffer_response:
                         order_hash = collectionOffer_response['order_hash']
                         chain = collectionOffer_response['chain']
-                        criteria = collectionOffer_response['criteria']
+                        criteria:dict = collectionOffer_response['criteria']
+                        criteria.pop('encoded_token_ids', None)
+                        criteria.pop('collection', None)
+                        criteria.pop('contract', None)
                         protocol_address = collectionOffer_response['protocol_address']
                         j['order_hash'] = order_hash
                         j['chain'] = chain
