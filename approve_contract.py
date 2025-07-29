@@ -111,15 +111,11 @@ def setApproved(asset_contract:str, chain='matic', counter = 1):
         transaction = contract.functions.setApprovalForAll(operator_address, True).build_transaction({
             'from': account_address,
             'value': 0,
-            'gas': gas_limit,
-            'maxFeePerGas': max_fee_per_gas,
-            'maxPriorityFeePerGas': priority_fee,
-            'nonce': w3.eth.get_transaction_count(account_address),
-            'chainId': chain_id,
         })
 
         gas_limit = int(w3.eth.estimate_gas(transaction=transaction, block_identifier='latest') * 1.2)
-    except:
+    except Exception as e:
+        print("Error estimating gas:", e)
         if counter < 2:
             print("Trying again...")
             return setApproved(asset_contract, chain, counter+1)
