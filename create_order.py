@@ -59,7 +59,7 @@ def createOrder(j:dict):
                 j['timestamp'] = time_now
                 j['itemType'] = [2, 4] if j['token standard'] == 'ERC-721' else [3, 5]
             else:
-                j['competitive listing'] = 'no'
+                j['my_price'] = None
             # else:
             #     j['chain'] = chain
             #     protocol_address = j['typed_message']['domain']['verifyingContract']
